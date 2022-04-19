@@ -1,0 +1,46 @@
+CASA
+- CLAVE Id.identificación	
+- Nºhabitaciones
+- Lista Inquilino/s
+
+INQUILINO
+- Id inquilino
+- nombre
+- bool administrador
+
+-FK id.casa
+
+HABITACION
+- id.habitación
+- Lista Nºelectrodomésticos
+
+- FK id.casa
+
+ELECTRODOMESTICO
+- Bool Encendido
+- Tiempo de uso
+
+- FK id.habitación
+	
+HEREDARÁN
+- Aire Acondicionado
+	- temperatura
+
+- Calefacción 
+	- modo invierno
+
+- Lavadora
+	- modo de lavado
+	- centrifugado
+
+- Luces
+	- potencia
+
+- Horno
+	- precalentar
+
+- Persianas
+	- posición
+
+- Regadero (terraza-jardín)
+	- modo (goteo/riego)
