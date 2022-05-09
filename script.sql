@@ -1,0 +1,42 @@
+CREATE DATABASE myhomy CHARACTER SET UTF8 COLLATE UTF8_GENERAL_CI;
+USE myhomy;
+
+CREATE TABLE usuario(
+id_usuario INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+nombre VARCHAR(100) NOT NULL,
+apellido VARCHAR(100) NOT NULL,
+correo VARCHAR(100) NOT NULL,
+contrasenya VARCHAR(100) NOT NULL,
+conectado TINYINT(1) NOT NULL
+);
+
+CREATE TABLE casa(
+id_casa INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+nombre VARCHAR(100) NOT NULL,
+fk_usuario INT NOT NULL,
+FOREIGN KEY (fk_usuario) REFERENCES usuario(id_usuario)
+);
+
+CREATE TABLE estancia(
+id_estancia INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+nombre VARCHAR(100) NOT NULL,
+fk_casa INT NOT NULL,
+FOREIGN KEY (fk_casa) REFERENCES casa(id_casa)
+);
+
+CREATE TABLE dispositivos(
+id_dispositivos INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+nombre VARCHAR(100) NOT NULL,
+encendido TINYINT(1) NOT NULL,
+consumo_base INT NOT NULL,
+aire_acon TINYINT(1) NOT NULL,
+temp_aire DOUBLE(2) NOT NULL,
+lavadora TINYINT(1) NOT NULL,
+modo_lavado VARCHAR(50) NOT NULL,
+centrifugado TINYINT(1) NOT NULL,
+luz TINYINT(1) NOT NULL,
+potencia_luz INT NOT NULL, 
+horno TINYINT(1) NOT NULL,
+fk_estancia INT NOT NULL,
+FOREIGN KEY (fk_estancia) REFERENCES estancia(id_estancia)
+);
