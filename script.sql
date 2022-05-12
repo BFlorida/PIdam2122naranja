@@ -45,8 +45,6 @@ id_dispositivos INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 nombre_Dispo VARCHAR(100) NOT NULL,
 encendido TINYINT(1) NOT NULL,
 consumo_base INT NOT NULL,
-tipo TINYINT NOT NULL,
-func_espe TINYINT NOT NULL,
 fk_estancia INT NOT NULL,
 FOREIGN KEY (fk_estancia) REFERENCES estancia(id_estancia)
 );
