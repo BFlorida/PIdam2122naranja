@@ -13,8 +13,8 @@ conectado TINYINT(1) NOT NULL
 
 
 #Insert para usuario (campo id autoincrementativo)
-INSERT INTO usuario (nombre_Usu,apellido_Usu,correo,contrasenya,conectado) VALUES ("Paco","Franciscano","Paco@franco.com","1989bna",1);
-INSERT INTO usuario (nombre_Usu,apellido_Usu,correo,contrasenya,conectado) VALUES ("Elena","Eleniak","Eleno@franco.com","123456",1);
+#INSERT INTO usuario (nombre_Usu,apellido_Usu,correo,contrasenya,conectado) VALUES ("Paco","Franciscano","Paco@franco.com","1989bna",1);
+#INSERT INTO usuario (nombre_Usu,apellido_Usu,correo,contrasenya,conectado) VALUES ("Elena","Eleniak","Eleno@franco.com","123456",1);
 
 CREATE TABLE casa(
 id_casa INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -24,7 +24,7 @@ FOREIGN KEY (fk_usuario) REFERENCES usuario(id_usuario)
 );
 
 #Insert para casa (campo id autoincrementativo)
-INSERT INTO casa (nombre_Casa,fk_usuario) VALUES ("Paco's House 1",1);
+#INSERT INTO casa (nombre_Casa,fk_usuario) VALUES ("Paco's House 1",1);
 
 
 CREATE TABLE estancia(
@@ -35,24 +35,35 @@ FOREIGN KEY (fk_casa) REFERENCES casa(id_casa)
 );
 
 #Insert para estancia (campo id de estancia autoincrementativo)
-INSERT INTO estancia (nombre_Estan,fk_casa) VALUES ("Cocina",1);
-INSERT INTO estancia (nombre_Estan,fk_casa) VALUES ("Salón",2);
+#INSERT INTO estancia (nombre_Estan,fk_casa) VALUES ("Cocina",1);
+#INSERT INTO estancia (nombre_Estan,fk_casa) VALUES ("Salón",2);
 
 
 
 CREATE TABLE dispositivos(
-id_dispositivos INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+id_disp INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 nombre_Dispo VARCHAR(100) NOT NULL,
 encendido TINYINT(1) NOT NULL,
 consumo_base INT NOT NULL,
+tiempo DATETIME NOT NULL,
 fk_estancia INT NOT NULL,
 FOREIGN KEY (fk_estancia) REFERENCES estancia(id_estancia)
 );
 
 #Insert para dispositivos (campo id de dispositivo autoincrementativo)
 
-INSERT INTO dispositivos (nombre_Dispo,encendido,consumo_base,tipo,func_espe,fk_estancia) VALUES ("Horno",1,2500,1,1,1);
+#INSERT INTO dispositivos (nombre_Dispo,encendido,consumo_base,tipo,func_espe,fk_estancia) VALUES ("Horno",1,2500,1,1,1);
 
+
+CREATE TABLE registro(
+id_log INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+nombre_dis VARCHAR(50) NOT NULL,
+tiempo_ini DATETIME NOT NULL,
+tiempo_fin DATETIME NOT NULL,
+estado BOOL NOT NULL,
+fk_disp INT NOT NULL,
+FOREIGN KEY (fk_disp) REFERENCES dispositivos(id_disp)
+);
 
 
 
