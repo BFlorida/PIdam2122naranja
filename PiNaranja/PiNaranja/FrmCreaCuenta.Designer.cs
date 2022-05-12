@@ -31,17 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCreaCuenta));
             this.lblCorreo = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.lblConstrasenya1 = new System.Windows.Forms.Label();
+            this.lblConstrasenya = new System.Windows.Forms.Label();
             this.lblApellido = new System.Windows.Forms.Label();
             this.lblCreaCuenta = new System.Windows.Forms.Label();
             this.ptbLogo = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtApellidos = new System.Windows.Forms.TextBox();
+            this.txtCon = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnCrearCuenta = new System.Windows.Forms.Button();
             this.grbRellena = new System.Windows.Forms.GroupBox();
             this.ptbSalir = new System.Windows.Forms.PictureBox();
+            this.lblIdioma = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).BeginInit();
             this.grbRellena.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSalir)).BeginInit();
@@ -69,16 +71,16 @@
             this.lblNombre.TabIndex = 3;
             this.lblNombre.Text = "Nombre";
             // 
-            // lblConstrasenya1
+            // lblConstrasenya
             // 
-            this.lblConstrasenya1.AutoSize = true;
-            this.lblConstrasenya1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConstrasenya1.Location = new System.Drawing.Point(285, 249);
-            this.lblConstrasenya1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblConstrasenya1.Name = "lblConstrasenya1";
-            this.lblConstrasenya1.Size = new System.Drawing.Size(114, 25);
-            this.lblConstrasenya1.TabIndex = 6;
-            this.lblConstrasenya1.Text = "Contraseña";
+            this.lblConstrasenya.AutoSize = true;
+            this.lblConstrasenya.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConstrasenya.Location = new System.Drawing.Point(285, 249);
+            this.lblConstrasenya.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblConstrasenya.Name = "lblConstrasenya";
+            this.lblConstrasenya.Size = new System.Drawing.Size(114, 25);
+            this.lblConstrasenya.TabIndex = 6;
+            this.lblConstrasenya.Text = "Contraseña";
             // 
             // lblApellido
             // 
@@ -108,54 +110,54 @@
             this.ptbLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbLogo.Image = ((System.Drawing.Image)(resources.GetObject("ptbLogo.Image")));
             this.ptbLogo.Location = new System.Drawing.Point(161, 537);
-            this.ptbLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbLogo.Margin = new System.Windows.Forms.Padding(4);
             this.ptbLogo.Name = "ptbLogo";
             this.ptbLogo.Size = new System.Drawing.Size(454, 139);
             this.ptbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbLogo.TabIndex = 8;
             this.ptbLogo.TabStop = false;
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(229, 85);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(245, 30);
-            this.textBox1.TabIndex = 9;
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(229, 85);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(245, 30);
+            this.txtNombre.TabIndex = 9;
             // 
-            // textBox2
+            // txtApellidos
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(229, 149);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(245, 30);
-            this.textBox2.TabIndex = 10;
+            this.txtApellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellidos.Location = new System.Drawing.Point(229, 149);
+            this.txtApellidos.Margin = new System.Windows.Forms.Padding(4);
+            this.txtApellidos.Name = "txtApellidos";
+            this.txtApellidos.Size = new System.Drawing.Size(245, 30);
+            this.txtApellidos.TabIndex = 10;
             // 
-            // textBox3
+            // txtCon
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(229, 277);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(245, 30);
-            this.textBox3.TabIndex = 12;
+            this.txtCon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCon.Location = new System.Drawing.Point(229, 277);
+            this.txtCon.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCon.Name = "txtCon";
+            this.txtCon.Size = new System.Drawing.Size(245, 30);
+            this.txtCon.TabIndex = 12;
             // 
-            // textBox4
+            // txtEmail
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(229, 213);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(245, 30);
-            this.textBox4.TabIndex = 11;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(229, 213);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(245, 30);
+            this.txtEmail.TabIndex = 11;
             // 
             // btnCrearCuenta
             // 
             this.btnCrearCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearCuenta.Location = new System.Drawing.Point(229, 332);
-            this.btnCrearCuenta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCrearCuenta.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrearCuenta.Name = "btnCrearCuenta";
             this.btnCrearCuenta.Size = new System.Drawing.Size(247, 60);
             this.btnCrearCuenta.TabIndex = 13;
@@ -165,20 +167,22 @@
             // 
             // grbRellena
             // 
+            this.grbRellena.Controls.Add(this.comboBox1);
+            this.grbRellena.Controls.Add(this.lblIdioma);
             this.grbRellena.Controls.Add(this.btnCrearCuenta);
-            this.grbRellena.Controls.Add(this.textBox3);
-            this.grbRellena.Controls.Add(this.textBox4);
-            this.grbRellena.Controls.Add(this.textBox2);
-            this.grbRellena.Controls.Add(this.textBox1);
-            this.grbRellena.Controls.Add(this.lblConstrasenya1);
+            this.grbRellena.Controls.Add(this.txtCon);
+            this.grbRellena.Controls.Add(this.txtEmail);
+            this.grbRellena.Controls.Add(this.txtApellidos);
+            this.grbRellena.Controls.Add(this.txtNombre);
+            this.grbRellena.Controls.Add(this.lblConstrasenya);
             this.grbRellena.Controls.Add(this.lblApellido);
             this.grbRellena.Controls.Add(this.lblCorreo);
             this.grbRellena.Controls.Add(this.lblNombre);
             this.grbRellena.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbRellena.Location = new System.Drawing.Point(41, 100);
-            this.grbRellena.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grbRellena.Margin = new System.Windows.Forms.Padding(4);
             this.grbRellena.Name = "grbRellena";
-            this.grbRellena.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grbRellena.Padding = new System.Windows.Forms.Padding(4);
             this.grbRellena.Size = new System.Drawing.Size(700, 430);
             this.grbRellena.TabIndex = 14;
             this.grbRellena.TabStop = false;
@@ -188,12 +192,35 @@
             // 
             this.ptbSalir.Image = ((System.Drawing.Image)(resources.GetObject("ptbSalir.Image")));
             this.ptbSalir.Location = new System.Drawing.Point(712, 619);
-            this.ptbSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbSalir.Margin = new System.Windows.Forms.Padding(4);
             this.ptbSalir.Name = "ptbSalir";
             this.ptbSalir.Size = new System.Drawing.Size(57, 57);
             this.ptbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbSalir.TabIndex = 15;
             this.ptbSalir.TabStop = false;
+            this.ptbSalir.Click += new System.EventHandler(this.ptbSalir_Click);
+            // 
+            // lblIdioma
+            // 
+            this.lblIdioma.AutoSize = true;
+            this.lblIdioma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdioma.Location = new System.Drawing.Point(493, 27);
+            this.lblIdioma.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIdioma.Name = "lblIdioma";
+            this.lblIdioma.Size = new System.Drawing.Size(76, 25);
+            this.lblIdioma.TabIndex = 14;
+            this.lblIdioma.Text = "Idioma:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Castellano",
+            "English"});
+            this.comboBox1.Location = new System.Drawing.Point(572, 24);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 33);
+            this.comboBox1.TabIndex = 15;
             // 
             // FrmCreaCuenta
             // 
@@ -205,7 +232,7 @@
             this.Controls.Add(this.grbRellena);
             this.Controls.Add(this.ptbLogo);
             this.Controls.Add(this.lblCreaCuenta);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmCreaCuenta";
             this.Text = "Crea Cuenta";
             ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).EndInit();
@@ -221,16 +248,18 @@
 
         private System.Windows.Forms.Label lblCorreo;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.Label lblConstrasenya1;
+        private System.Windows.Forms.Label lblConstrasenya;
         private System.Windows.Forms.Label lblApellido;
         private System.Windows.Forms.Label lblCreaCuenta;
         private System.Windows.Forms.PictureBox ptbLogo;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtApellidos;
+        private System.Windows.Forms.TextBox txtCon;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Button btnCrearCuenta;
         private System.Windows.Forms.GroupBox grbRellena;
         private System.Windows.Forms.PictureBox ptbSalir;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblIdioma;
     }
 }

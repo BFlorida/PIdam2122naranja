@@ -21,7 +21,10 @@ namespace PiNaranja
         {
 
         }
-
-
+        
+        private void btnAgregarHogar_Click(object sender, EventArgs e)
+        {
+        
+        }
     }
 }
