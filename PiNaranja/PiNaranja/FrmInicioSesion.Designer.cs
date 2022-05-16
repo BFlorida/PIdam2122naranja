@@ -31,15 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInicioSesion));
             this.ptblogo = new System.Windows.Forms.PictureBox();
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.lblContrasenya = new System.Windows.Forms.Label();
+            this.lblContraseña = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtContrasenya = new System.Windows.Forms.TextBox();
             this.btnInicioSesion = new System.Windows.Forms.Button();
             this.btnCrearCuenta = new System.Windows.Forms.Button();
             this.ptbSalir = new System.Windows.Forms.PictureBox();
-            this.btnEliminar = new System.Windows.Forms.Button();
             this.lblIdioma = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbIdioma = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.ptblogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSalir)).BeginInit();
             this.SuspendLayout();
@@ -67,16 +66,16 @@
             this.lblUsuario.TabIndex = 1;
             this.lblUsuario.Text = "USUARIO";
             // 
-            // lblContrasenya
+            // lblContraseña
             // 
-            this.lblContrasenya.AutoSize = true;
-            this.lblContrasenya.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContrasenya.Location = new System.Drawing.Point(347, 387);
-            this.lblContrasenya.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblContrasenya.Name = "lblContrasenya";
-            this.lblContrasenya.Size = new System.Drawing.Size(152, 25);
-            this.lblContrasenya.TabIndex = 2;
-            this.lblContrasenya.Text = "CONTRASEÑA";
+            this.lblContraseña.AutoSize = true;
+            this.lblContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContraseña.Location = new System.Drawing.Point(347, 387);
+            this.lblContraseña.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblContraseña.Name = "lblContraseña";
+            this.lblContraseña.Size = new System.Drawing.Size(152, 25);
+            this.lblContraseña.TabIndex = 2;
+            this.lblContraseña.Text = "CONTRASEÑA";
             // 
             // txtUsuario
             // 
@@ -130,38 +129,30 @@
             this.ptbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbSalir.TabIndex = 7;
             this.ptbSalir.TabStop = false;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Location = new System.Drawing.Point(12, 655);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(138, 25);
-            this.btnEliminar.TabIndex = 8;
-            this.btnEliminar.Text = "Eliminar Cuenta";
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            this.ptbSalir.Click += new System.EventHandler(this.ptbSalir_Click);
             // 
             // lblIdioma
             // 
             this.lblIdioma.AutoSize = true;
             this.lblIdioma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdioma.Location = new System.Drawing.Point(520, 251);
+            this.lblIdioma.Location = new System.Drawing.Point(488, 251);
             this.lblIdioma.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIdioma.Name = "lblIdioma";
             this.lblIdioma.Size = new System.Drawing.Size(76, 25);
             this.lblIdioma.TabIndex = 9;
             this.lblIdioma.Text = "Idioma:";
             // 
-            // comboBox1
+            // cmbIdioma
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbIdioma.FormattingEnabled = true;
+            this.cmbIdioma.Items.AddRange(new object[] {
             "Castellano",
             "English"});
-            this.comboBox1.Location = new System.Drawing.Point(604, 251);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 10;
+            this.cmbIdioma.Location = new System.Drawing.Point(598, 251);
+            this.cmbIdioma.Name = "cmbIdioma";
+            this.cmbIdioma.Size = new System.Drawing.Size(121, 24);
+            this.cmbIdioma.TabIndex = 10;
+            this.cmbIdioma.SelectedIndexChanged += new System.EventHandler(this.cmbIdioma_SelectedIndexChanged);
             // 
             // FrmInicioSesion
             // 
@@ -169,20 +160,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(779, 690);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbIdioma);
             this.Controls.Add(this.lblIdioma);
-            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.ptbSalir);
             this.Controls.Add(this.btnCrearCuenta);
             this.Controls.Add(this.btnInicioSesion);
             this.Controls.Add(this.txtContrasenya);
             this.Controls.Add(this.txtUsuario);
-            this.Controls.Add(this.lblContrasenya);
+            this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.ptblogo);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmInicioSesion";
             this.Text = "Inicio Sesion";
+            this.Load += new System.EventHandler(this.FrmInicioSesion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ptblogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSalir)).EndInit();
             this.ResumeLayout(false);
@@ -194,15 +185,14 @@
 
         private System.Windows.Forms.PictureBox ptblogo;
         private System.Windows.Forms.Label lblUsuario;
-        private System.Windows.Forms.Label lblContrasenya;
+        private System.Windows.Forms.Label lblContraseña;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtContrasenya;
         private System.Windows.Forms.Button btnInicioSesion;
         private System.Windows.Forms.Button btnCrearCuenta;
         private System.Windows.Forms.PictureBox ptbSalir;
-        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Label lblIdioma;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbIdioma;
     }
 }
 

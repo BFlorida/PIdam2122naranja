@@ -28,7 +28,7 @@ namespace PInaranja.Clases
         public Casa() { }
 
 
-        public int AgregarCasa(Casa c)
+        public static int AgregarCasa(Casa c)
         {
             int retorno;
 

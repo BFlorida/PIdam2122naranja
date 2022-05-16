@@ -128,3 +128,7 @@ C:\Users\Álex\Documents\DAM\PI\Codigo\PiNaranja\PiNaranja\obj\Debug\PiNaranja.c
 C:\Users\Álex\Documents\DAM\PI\Codigo\PiNaranja\PiNaranja\obj\Debug\PiNaranja.csproj.CopyComplete
 C:\Users\Álex\Documents\DAM\PI\Codigo\PiNaranja\PiNaranja\obj\Debug\PiNaranja.exe
 C:\Users\Álex\Documents\DAM\PI\Codigo\PiNaranja\PiNaranja\obj\Debug\PiNaranja.pdb
+C:\Users\Álex\Documents\DAM\PI\Codigo\PiNaranja\PiNaranja\bin\Debug\EN-GB\PiNaranja.resources.dll
+C:\Users\Álex\Documents\DAM\PI\Codigo\PiNaranja\PiNaranja\obj\Debug\EN-GB\PiNaranja.resources.dll
+C:\Users\Álex\Documents\DAM\PI\Codigo\PiNaranja\PiNaranja\obj\Debug\PiNaranja.Recursos.Idioma.resources
+C:\Users\Álex\Documents\DAM\PI\Codigo\PiNaranja\PiNaranja\obj\Debug\PiNaranja.Recursos.Idioma.EN-GB.resources

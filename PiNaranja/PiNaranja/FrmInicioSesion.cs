@@ -7,6 +7,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
+using System.Threading;
+using PiNaranja.Recursos;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
@@ -23,28 +26,30 @@ namespace PiNaranja
         {
             FrmPanelControl frm = new FrmPanelControl();
 
-            if (Usuario.UsuarioYaRegistrado(txtUsuario.Text) == true)
-            {
-                if(ConBD.Conexion != null)
-                {
-                    ConBD.AbrirConexion();
-                    if (Usuario.ValidaConstrasenya(txtContrasenya.Text) == true)
-                    {
-                        frm.Show();
-                        this.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("La contraseña es erronea");
-                        ConBD.CerrarConexion();
-                    }
-                }
-                ConBD.CerrarConexion();
-            }
-            else
-            {
-                MessageBox.Show("El usuario no está registrado");
-            }
+            frm.Show();
+
+            //if (Usuario.UsuarioYaRegistrado(txtUsuario.Text) == true)
+            //{
+            //    if(ConBD.Conexion != null)
+            //    {
+            //        ConBD.AbrirConexion();
+            //        if (Usuario.ValidaConstrasenya(txtContrasenya.Text) == true)
+            //        {
+            //            frm.Show();
+            //            this.Hide();
+            //        }
+            //        else
+            //        {
+            //            MessageBox.Show("La contraseña es erronea");
+            //            ConBD.CerrarConexion();
+            //        }
+            //    }
+            //    ConBD.CerrarConexion();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("El usuario no está registrado");
+            //}
         }
 
         private void btnCrearCuenta_Click(object sender, EventArgs e)
@@ -60,6 +65,47 @@ namespace PiNaranja
         {
             DialogResult dialogResult = MessageBox.Show("¿Deseas eliminar la cuenta registrada?", "Avisa", MessageBoxButtons.YesNo);
             //funcion de eliminar todo para pablo
+        }
+
+        private void ptbSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FrmInicioSesion_Load(object sender, EventArgs e)
+        {
+            cmbIdioma.Text = "Castellano";
+            AplicarIdioma();
+        }
+
+        private void AplicarIdioma()
+        {
+            this.Text = Recursos.Idioma.FrmInicioSesion;
+            lblUsuario.Text = Recursos.Idioma.lblUsuario;
+            lblContraseña.Text = Recursos.Idioma.lblContraseña;
+            lblIdioma.Text = Recursos.Idioma.lblIdioma;
+            btnInicioSesion.Text = Recursos.Idioma.btnInicioSesion;
+            btnCrearCuenta.Text = Recursos.Idioma.btnCrearCuenta;
+        }
+
+        private void cmbIdioma_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string cultura = "";
+            switch (cmbIdioma.Text)
+            {
+                case "Castellano":
+                    {
+                        cultura = "ES-ES";
+                        break;
+                    }
+                case "English":
+                    {
+                        cultura = "EN-GB";
+                        break;
+                    }
+            }
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
+            AplicarIdioma();
         }
     }
 }

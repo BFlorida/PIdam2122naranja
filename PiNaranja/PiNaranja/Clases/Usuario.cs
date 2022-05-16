@@ -65,7 +65,8 @@ namespace PInaranja.Clases
         {
             //se tiene que rehacer esta parte para que se elimine todo lo registrao para el usuario
             int retorno;
-            string consulta = String.Format("DELETE FROM usuario WHERE correo='{0}' AND contrasenya='{1}'", email, contra);
+            string consulta = String.Format("DELETE FROM usuario WHERE correo='{0}' AND contrasenya='{1}', ON" +
+                "DELETE CASCADE", email, contra);
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
             retorno = comando.ExecuteNonQuery();
             return retorno;
