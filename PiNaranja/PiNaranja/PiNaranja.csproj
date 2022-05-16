@@ -51,6 +51,7 @@
     <Compile Include="Clases\ConBD.cs" />
     <Compile Include="Clases\Dispositivo.cs" />
     <Compile Include="Clases\Estancia.cs" />
+    <Compile Include="Clases\Log.cs" />
     <Compile Include="Clases\Usuario.cs" />
     <Compile Include="FrmPanelControl.cs">
       <SubType>Form</SubType>

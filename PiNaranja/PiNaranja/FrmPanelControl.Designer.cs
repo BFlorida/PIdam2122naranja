@@ -40,20 +40,6 @@
             this.lblClick = new System.Windows.Forms.Label();
             this.lblReloj = new System.Windows.Forms.Label();
             this.ptbLogo = new System.Windows.Forms.PictureBox();
-            this.grbCrearHogar = new System.Windows.Forms.GroupBox();
-            this.btnAgregarHogar = new System.Windows.Forms.Button();
-            this.txtDireccionHogar = new System.Windows.Forms.TextBox();
-            this.btnEliminarHogar = new System.Windows.Forms.Button();
-            this.txtNombreHogar = new System.Windows.Forms.TextBox();
-            this.lblDireccion = new System.Windows.Forms.Label();
-            this.lblNombreHogar = new System.Windows.Forms.Label();
-            this.grbCreaEstancia = new System.Windows.Forms.GroupBox();
-            this.btnAgregarEstancia = new System.Windows.Forms.Button();
-            this.cmbSelecHogar = new System.Windows.Forms.ComboBox();
-            this.btnEliminarEstancia = new System.Windows.Forms.Button();
-            this.txtEstancia = new System.Windows.Forms.TextBox();
-            this.lblHogar = new System.Windows.Forms.Label();
-            this.lblEstancia = new System.Windows.Forms.Label();
             this.grbAnyadirDispositivo = new System.Windows.Forms.GroupBox();
             this.btnAgregarDispositivo = new System.Windows.Forms.Button();
             this.btnEliminaDispositivo = new System.Windows.Forms.Button();
@@ -76,8 +62,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).BeginInit();
-            this.grbCrearHogar.SuspendLayout();
-            this.grbCreaEstancia.SuspendLayout();
             this.grbAnyadirDispositivo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSalida)).BeginInit();
             this.SuspendLayout();
@@ -192,163 +176,6 @@
             this.ptbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbLogo.TabIndex = 19;
             this.ptbLogo.TabStop = false;
-            // 
-            // grbCrearHogar
-            // 
-            this.grbCrearHogar.Controls.Add(this.btnAgregarHogar);
-            this.grbCrearHogar.Controls.Add(this.txtDireccionHogar);
-            this.grbCrearHogar.Controls.Add(this.btnEliminarHogar);
-            this.grbCrearHogar.Controls.Add(this.txtNombreHogar);
-            this.grbCrearHogar.Controls.Add(this.lblDireccion);
-            this.grbCrearHogar.Controls.Add(this.lblNombreHogar);
-            this.grbCrearHogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbCrearHogar.Location = new System.Drawing.Point(49, 114);
-            this.grbCrearHogar.Margin = new System.Windows.Forms.Padding(4);
-            this.grbCrearHogar.Name = "grbCrearHogar";
-            this.grbCrearHogar.Padding = new System.Windows.Forms.Padding(4);
-            this.grbCrearHogar.Size = new System.Drawing.Size(624, 189);
-            this.grbCrearHogar.TabIndex = 20;
-            this.grbCrearHogar.TabStop = false;
-            this.grbCrearHogar.Text = "Crear Hogar";
-            // 
-            // btnAgregarHogar
-            // 
-            this.btnAgregarHogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarHogar.Location = new System.Drawing.Point(8, 137);
-            this.btnAgregarHogar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAgregarHogar.Name = "btnAgregarHogar";
-            this.btnAgregarHogar.Size = new System.Drawing.Size(193, 44);
-            this.btnAgregarHogar.TabIndex = 32;
-            this.btnAgregarHogar.Text = "Agregar Hogar";
-            this.btnAgregarHogar.UseVisualStyleBackColor = true;
-            this.btnAgregarHogar.Click += new System.EventHandler(this.btnAgregarHogar_Click);
-            // 
-            // txtDireccionHogar
-            // 
-            this.txtDireccionHogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDireccionHogar.Location = new System.Drawing.Point(141, 73);
-            this.txtDireccionHogar.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDireccionHogar.Name = "txtDireccionHogar";
-            this.txtDireccionHogar.Size = new System.Drawing.Size(448, 26);
-            this.txtDireccionHogar.TabIndex = 5;
-            // 
-            // btnEliminarHogar
-            // 
-            this.btnEliminarHogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarHogar.Location = new System.Drawing.Point(435, 137);
-            this.btnEliminarHogar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEliminarHogar.Name = "btnEliminarHogar";
-            this.btnEliminarHogar.Size = new System.Drawing.Size(181, 44);
-            this.btnEliminarHogar.TabIndex = 31;
-            this.btnEliminarHogar.Text = "Elimina Hogar";
-            this.btnEliminarHogar.UseVisualStyleBackColor = true;
-            // 
-            // txtNombreHogar
-            // 
-            this.txtNombreHogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreHogar.Location = new System.Drawing.Point(200, 42);
-            this.txtNombreHogar.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombreHogar.Name = "txtNombreHogar";
-            this.txtNombreHogar.Size = new System.Drawing.Size(236, 26);
-            this.txtNombreHogar.TabIndex = 4;
-            // 
-            // lblDireccion
-            // 
-            this.lblDireccion.AutoSize = true;
-            this.lblDireccion.Location = new System.Drawing.Point(25, 76);
-            this.lblDireccion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(99, 25);
-            this.lblDireccion.TabIndex = 2;
-            this.lblDireccion.Text = "Dirección:";
-            // 
-            // lblNombreHogar
-            // 
-            this.lblNombreHogar.AutoSize = true;
-            this.lblNombreHogar.Location = new System.Drawing.Point(25, 40);
-            this.lblNombreHogar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblNombreHogar.Name = "lblNombreHogar";
-            this.lblNombreHogar.Size = new System.Drawing.Size(176, 25);
-            this.lblNombreHogar.TabIndex = 1;
-            this.lblNombreHogar.Text = "Nombre del Hogar:";
-            // 
-            // grbCreaEstancia
-            // 
-            this.grbCreaEstancia.Controls.Add(this.btnAgregarEstancia);
-            this.grbCreaEstancia.Controls.Add(this.cmbSelecHogar);
-            this.grbCreaEstancia.Controls.Add(this.btnEliminarEstancia);
-            this.grbCreaEstancia.Controls.Add(this.txtEstancia);
-            this.grbCreaEstancia.Controls.Add(this.lblHogar);
-            this.grbCreaEstancia.Controls.Add(this.lblEstancia);
-            this.grbCreaEstancia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbCreaEstancia.Location = new System.Drawing.Point(49, 311);
-            this.grbCreaEstancia.Margin = new System.Windows.Forms.Padding(4);
-            this.grbCreaEstancia.Name = "grbCreaEstancia";
-            this.grbCreaEstancia.Padding = new System.Windows.Forms.Padding(4);
-            this.grbCreaEstancia.Size = new System.Drawing.Size(624, 165);
-            this.grbCreaEstancia.TabIndex = 21;
-            this.grbCreaEstancia.TabStop = false;
-            this.grbCreaEstancia.Text = "Añade una Estancia";
-            // 
-            // btnAgregarEstancia
-            // 
-            this.btnAgregarEstancia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarEstancia.Location = new System.Drawing.Point(8, 113);
-            this.btnAgregarEstancia.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAgregarEstancia.Name = "btnAgregarEstancia";
-            this.btnAgregarEstancia.Size = new System.Drawing.Size(193, 44);
-            this.btnAgregarEstancia.TabIndex = 30;
-            this.btnAgregarEstancia.Text = "Agregar Estancia";
-            this.btnAgregarEstancia.UseVisualStyleBackColor = true;
-            // 
-            // cmbSelecHogar
-            // 
-            this.cmbSelecHogar.FormattingEnabled = true;
-            this.cmbSelecHogar.Location = new System.Drawing.Point(104, 39);
-            this.cmbSelecHogar.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbSelecHogar.Name = "cmbSelecHogar";
-            this.cmbSelecHogar.Size = new System.Drawing.Size(160, 33);
-            this.cmbSelecHogar.TabIndex = 29;
-            // 
-            // btnEliminarEstancia
-            // 
-            this.btnEliminarEstancia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarEstancia.Location = new System.Drawing.Point(435, 113);
-            this.btnEliminarEstancia.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEliminarEstancia.Name = "btnEliminarEstancia";
-            this.btnEliminarEstancia.Size = new System.Drawing.Size(181, 44);
-            this.btnEliminarEstancia.TabIndex = 23;
-            this.btnEliminarEstancia.Text = "Eliminar Estancia";
-            this.btnEliminarEstancia.UseVisualStyleBackColor = true;
-            // 
-            // txtEstancia
-            // 
-            this.txtEstancia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEstancia.Location = new System.Drawing.Point(399, 42);
-            this.txtEstancia.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEstancia.Name = "txtEstancia";
-            this.txtEstancia.Size = new System.Drawing.Size(129, 26);
-            this.txtEstancia.TabIndex = 4;
-            // 
-            // lblHogar
-            // 
-            this.lblHogar.AutoSize = true;
-            this.lblHogar.Location = new System.Drawing.Point(25, 42);
-            this.lblHogar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblHogar.Name = "lblHogar";
-            this.lblHogar.Size = new System.Drawing.Size(71, 25);
-            this.lblHogar.TabIndex = 28;
-            this.lblHogar.Text = "Hogar:";
-            // 
-            // lblEstancia
-            // 
-            this.lblEstancia.AutoSize = true;
-            this.lblEstancia.Location = new System.Drawing.Point(298, 41);
-            this.lblEstancia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblEstancia.Name = "lblEstancia";
-            this.lblEstancia.Size = new System.Drawing.Size(93, 25);
-            this.lblEstancia.TabIndex = 1;
-            this.lblEstancia.Text = "Estancia:";
             // 
             // grbAnyadirDispositivo
             // 
@@ -568,8 +395,6 @@
             this.Controls.Add(this.ptbSalida);
             this.Controls.Add(this.lblPanelControl);
             this.Controls.Add(this.grbAnyadirDispositivo);
-            this.Controls.Add(this.grbCreaEstancia);
-            this.Controls.Add(this.grbCrearHogar);
             this.Controls.Add(this.ptbLogo);
             this.Controls.Add(this.lblReloj);
             this.Controls.Add(this.lblClick);
@@ -587,10 +412,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).EndInit();
-            this.grbCrearHogar.ResumeLayout(false);
-            this.grbCrearHogar.PerformLayout();
-            this.grbCreaEstancia.ResumeLayout(false);
-            this.grbCreaEstancia.PerformLayout();
             this.grbAnyadirDispositivo.ResumeLayout(false);
             this.grbAnyadirDispositivo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSalida)).EndInit();
@@ -611,14 +432,6 @@
         private System.Windows.Forms.Label lblClick;
         private System.Windows.Forms.Label lblReloj;
         private System.Windows.Forms.PictureBox ptbLogo;
-        private System.Windows.Forms.GroupBox grbCrearHogar;
-        private System.Windows.Forms.TextBox txtDireccionHogar;
-        private System.Windows.Forms.TextBox txtNombreHogar;
-        private System.Windows.Forms.Label lblDireccion;
-        private System.Windows.Forms.Label lblNombreHogar;
-        private System.Windows.Forms.GroupBox grbCreaEstancia;
-        private System.Windows.Forms.TextBox txtEstancia;
-        private System.Windows.Forms.Label lblEstancia;
         private System.Windows.Forms.GroupBox grbAnyadirDispositivo;
         private System.Windows.Forms.Label lblNombreDis;
         private System.Windows.Forms.Label lblSelecHogar;
@@ -628,13 +441,7 @@
         private System.Windows.Forms.ComboBox cmbSelecEstancia;
         private System.Windows.Forms.Label lblEstanciaDispo;
         private System.Windows.Forms.ComboBox cmbHogar;
-        private System.Windows.Forms.Button btnEliminarEstancia;
         private System.Windows.Forms.Button btnEliminaDispositivo;
-        private System.Windows.Forms.Button btnAgregarHogar;
-        private System.Windows.Forms.Button btnEliminarHogar;
-        private System.Windows.Forms.Button btnAgregarEstancia;
-        private System.Windows.Forms.ComboBox cmbSelecHogar;
-        private System.Windows.Forms.Label lblHogar;
         private System.Windows.Forms.Button btnAgregarDispositivo;
         private System.Windows.Forms.PictureBox ptbSalida;
         private System.Windows.Forms.Label lblFecha;

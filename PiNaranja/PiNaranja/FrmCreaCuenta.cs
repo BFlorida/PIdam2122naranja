@@ -19,7 +19,7 @@ namespace PiNaranja
         {
             FrmInicioSesion frm = new FrmInicioSesion();
 
-            Usuario user = new Usuario(txtNombre.Text,txtApellidos.Text,txtEmail.Text,txtCon.Text);
+            Usuario user = new Usuario(txtNombre.Text,txtEmail.Text,txtCon.Text);
             Usuario.AgregarUsuario(user);
             
             frm.Show();
@@ -46,7 +46,6 @@ namespace PiNaranja
         private void AplicarIdioma()
         {
             lblNombre.Text = Recursos.Idioma.lblNombre;
-            lblApellido.Text = Recursos.Idioma.lblApellidos;
             lblCorreo.Text = Recursos.Idioma.lblCorreo;
             lblConstraseña.Text = Recursos.Idioma.lblContraseña;
             btnCrearCuenta.Text = Recursos.Idioma.btnCrearCuenta;

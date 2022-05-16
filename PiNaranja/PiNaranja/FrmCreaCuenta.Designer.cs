@@ -32,11 +32,9 @@
             this.lblCorreo = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblConstraseña = new System.Windows.Forms.Label();
-            this.lblApellido = new System.Windows.Forms.Label();
             this.lblCreaCuenta = new System.Windows.Forms.Label();
             this.ptbLogo = new System.Windows.Forms.PictureBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtApellidos = new System.Windows.Forms.TextBox();
             this.txtCon = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnCrearCuenta = new System.Windows.Forms.Button();
@@ -44,6 +42,8 @@
             this.cmbIdioma = new System.Windows.Forms.ComboBox();
             this.lblIdioma = new System.Windows.Forms.Label();
             this.ptbSalir = new System.Windows.Forms.PictureBox();
+            this.txtNombreHogar = new System.Windows.Forms.TextBox();
+            this.lblNombreHogar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).BeginInit();
             this.grbRellena.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSalir)).BeginInit();
@@ -82,17 +82,6 @@
             this.lblConstraseña.TabIndex = 6;
             this.lblConstraseña.Text = "Contraseña";
             // 
-            // lblApellido
-            // 
-            this.lblApellido.AutoSize = true;
-            this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellido.Location = new System.Drawing.Point(297, 121);
-            this.lblApellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(92, 25);
-            this.lblApellido.TabIndex = 5;
-            this.lblApellido.Text = "Apellidos";
-            // 
             // lblCreaCuenta
             // 
             this.lblCreaCuenta.AutoSize = true;
@@ -126,15 +115,6 @@
             this.txtNombre.Size = new System.Drawing.Size(245, 30);
             this.txtNombre.TabIndex = 9;
             // 
-            // txtApellidos
-            // 
-            this.txtApellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellidos.Location = new System.Drawing.Point(229, 149);
-            this.txtApellidos.Margin = new System.Windows.Forms.Padding(4);
-            this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(245, 30);
-            this.txtApellidos.TabIndex = 10;
-            // 
             // txtCon
             // 
             this.txtCon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -167,15 +147,15 @@
             // 
             // grbRellena
             // 
+            this.grbRellena.Controls.Add(this.txtNombreHogar);
+            this.grbRellena.Controls.Add(this.lblNombreHogar);
             this.grbRellena.Controls.Add(this.cmbIdioma);
             this.grbRellena.Controls.Add(this.lblIdioma);
             this.grbRellena.Controls.Add(this.btnCrearCuenta);
             this.grbRellena.Controls.Add(this.txtCon);
             this.grbRellena.Controls.Add(this.txtEmail);
-            this.grbRellena.Controls.Add(this.txtApellidos);
             this.grbRellena.Controls.Add(this.txtNombre);
             this.grbRellena.Controls.Add(this.lblConstraseña);
-            this.grbRellena.Controls.Add(this.lblApellido);
             this.grbRellena.Controls.Add(this.lblCorreo);
             this.grbRellena.Controls.Add(this.lblNombre);
             this.grbRellena.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -223,6 +203,25 @@
             this.ptbSalir.TabStop = false;
             this.ptbSalir.Click += new System.EventHandler(this.ptbSalir_Click);
             // 
+            // txtNombreHogar
+            // 
+            this.txtNombreHogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreHogar.Location = new System.Drawing.Point(229, 148);
+            this.txtNombreHogar.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreHogar.Name = "txtNombreHogar";
+            this.txtNombreHogar.Size = new System.Drawing.Size(245, 26);
+            this.txtNombreHogar.TabIndex = 17;
+            // 
+            // lblNombreHogar
+            // 
+            this.lblNombreHogar.AutoSize = true;
+            this.lblNombreHogar.Location = new System.Drawing.Point(261, 119);
+            this.lblNombreHogar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNombreHogar.Name = "lblNombreHogar";
+            this.lblNombreHogar.Size = new System.Drawing.Size(176, 25);
+            this.lblNombreHogar.TabIndex = 16;
+            this.lblNombreHogar.Text = "Nombre del Hogar:";
+            // 
             // FrmCreaCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -251,11 +250,9 @@
         private System.Windows.Forms.Label lblCorreo;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblConstraseña;
-        private System.Windows.Forms.Label lblApellido;
         private System.Windows.Forms.Label lblCreaCuenta;
         private System.Windows.Forms.PictureBox ptbLogo;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtApellidos;
         private System.Windows.Forms.TextBox txtCon;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Button btnCrearCuenta;
@@ -263,5 +260,7 @@
         private System.Windows.Forms.PictureBox ptbSalir;
         private System.Windows.Forms.ComboBox cmbIdioma;
         private System.Windows.Forms.Label lblIdioma;
+        private System.Windows.Forms.TextBox txtNombreHogar;
+        private System.Windows.Forms.Label lblNombreHogar;
     }
 }

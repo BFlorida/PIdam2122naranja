@@ -40,16 +40,7 @@ namespace PiNaranja
         private void AplicarIdioma()
         {
             this.Text = Recursos.Idioma.FrmPanelControl;
-            grbCrearHogar.Text = Recursos.Idioma.grbCrearHogar;
-            lblNombreHogar.Text = Recursos.Idioma.lblNombreHogar;
-            lblDireccion.Text = Recursos.Idioma.lblDireccion;
-            btnAgregarHogar.Text = Recursos.Idioma.btnAgregarHogar;
-            btnEliminarHogar.Text = Recursos.Idioma.btnEliminarHogar;
-            grbCreaEstancia.Text = Recursos.Idioma.grbCrearEstancia;
             lblSelecHogar.Text = Recursos.Idioma.lblSelecHogar;
-            lblEstancia.Text = Recursos.Idioma.lblEstancia;
-            btnAgregarEstancia.Text = Recursos.Idioma.btnAgregarEstancia;
-            btnEliminarEstancia.Text = Recursos.Idioma.btnEliminarEstancia;
             grbAnyadirDispositivo.Text = Recursos.Idioma.grbAnyadirProducto;
             lblNombreDis.Text = Recursos.Idioma.lblNombreDis;
             lblSelecHogar.Text = Recursos.Idioma.lblSelecHogar;
@@ -65,7 +56,6 @@ namespace PiNaranja
             lblClick.Text = Recursos.Idioma.lblClick;
             lblTotalConsumo.Text = Recursos.Idioma.lblTotalConsumo;
             lblIdioma.Text = Recursos.Idioma.lblIdioma;
-            lblHogar.Text = Recursos.Idioma.lblHogar;
         }
 
         private void cmbIdioma_SelectedIndexChanged(object sender, EventArgs e)
