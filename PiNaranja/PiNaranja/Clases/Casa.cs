@@ -16,7 +16,7 @@ namespace PInaranja.Clases
         Usuario user = new Usuario();
 
         public int Id_casa { get { return id_casa; } }
-        public string Nombre { get { return nombre; } set { nombre=value; } }
+        public string Nombre { get { return nombre; } set { nombre = value; } }
         public Usuario User { get { return user; } set { user = value; } }
 
         public Casa(string nom, Usuario usu)
