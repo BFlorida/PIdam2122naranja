@@ -72,15 +72,12 @@
     <Compile Include="FrmCreaCuenta.Designer.cs">
       <DependentUpon>FrmCreaCuenta.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="FrmRecuperarCuenta.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmRecuperarCuenta.Designer.cs">
       <DependentUpon>FrmRecuperarCuenta.cs</DependentUpon>
     </Compile>
-=======
->>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
     <Compile Include="FrmReemplazarCasa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,12 +111,9 @@
     <EmbeddedResource Include="FrmCreaCuenta.resx">
       <DependentUpon>FrmCreaCuenta.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="FrmRecuperarCuenta.resx">
       <DependentUpon>FrmRecuperarCuenta.cs</DependentUpon>
     </EmbeddedResource>
-=======
->>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
     <EmbeddedResource Include="FrmReemplazarCasa.resx">
       <DependentUpon>FrmReemplazarCasa.cs</DependentUpon>
     </EmbeddedResource>
@@ -277,14 +271,11 @@
   <ItemGroup>
     <None Include="Resources\9035535_trash_outline_icon.png" />
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup>
     <None Include="Resources\disapprove-xxl.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\door-5-xxl.png" />
   </ItemGroup>
-=======
->>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

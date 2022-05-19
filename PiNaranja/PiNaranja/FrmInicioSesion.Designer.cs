@@ -39,10 +39,7 @@
             this.cmbIdioma = new System.Windows.Forms.ComboBox();
             this.ptbSalir = new System.Windows.Forms.PictureBox();
             this.ptblogo = new System.Windows.Forms.PictureBox();
-<<<<<<< HEAD
             this.btnRecContr = new System.Windows.Forms.Button();
-=======
->>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
             ((System.ComponentModel.ISupportInitialize)(this.ptbSalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptblogo)).BeginInit();
             this.SuspendLayout();
@@ -122,11 +119,7 @@
             "Castellano",
             "English"});
             this.cmbIdioma.Location = new System.Drawing.Point(448, 204);
-<<<<<<< HEAD
             this.cmbIdioma.Margin = new System.Windows.Forms.Padding(2);
-=======
-            this.cmbIdioma.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
->>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
             this.cmbIdioma.Name = "cmbIdioma";
             this.cmbIdioma.Size = new System.Drawing.Size(92, 21);
             this.cmbIdioma.TabIndex = 10;
@@ -152,7 +145,6 @@
             this.ptblogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptblogo.TabIndex = 0;
             this.ptblogo.TabStop = false;
-<<<<<<< HEAD
             // 
             // btnRecContr
             // 
@@ -162,8 +154,6 @@
             this.btnRecContr.TabIndex = 11;
             this.btnRecContr.Text = "Recuperar Contraseña";
             this.btnRecContr.UseVisualStyleBackColor = true;
-=======
->>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
             // 
             // FrmInicioSesion
             // 
@@ -171,10 +161,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.ClientSize = new System.Drawing.Size(584, 561);
-<<<<<<< HEAD
             this.Controls.Add(this.btnRecContr);
-=======
->>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
             this.Controls.Add(this.cmbIdioma);
             this.Controls.Add(this.lblIdioma);
             this.Controls.Add(this.ptbSalir);
@@ -208,10 +195,7 @@
         private System.Windows.Forms.PictureBox ptbSalir;
         private System.Windows.Forms.Label lblIdioma;
         private System.Windows.Forms.ComboBox cmbIdioma;
-<<<<<<< HEAD
         private System.Windows.Forms.Button btnRecContr;
-=======
->>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
     }
 }
 

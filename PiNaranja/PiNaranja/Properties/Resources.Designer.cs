@@ -113,7 +113,6 @@ namespace PiNaranja.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-<<<<<<< HEAD
         internal static System.Drawing.Bitmap disapprove_xxl {
             get {
                 object obj = ResourceManager.GetObject("disapprove-xxl", resourceCulture);
@@ -134,8 +133,6 @@ namespace PiNaranja.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-=======
->>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
         internal static System.Drawing.Bitmap edit_9_xxl {
             get {
                 object obj = ResourceManager.GetObject("edit-9-xxl", resourceCulture);

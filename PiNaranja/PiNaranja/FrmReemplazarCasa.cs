@@ -1,30 +1,14 @@
 ﻿using System;
-<<<<<<< HEAD
 using PInaranja.Clases;
-=======
-<<<<<<< HEAD
-using PInaranja.Clases;
-=======
->>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
->>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-<<<<<<< HEAD
 using System.Globalization;
 using System.Threading;
 using PiNaranja.Recursos;
-=======
-<<<<<<< HEAD
-using System.Globalization;
-using System.Threading;
-using PiNaranja.Recursos;
-=======
->>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
->>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -32,10 +16,6 @@ namespace PiNaranja
 {
     public partial class FrmReemplazarCasa : Form
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
         string usuario;
         public FrmReemplazarCasa(string usu)
         {
@@ -104,24 +84,6 @@ namespace PiNaranja
             FrmPanelControl panel = new FrmPanelControl(usuario);
             panel.Show();
             this.Dispose();
-<<<<<<< HEAD
-=======
-=======
-        public FrmReemplazarCasa()
-        {
-            InitializeComponent();
-        }
-
-        private void btnActualizarCasa_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCancelarBorrado_Click(object sender, EventArgs e)
-        {
-
->>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
->>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
         }
     }
 }

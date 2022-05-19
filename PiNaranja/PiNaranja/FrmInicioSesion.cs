@@ -47,43 +47,19 @@ namespace PiNaranja
                             {
                                 ConBD.AbrirConexion();
                                 bool validado = Usuario.UsuarioValidado(txtUsuario.Text);
-<<<<<<< HEAD
                                 if (validado == true)
                                 {
                                     usuario = txtUsuario.Text;
                                     ConBD.CerrarConexion();
                                     FrmPanelControl frmpc = new FrmPanelControl(usuario);
-=======
-                                MessageBox.Show(validado.ToString());
-                                if (validado == true)
-                                {
-                                    usuario = txtUsuario.Text;
-<<<<<<< HEAD
-                                    ConBD.CerrarConexion();
-                                    FrmPanelControl frmpc = new FrmPanelControl(usuario);
-=======
-                                    FrmPanelControl frmpc = new FrmPanelControl(usuario);
-                                    ConBD.CerrarConexion();
->>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
->>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
                                     frmpc.Show();
                                     this.Hide();
                                 }
                                 else
                                 {
                                     usuario = txtUsuario.Text;
-<<<<<<< HEAD
                                     ConBD.CerrarConexion();
                                     FrmVerificacion frmv = new FrmVerificacion(usuario);
-=======
-<<<<<<< HEAD
-                                    ConBD.CerrarConexion();
-                                    FrmVerificacion frmv = new FrmVerificacion(usuario);
-=======
-                                    FrmVerificacion frmv = new FrmVerificacion(usuario);
-                                    ConBD.CerrarConexion();
->>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
->>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
                                     frmv.Show();
                                     this.Hide();
                                 }
