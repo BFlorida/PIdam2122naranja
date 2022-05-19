@@ -29,31 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInicioSesion));
-            this.ptblogo = new System.Windows.Forms.PictureBox();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblContraseña = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtContrasenya = new System.Windows.Forms.TextBox();
             this.btnInicioSesion = new System.Windows.Forms.Button();
             this.btnCrearCuenta = new System.Windows.Forms.Button();
-            this.ptbSalir = new System.Windows.Forms.PictureBox();
             this.lblIdioma = new System.Windows.Forms.Label();
             this.cmbIdioma = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.ptblogo)).BeginInit();
+            this.ptbSalir = new System.Windows.Forms.PictureBox();
+            this.ptblogo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSalir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptblogo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // ptblogo
-            // 
-            this.ptblogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ptblogo.Image = ((System.Drawing.Image)(resources.GetObject("ptblogo.Image")));
-            this.ptblogo.Location = new System.Drawing.Point(68, 53);
-            this.ptblogo.Margin = new System.Windows.Forms.Padding(4);
-            this.ptblogo.Name = "ptblogo";
-            this.ptblogo.Size = new System.Drawing.Size(651, 179);
-            this.ptblogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptblogo.TabIndex = 0;
-            this.ptblogo.TabStop = false;
             // 
             // lblUsuario
             // 
@@ -119,18 +107,6 @@
             this.btnCrearCuenta.UseVisualStyleBackColor = true;
             this.btnCrearCuenta.Click += new System.EventHandler(this.btnCrearCuenta_Click);
             // 
-            // ptbSalir
-            // 
-            this.ptbSalir.Image = ((System.Drawing.Image)(resources.GetObject("ptbSalir.Image")));
-            this.ptbSalir.Location = new System.Drawing.Point(684, 623);
-            this.ptbSalir.Margin = new System.Windows.Forms.Padding(4);
-            this.ptbSalir.Name = "ptbSalir";
-            this.ptbSalir.Size = new System.Drawing.Size(57, 57);
-            this.ptbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbSalir.TabIndex = 7;
-            this.ptbSalir.TabStop = false;
-            this.ptbSalir.Click += new System.EventHandler(this.ptbSalir_Click);
-            // 
             // lblIdioma
             // 
             this.lblIdioma.AutoSize = true;
@@ -154,11 +130,34 @@
             this.cmbIdioma.TabIndex = 10;
             this.cmbIdioma.SelectedIndexChanged += new System.EventHandler(this.cmbIdioma_SelectedIndexChanged);
             // 
+            // ptbSalir
+            // 
+            this.ptbSalir.Image = ((System.Drawing.Image)(resources.GetObject("ptbSalir.Image")));
+            this.ptbSalir.Location = new System.Drawing.Point(684, 623);
+            this.ptbSalir.Margin = new System.Windows.Forms.Padding(4);
+            this.ptbSalir.Name = "ptbSalir";
+            this.ptbSalir.Size = new System.Drawing.Size(57, 57);
+            this.ptbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbSalir.TabIndex = 7;
+            this.ptbSalir.TabStop = false;
+            this.ptbSalir.Click += new System.EventHandler(this.ptbSalir_Click);
+            // 
+            // ptblogo
+            // 
+            this.ptblogo.Image = ((System.Drawing.Image)(resources.GetObject("ptblogo.Image")));
+            this.ptblogo.Location = new System.Drawing.Point(68, 53);
+            this.ptblogo.Margin = new System.Windows.Forms.Padding(4);
+            this.ptblogo.Name = "ptblogo";
+            this.ptblogo.Size = new System.Drawing.Size(651, 179);
+            this.ptblogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptblogo.TabIndex = 0;
+            this.ptblogo.TabStop = false;
+            // 
             // FrmInicioSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.ClientSize = new System.Drawing.Size(779, 690);
             this.Controls.Add(this.cmbIdioma);
             this.Controls.Add(this.lblIdioma);
@@ -174,8 +173,8 @@
             this.Name = "FrmInicioSesion";
             this.Text = "Inicio Sesion";
             this.Load += new System.EventHandler(this.FrmInicioSesion_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ptblogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSalir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptblogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

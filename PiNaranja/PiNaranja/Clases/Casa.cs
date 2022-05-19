@@ -4,70 +4,60 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PiNaranja.Clases;
 
 namespace PInaranja.Clases
 {
-    internal class Casa
+    class Casa
     {
+        private string nombreCasa;
+        private string propietario;
 
-        private int id_casa;
-        private string nombre;
-
-        Usuario user = new Usuario();
-
-        public int Id_casa { get { return id_casa; } }
-        public string Nombre { get { return nombre; } set { nombre = value; } }
-        public Usuario User { get { return user; } set { user = value; } }
-
-        public Casa(string nom, Usuario usu)
+        public string NombreCasa { get { return nombreCasa; } set { nombreCasa = value; } }
+        public string Propietario { get { return propietario; } set { propietario = value; } }
+        public Casa(string nomCasa, string prop)
         {
-            this.nombre = nom;
-            this.user = usu;
+            this.nombreCasa = nomCasa;
+            this.propietario = prop;
         }
 
         public Casa() { }
 
 
-        public static int AgregarCasa(Casa c)
+        public static int AgregaCasa(Casa cas)
         {
             int retorno;
 
-            string consulta = String.Format("INSERT INTO casa (nombre_Casa) VALUES " +
-                "('{0}')", c.nombre);
+            string consulta = String.Format("INSERT INTO casa (nombrecasa,propietario) VALUES " +
+                "('@nomCasa','@prop')");
 
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
+            comando.Parameters.AddWithValue("nomCasa", cas.nombreCasa);
+            comando.Parameters.AddWithValue("prop", cas.propietario);
             retorno = comando.ExecuteNonQuery();
 
             return retorno;
         }
 
-        public static int EliminarCasa(string nombre, Usuario usu) //duda con parametrizar usuario
+        public static int EliminaUsuario(string nomCasa, string prop)
         {
+            //se tiene que rehacer esta parte para que se elimine todo lo registrao para el usuario
             int retorno;
-            string consulta = String.Format("DELETE FROM casa WHERE nombre='{0}' AND fk_usuario='{1}'", nombre, usu);
+            string consulta = String.Format("DELETE FROM casa WHERE nombrecasa='{0}' AND propietario='{1}', ON" +
+                "DELETE CASCADE", nomCasa, prop);
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
             retorno = comando.ExecuteNonQuery();
             return retorno;
         }
 
-        public bool CasaYaRegistrada(string nombre)
+        public static string ObtenerCasa(string usu)
         {
-            string consulta = String.Format("SELECT * FROM casa" +
-            " WHERE nombre='{0}'", nombre);
-
+            string consulta = string.Format("SELECT nombreCasa from casa" +
+                "Where propietario='@nom';");
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
+            comando.Parameters.AddWithValue("@nom", usu);
             MySqlDataReader reader = comando.ExecuteReader();
-            if (reader.HasRows)
-            {
-                reader.Close();
-                return true;
-            }
-            else
-            {
-                reader.Close();
-                return false;
-            }
+            return reader.ToString();
         }
-
     }
 }

@@ -17,6 +17,8 @@ namespace PiNaranja
 {
     public partial class FrmInicioSesion : Form
     {
+        
+        private string usuario;
         public FrmInicioSesion()
         {
             InitializeComponent();
@@ -24,32 +26,55 @@ namespace PiNaranja
 
         private void btnInicioSesion_Click(object sender, EventArgs e)
         {
-            FrmPanelControl frm = new FrmPanelControl();
+            
 
-            frm.Show();
+            if (ConBD.Conexion != null)
+            {
+                ConBD.AbrirConexion();
 
-            //if (Usuario.UsuarioYaRegistrado(txtUsuario.Text) == true)
-            //{
-            //    if(ConBD.Conexion != null)
-            //    {
-            //        ConBD.AbrirConexion();
-            //        if (Usuario.ValidaConstrasenya(txtContrasenya.Text) == true)
-            //        {
-            //            frm.Show();
-            //            this.Hide();
-            //        }
-            //        else
-            //        {
-            //            MessageBox.Show("La contraseña es erronea");
-            //            ConBD.CerrarConexion();
-            //        }
-            //    }
-            //    ConBD.CerrarConexion();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("El usuario no está registrado");
-            //}
+                if (Usuario.UsuarioYaRegistrado(txtUsuario.Text))
+                {
+                    ConBD.CerrarConexion();
+                    if (ConBD.Conexion != null)
+                    {
+                        ConBD.AbrirConexion();
+
+                        if (Usuario.ValidaConstrasenya(txtContrasenya.Text))
+                        {
+                            
+                            ConBD.CerrarConexion();
+                            if (ConBD.Conexion != null)
+                            {
+                                ConBD.AbrirConexion();
+                                if (Usuario.UsuarioValidado(txtUsuario.Text))
+                                {
+                                    usuario = txtUsuario.Text;
+                                    FrmPanelControl frmpc = new FrmPanelControl(usuario);
+                                    
+                                    frmpc.Show();
+                                    this.Hide();
+                                }
+                                else
+                                {
+                                    FrmVerificacion frmv = new FrmVerificacion(usuario);
+                                    frmv.Show();
+                                    this.Hide();
+                                }
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("La contraseña es erronea");
+                            ConBD.CerrarConexion();
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("El usuario no está registrado");
+                    ConBD.CerrarConexion();
+                }
+            }
         }
 
         private void btnCrearCuenta_Click(object sender, EventArgs e)

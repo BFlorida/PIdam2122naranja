@@ -16,23 +16,21 @@ namespace PInaranja.Clases
         private double consumoPrecio;
         private string certificado;
         private string tipo;
-        private DateTime tiempo;
         private string estancia;
         private string nomCasa;
+
 
 
         public string Nombre { get => nombre; set => nombre = value; }
         public bool Encendido { get => encendido; set => encendido = value; }
         public double ConsumoBase { get => consumoBase; set => consumoBase = value; }
-        public DateTime Tiempo { get => tiempo; set => tiempo = value; }
         public string Estancia { get => estancia; set => estancia = value; }
-        public string NomCasa { get => nomCasa; set => nomCasa = value; }
         public string Tipo { get => tipo; set => tipo = value; }
         public double ConsumoPrecio { get => consumoPrecio; set => consumoPrecio = value; }
         public string Certificado { get => certificado; set => certificado = value; }
 
         //Constructor para dispositivos que no esten en la base de datos.
-        public Dispositivo(string nombre, bool encendido, string tipo, DateTime tiempo, string estancia, string certificado, string nomCasa)
+        public Dispositivo(string nombre, string tipo, string estancia, string certificado)
         {
             this.nombre = nombre;
             this.encendido = false;
@@ -40,18 +38,15 @@ namespace PInaranja.Clases
             this.consumoPrecio = CalcularPrecio(consumoBase);
             this.certificado = certificado;
             this.tipo = tipo;
-            this.tiempo = tiempo;
             this.estancia = estancia;
-            this.nomCasa = nomCasa;
         }
 
         //Constuctor que recibe los datos de la base de datos.
-        public Dispositivo(string nombre, bool encendido, double consumoBase, DateTime tiempo, string estancia, string nomCasa)
+        public Dispositivo(string nombre, bool encendido, double consumoBase, string estancia, string nomCasa)
         {
             this.nombre = nombre;
             this.encendido = encendido;
             this.consumoBase = consumoBase;
-            this.tiempo = tiempo;
             this.estancia = estancia;
             this.nomCasa = nomCasa;
         }
@@ -70,13 +65,12 @@ namespace PInaranja.Clases
         {
             int retorno;
 
-            string consulta = String.Format("INSERT INTO dispositivos VALUES ('@nom','@enc','@cBa','@tie','@est','@cer','@nCa');");
+            string consulta = String.Format("INSERT INTO dispositivos VALUES ('@nom','@enc','@cBa',@est','@cer','@nCa');");
 
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
             comando.Parameters.AddWithValue("nom", disp.nombre);
             comando.Parameters.AddWithValue("enc", disp.encendido);
             comando.Parameters.AddWithValue("cBa", disp.consumoBase);
-            comando.Parameters.AddWithValue("tie", disp.tiempo);
             comando.Parameters.AddWithValue("est", disp.estancia);
             comando.Parameters.AddWithValue("nCa", disp.nomCasa);
             retorno = comando.ExecuteNonQuery();
@@ -126,7 +120,7 @@ namespace PInaranja.Clases
         }
 
             //Ver como introducir
-        public static int EditarDispositivo(string nombre, string tipo, DateTime tiempo, string estancia, string certificado, string nomCasa)
+        public static int EditarDispositivo(string nombre, string tipo,string estancia, string certificado, string nomCasa)
         {
             int retorno;
 
@@ -135,7 +129,6 @@ namespace PInaranja.Clases
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
             comando.Parameters.AddWithValue("nom", nombre);
             comando.Parameters.AddWithValue("cBa", CalcularConsumo(tipo,certificado));
-            comando.Parameters.AddWithValue("tie", tiempo);
             comando.Parameters.AddWithValue("est", estancia);
             comando.Parameters.AddWithValue("cer", certificado);
             comando.Parameters.AddWithValue("nCa", nomCasa);
@@ -276,7 +269,7 @@ namespace PInaranja.Clases
             while (reader.Read())
             {
                 lista.Add(new Dispositivo(reader.GetString(0), reader.GetBoolean(1), reader.GetDouble(2),
-                    reader.GetDateTime(3), reader.GetString(4), reader.GetString(5)));
+                    reader.GetString(3), reader.GetString(4)));
             }
             return lista;
         }

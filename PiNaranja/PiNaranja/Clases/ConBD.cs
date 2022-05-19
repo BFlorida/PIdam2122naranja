@@ -37,8 +37,8 @@ namespace PInaranja.Clases
                         instancia = new MySqlConnection();
                         // Se define la cadena de conexión para la conexión.
                         string server = "server=myhomy.cdgeb6sovbed.us-east-1.rds.amazonaws.com;";
-                        string database = "database=myhomy;";
-                        string usuario = "uid=NaranjitoTeam;";
+                        string database = "database=my_homy;";
+                        string usuario = "uid=naranjitoteam;";
                         string password = "pwd=PIdamNaranjito1234!;";
                         instancia.ConnectionString = server + database + usuario + password;
                     }

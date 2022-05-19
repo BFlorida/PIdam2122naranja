@@ -16,45 +16,48 @@ namespace PiNaranja
 {
     public partial class FrmPanelControl : Form
     {
-        public FrmPanelControl()
+        private string usuario;
+        private string casa;
+        public FrmPanelControl(string usu)
         {
             InitializeComponent();
+            usuario = usu;
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            lblReloj.Text = DateTime.Now.ToString("T");
+            
             lblFecha.Text = DateTime.Now.ToShortDateString();
             cmbIdioma.Text = "Castellano";
             AplicarIdioma();
         }
-        
-        private void btnAgregarHogar_Click(object sender, EventArgs e)
-        {
-        }
+
+        DateTime ahora = DateTime.Now;
+        DateTime final;
+        string[] fecha = new string[3];
+
+        DateTime ahora2 = DateTime.Now;
+        DateTime final2;
+        string[] fecha2 = new string[3];
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            lblReloj.Text = DateTime.Now.ToString("T");
+            lblReloj.Text = DateTime.Now.ToLongTimeString();
         }
+
         private void AplicarIdioma()
         {
             this.Text = Recursos.Idioma.FrmPanelControl;
-            lblSelecHogar.Text = Recursos.Idioma.lblSelecHogar;
+            lblTipo.Text = Recursos.Idioma.lblSelecHogar;
             grbAnyadirDispositivo.Text = Recursos.Idioma.grbAnyadirProducto;
             lblNombreDis.Text = Recursos.Idioma.lblNombreDis;
-            lblSelecHogar.Text = Recursos.Idioma.lblSelecHogar;
-            lblEstanciaDispo.Text = Recursos.Idioma.lblEstanciaDispo;
-            lblConsumoBase.Text = Recursos.Idioma.lblConsumoBase;
+            lblTipo.Text = Recursos.Idioma.lblSelecHogar;
+            lblCertificado.Text = Recursos.Idioma.lblEstanciaDispo;
+            lblEstancia.Text = Recursos.Idioma.lblConsumoBase;
             btnAgregarDispositivo.Text = Recursos.Idioma.btnAgregarDispositivo;
-            btnEliminaDispositivo.Text = Recursos.Idioma.btnEliminaDispositivo;
-            btnCalculo.Text = Recursos.Idioma.btnCalculo;
-            btnLog.Text = Recursos.Idioma.btnLog;
-            lblCalculo.Text = Recursos.Idioma.lblCalculo;
             lblEstanciasRegistradas.Text = Recursos.Idioma.lblEstanciasRegistradas;
-            lblDispositivosRegistrados.Text = Recursos.Idioma.lblDispositivosRegistrados;
             lblClick.Text = Recursos.Idioma.lblClick;
-            lblTotalConsumo.Text = Recursos.Idioma.lblTotalConsumo;
             lblIdioma.Text = Recursos.Idioma.lblIdioma;
         }
 
@@ -78,9 +81,145 @@ namespace PiNaranja
             AplicarIdioma();
         }
 
-        private void ptbSalida_Click(object sender, EventArgs e)
+
+
+        private void btnAgregarDispositivo_Click(object sender, EventArgs e)
         {
+            Dispositivo disp = new Dispositivo();
+            disp.Nombre = txtNombre.Text;
+            disp.Tipo = cmbCertificado.Text;
+            disp.Certificado = cmbCertificado.Text;
+            disp.Encendido = false;
+            disp.ConsumoBase = Dispositivo.CalcularConsumo(cmbTipo.Text,cmbCertificado.Text);
+            Dispositivo.AgregarDispositivos(disp);
+            Dispositivo.ListaDispositivos();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMostrarDis_Click(object sender, EventArgs e)
+        {
+            if (grbAnyadirDispositivo.Visible == true)
+            {
+                grbAnyadirDispositivo.Visible = false;
+            }
+            else
+            {
+                grbAnyadirDispositivo.Visible = true;
+            }
+                
+            
+        }
+
+        private void btnMostrarModDis_Click(object sender, EventArgs e)
+        {
+            if (grbModificar.Visible == true)
+            {
+                grbModificar.Visible = false;
+            }
+            else
+            {
+                grbModificar.Visible = true;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if(lblEstanciasRegistradas.Visible==true && dtv.Visible == true && lblClick.Visible==true)
+            {
+                lblEstanciasRegistradas.Visible = false;
+                dtv.Visible = false;
+                lblClick.Visible = false;
+            }
+            else
+            {
+                lblEstanciasRegistradas.Visible = true;
+                dtv.Visible = true;
+                lblClick.Visible = true;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+           
+        }
+
+        private void btnConfigurar_Click(object sender, EventArgs e)
+        {
+            tmrCrono.Enabled = true;
+        }
+
+        private void btnConfigurar2_Click(object sender, EventArgs e)
+        {
+            tmrCrono2.Enabled = true;
+        }
+
+        private void btnParar_Click(object sender, EventArgs e)
+        {
+            tmrCrono.Enabled = false;
+        }
+
+        private void btnParar2_Click(object sender, EventArgs e)
+        {
+            tmrCrono2.Enabled = false;
+        }
+
+        private void tmrCrono_Tick(object sender, EventArgs e)
+        {
+            DateTime hoy = DateTime.Now;
+            string temp = mtxtTemp.Text;
+            fecha = temp.Split(':');
+            final = new DateTime(ahora.Year, ahora.Month, ahora.Day,
+                Convert.ToInt32(fecha[0]), Convert.ToInt32(fecha[1]),
+                Convert.ToInt32(fecha[2]));
+            TimeSpan diferencia = new TimeSpan();
+            diferencia = final - hoy;
+
+            lblFaltan.Text = diferencia.Hours + ":" + diferencia.Minutes + ":"
+                + (diferencia.Seconds + 1);
+
+            if (lblFaltan.Text == "0:0:0")
+            {
+                tmrCrono.Enabled = false;
+                MessageBox.Show("temporizador finalizado. myHomy apagará el dispositivo");
+            }
+        }
+
+        private void tmrCrono2_Tick(object sender, EventArgs e)
+        {
+            DateTime hoy = DateTime.Now;
+            string temp = mtxtTemp2.Text;
+            fecha2 = temp.Split(':');
+            final2 = new DateTime(ahora.Year, ahora.Month, ahora.Day,
+                Convert.ToInt32(fecha2[0]), Convert.ToInt32(fecha2[1]),
+                Convert.ToInt32(fecha2[2]));
+            TimeSpan diferencia2 = new TimeSpan();
+            diferencia2 = final2 - hoy;
+
+            lblFaltan2.Text = diferencia2.Hours + ":" + diferencia2.Minutes + ":"
+                + (diferencia2.Seconds + 1);
+
+            if (lblFaltan2.Text == "0:0:0")
+            {
+                tmrCrono2.Enabled = false;
+                MessageBox.Show("temporizador finalizado. myHomy apagará el dispositivo2");
+            }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            FrmInicioSesion inicio = new FrmInicioSesion();
             this.Dispose();
+            inicio.Show();
         }
     }
 }

@@ -33,20 +33,20 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblConstraseña = new System.Windows.Forms.Label();
             this.lblCreaCuenta = new System.Windows.Forms.Label();
-            this.ptbLogo = new System.Windows.Forms.PictureBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtCon = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnCrearCuenta = new System.Windows.Forms.Button();
             this.grbRellena = new System.Windows.Forms.GroupBox();
+            this.txtNombreHogar = new System.Windows.Forms.TextBox();
+            this.lblNombreHogar = new System.Windows.Forms.Label();
             this.cmbIdioma = new System.Windows.Forms.ComboBox();
             this.lblIdioma = new System.Windows.Forms.Label();
             this.ptbSalir = new System.Windows.Forms.PictureBox();
-            this.txtNombreHogar = new System.Windows.Forms.TextBox();
-            this.lblNombreHogar = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).BeginInit();
+            this.ptbLogo = new System.Windows.Forms.PictureBox();
             this.grbRellena.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSalir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCorreo
@@ -85,26 +85,13 @@
             // lblCreaCuenta
             // 
             this.lblCreaCuenta.AutoSize = true;
-            this.lblCreaCuenta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCreaCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCreaCuenta.Location = new System.Drawing.Point(195, 36);
+            this.lblCreaCuenta.Location = new System.Drawing.Point(202, 39);
             this.lblCreaCuenta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCreaCuenta.Name = "lblCreaCuenta";
-            this.lblCreaCuenta.Size = new System.Drawing.Size(379, 31);
+            this.lblCreaCuenta.Size = new System.Drawing.Size(377, 29);
             this.lblCreaCuenta.TabIndex = 7;
             this.lblCreaCuenta.Text = "Crear Nueva Cuenta myHomy";
-            // 
-            // ptbLogo
-            // 
-            this.ptbLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ptbLogo.Image = ((System.Drawing.Image)(resources.GetObject("ptbLogo.Image")));
-            this.ptbLogo.Location = new System.Drawing.Point(161, 537);
-            this.ptbLogo.Margin = new System.Windows.Forms.Padding(4);
-            this.ptbLogo.Name = "ptbLogo";
-            this.ptbLogo.Size = new System.Drawing.Size(454, 139);
-            this.ptbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbLogo.TabIndex = 8;
-            this.ptbLogo.TabStop = false;
             // 
             // txtNombre
             // 
@@ -168,6 +155,25 @@
             this.grbRellena.TabStop = false;
             this.grbRellena.Text = "Rellena los siguientes campos";
             // 
+            // txtNombreHogar
+            // 
+            this.txtNombreHogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreHogar.Location = new System.Drawing.Point(229, 148);
+            this.txtNombreHogar.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreHogar.Name = "txtNombreHogar";
+            this.txtNombreHogar.Size = new System.Drawing.Size(245, 26);
+            this.txtNombreHogar.TabIndex = 17;
+            // 
+            // lblNombreHogar
+            // 
+            this.lblNombreHogar.AutoSize = true;
+            this.lblNombreHogar.Location = new System.Drawing.Point(261, 119);
+            this.lblNombreHogar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNombreHogar.Name = "lblNombreHogar";
+            this.lblNombreHogar.Size = new System.Drawing.Size(176, 25);
+            this.lblNombreHogar.TabIndex = 16;
+            this.lblNombreHogar.Text = "Nombre del Hogar:";
+            // 
             // cmbIdioma
             // 
             this.cmbIdioma.FormattingEnabled = true;
@@ -203,30 +209,23 @@
             this.ptbSalir.TabStop = false;
             this.ptbSalir.Click += new System.EventHandler(this.ptbSalir_Click);
             // 
-            // txtNombreHogar
+            // ptbLogo
             // 
-            this.txtNombreHogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreHogar.Location = new System.Drawing.Point(229, 148);
-            this.txtNombreHogar.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombreHogar.Name = "txtNombreHogar";
-            this.txtNombreHogar.Size = new System.Drawing.Size(245, 26);
-            this.txtNombreHogar.TabIndex = 17;
-            // 
-            // lblNombreHogar
-            // 
-            this.lblNombreHogar.AutoSize = true;
-            this.lblNombreHogar.Location = new System.Drawing.Point(261, 119);
-            this.lblNombreHogar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblNombreHogar.Name = "lblNombreHogar";
-            this.lblNombreHogar.Size = new System.Drawing.Size(176, 25);
-            this.lblNombreHogar.TabIndex = 16;
-            this.lblNombreHogar.Text = "Nombre del Hogar:";
+            this.ptbLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptbLogo.Image = ((System.Drawing.Image)(resources.GetObject("ptbLogo.Image")));
+            this.ptbLogo.Location = new System.Drawing.Point(161, 537);
+            this.ptbLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.ptbLogo.Name = "ptbLogo";
+            this.ptbLogo.Size = new System.Drawing.Size(454, 139);
+            this.ptbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbLogo.TabIndex = 8;
+            this.ptbLogo.TabStop = false;
             // 
             // FrmCreaCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.ClientSize = new System.Drawing.Size(785, 690);
             this.Controls.Add(this.ptbSalir);
             this.Controls.Add(this.grbRellena);
@@ -236,10 +235,10 @@
             this.Name = "FrmCreaCuenta";
             this.Text = "Crea Cuenta";
             this.Load += new System.EventHandler(this.FrmCreaCuenta_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).EndInit();
             this.grbRellena.ResumeLayout(false);
             this.grbRellena.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSalir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

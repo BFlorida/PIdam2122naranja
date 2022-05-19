@@ -18,10 +18,16 @@ namespace PiNaranja
         private void btnCrearCuenta_Click(object sender, EventArgs e)
         {
             FrmInicioSesion frm = new FrmInicioSesion();
+            Usuario user = new Usuario(txtNombre.Text, txtEmail.Text, txtCon.Text);
+            if (ConBD.Conexion != null)
+            {
+                ConBD.AbrirConexion();
+                Usuario.AgregarUsuario(user);
 
-            Usuario user = new Usuario(txtNombre.Text,txtEmail.Text,txtCon.Text);
-            Usuario.AgregarUsuario(user);
-            
+                Casa home = new Casa(txtNombreHogar.Text, txtNombre.Text);
+                Casa.AgregaCasa(home);
+                ConBD.CerrarConexion();
+            }
             frm.Show();
             this.Dispose();
 
@@ -74,5 +80,7 @@ namespace PiNaranja
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
             AplicarIdioma();
         }
+
+
     }
 }
