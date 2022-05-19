@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace PInaranja.Clases
 {
     internal class ConBD
@@ -35,10 +36,10 @@ namespace PInaranja.Clases
                     {
                         instancia = new MySqlConnection();
                         // Se define la cadena de conexión para la conexión.
-                        string server = "server=127.0.0.1;";
-                        string database = "database=myhomy;";
-                        string usuario = "uid=root;";
-                        string password = "pwd=;";
+                        string server = "server=myhomy.cdgeb6sovbed.us-east-1.rds.amazonaws.com;";
+                        string database = "database=my_homy;";
+                        string usuario = "uid=naranjitoteam;";
+                        string password = "pwd=PIdamNaranjito1234!;";
                         instancia.ConnectionString = server + database + usuario + password;
                     }
                     // Se devuelve la instancia de conexión a la base de datos.

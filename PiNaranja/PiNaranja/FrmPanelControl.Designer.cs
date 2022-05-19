@@ -28,591 +28,926 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPanelControl));
             this.dtv = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.lblEstanciasRegistradas = new System.Windows.Forms.Label();
             this.lblDispositivosRegistrados = new System.Windows.Forms.Label();
-            this.lblTotalConsumo = new System.Windows.Forms.Label();
-            this.lblTotalConsumo1 = new System.Windows.Forms.Label();
-            this.btnLog = new System.Windows.Forms.Button();
-            this.lbClick = new System.Windows.Forms.Label();
+            this.lblClick = new System.Windows.Forms.Label();
             this.lblReloj = new System.Windows.Forms.Label();
-            this.ptbLogo = new System.Windows.Forms.PictureBox();
-            this.grbCrearHogar = new System.Windows.Forms.GroupBox();
-            this.btnAgregarHogar = new System.Windows.Forms.Button();
-            this.txtDireccionHogar = new System.Windows.Forms.TextBox();
-            this.btnEliminarHogar = new System.Windows.Forms.Button();
-            this.txtNombreHogar = new System.Windows.Forms.TextBox();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.lblDireccion = new System.Windows.Forms.Label();
-            this.lblNombreHogar = new System.Windows.Forms.Label();
-            this.lblNombreUsuario = new System.Windows.Forms.Label();
-            this.grbCreaEstancia = new System.Windows.Forms.GroupBox();
-            this.btnAgregarEstancia = new System.Windows.Forms.Button();
-            this.cmbSelecHogar = new System.Windows.Forms.ComboBox();
-            this.btnEliminaEstancia = new System.Windows.Forms.Button();
-            this.txtEstancia = new System.Windows.Forms.TextBox();
-            this.lblHogar = new System.Windows.Forms.Label();
-            this.lblEstancia = new System.Windows.Forms.Label();
             this.grbAnyadirDispositivo = new System.Windows.Forms.GroupBox();
-            this.lblCantidad = new System.Windows.Forms.Label();
+            this.txtEuros = new System.Windows.Forms.TextBox();
+            this.lblPrecio = new System.Windows.Forms.Label();
+            this.txtW = new System.Windows.Forms.TextBox();
+            this.lblW = new System.Windows.Forms.Label();
             this.btnAgregarDispositivo = new System.Windows.Forms.Button();
-            this.btnEliminaDispositivo = new System.Windows.Forms.Button();
-            this.cmbSelecEstancia = new System.Windows.Forms.ComboBox();
-            this.lblEstanciaDispo = new System.Windows.Forms.Label();
-            this.cmbHogar = new System.Windows.Forms.ComboBox();
+            this.cmbCertificado = new System.Windows.Forms.ComboBox();
+            this.lblCertificado = new System.Windows.Forms.Label();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblSelecHogar = new System.Windows.Forms.Label();
-            this.lblConsumoBase = new System.Windows.Forms.Label();
+            this.txtEstancia = new System.Windows.Forms.TextBox();
+            this.lblNombreDis = new System.Windows.Forms.Label();
+            this.lblTipo = new System.Windows.Forms.Label();
+            this.lblEstancia = new System.Windows.Forms.Label();
             this.lblPanelControl = new System.Windows.Forms.Label();
-            this.ptbSalida = new System.Windows.Forms.PictureBox();
-            this.cmbTipoElectro = new System.Windows.Forms.ComboBox();
             this.lblFecha = new System.Windows.Forms.Label();
-            this.cmbConsumo = new System.Windows.Forms.ComboBox();
-            this.lblConsumo = new System.Windows.Forms.Label();
-            this.lblCalculo = new System.Windows.Forms.Label();
+            this.lblIdioma = new System.Windows.Forms.Label();
+            this.cmbIdioma = new System.Windows.Forms.ComboBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.grbModificar = new System.Windows.Forms.GroupBox();
+            this.txtEuros2 = new System.Windows.Forms.TextBox();
+            this.lblPrecio2 = new System.Windows.Forms.Label();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.cmbDispositivos2 = new System.Windows.Forms.ComboBox();
+            this.txtW2 = new System.Windows.Forms.TextBox();
+            this.lblW2 = new System.Windows.Forms.Label();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.cmbCertificado2 = new System.Windows.Forms.ComboBox();
+            this.lblCertificado2 = new System.Windows.Forms.Label();
+            this.cmbTipo2 = new System.Windows.Forms.ComboBox();
+            this.txtEstancia2 = new System.Windows.Forms.TextBox();
+            this.lblDispositivo = new System.Windows.Forms.Label();
+            this.lblTipo2 = new System.Windows.Forms.Label();
+            this.lblEstancia2 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.btnDeleteHome = new System.Windows.Forms.Button();
+            this.btnEliminarCuenta = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.ptbLogo = new System.Windows.Forms.PictureBox();
+            this.btnMostrarModDis = new System.Windows.Forms.Button();
+            this.btnMostrarDis = new System.Windows.Forms.Button();
+            this.grbtemporizadores = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblFaltan2 = new System.Windows.Forms.Label();
+            this.lblFaltan = new System.Windows.Forms.Label();
+            this.btnParar2 = new System.Windows.Forms.Button();
+            this.btnParar = new System.Windows.Forms.Button();
+            this.btnConfigurar2 = new System.Windows.Forms.Button();
+            this.btnConfigurar = new System.Windows.Forms.Button();
+            this.mtxtTemp2 = new System.Windows.Forms.MaskedTextBox();
+            this.mtxtTemp = new System.Windows.Forms.MaskedTextBox();
+            this.tmrCrono = new System.Windows.Forms.Timer(this.components);
+            this.tmrCrono2 = new System.Windows.Forms.Timer(this.components);
+            this.lblnamehouse = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).BeginInit();
-            this.grbCrearHogar.SuspendLayout();
-            this.grbCreaEstancia.SuspendLayout();
             this.grbAnyadirDispositivo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbSalida)).BeginInit();
+            this.grbModificar.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).BeginInit();
+            this.grbtemporizadores.SuspendLayout();
             this.SuspendLayout();
             // 
             // dtv
             // 
             this.dtv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtv.Location = new System.Drawing.Point(49, 551);
-            this.dtv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtv.Location = new System.Drawing.Point(235, 551);
+            this.dtv.Margin = new System.Windows.Forms.Padding(4);
             this.dtv.Name = "dtv";
             this.dtv.RowHeadersWidth = 51;
-            this.dtv.Size = new System.Drawing.Size(624, 178);
+            this.dtv.Size = new System.Drawing.Size(723, 222);
             this.dtv.TabIndex = 0;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(713, 551);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.Size = new System.Drawing.Size(624, 178);
-            this.dataGridView2.TabIndex = 1;
-            // 
-            // lblEstanciasRegistradas
-            // 
-            this.lblEstanciasRegistradas.AutoSize = true;
-            this.lblEstanciasRegistradas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblEstanciasRegistradas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstanciasRegistradas.Location = new System.Drawing.Point(49, 521);
-            this.lblEstanciasRegistradas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblEstanciasRegistradas.Name = "lblEstanciasRegistradas";
-            this.lblEstanciasRegistradas.Size = new System.Drawing.Size(207, 27);
-            this.lblEstanciasRegistradas.TabIndex = 2;
-            this.lblEstanciasRegistradas.Text = "Estancias Registradas";
+            this.dtv.Visible = false;
             // 
             // lblDispositivosRegistrados
             // 
             this.lblDispositivosRegistrados.AutoSize = true;
             this.lblDispositivosRegistrados.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDispositivosRegistrados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDispositivosRegistrados.Location = new System.Drawing.Point(713, 521);
+            this.lblDispositivosRegistrados.Location = new System.Drawing.Point(235, 521);
             this.lblDispositivosRegistrados.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDispositivosRegistrados.Name = "lblDispositivosRegistrados";
             this.lblDispositivosRegistrados.Size = new System.Drawing.Size(226, 27);
-            this.lblDispositivosRegistrados.TabIndex = 3;
+            this.lblDispositivosRegistrados.TabIndex = 2;
             this.lblDispositivosRegistrados.Text = "Dispositivos Registrados";
+            this.lblDispositivosRegistrados.Visible = false;
             // 
-            // lblTotalConsumo
+            // lblClick
             // 
-            this.lblTotalConsumo.AutoSize = true;
-            this.lblTotalConsumo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalConsumo.Location = new System.Drawing.Point(708, 734);
-            this.lblTotalConsumo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTotalConsumo.Name = "lblTotalConsumo";
-            this.lblTotalConsumo.Size = new System.Drawing.Size(152, 25);
-            this.lblTotalConsumo.TabIndex = 4;
-            this.lblTotalConsumo.Text = "Total Consumo:";
-            // 
-            // lblTotalConsumo1
-            // 
-            this.lblTotalConsumo1.AutoSize = true;
-            this.lblTotalConsumo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalConsumo1.Location = new System.Drawing.Point(876, 734);
-            this.lblTotalConsumo1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTotalConsumo1.Name = "lblTotalConsumo1";
-            this.lblTotalConsumo1.Size = new System.Drawing.Size(54, 25);
-            this.lblTotalConsumo1.TabIndex = 5;
-            this.lblTotalConsumo1.Text = "0.00";
-            // 
-            // btnLog
-            // 
-            this.btnLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLog.Location = new System.Drawing.Point(1071, 490);
-            this.btnLog.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnLog.Name = "btnLog";
-            this.btnLog.Size = new System.Drawing.Size(267, 42);
-            this.btnLog.TabIndex = 6;
-            this.btnLog.Text = "ACCESO A REGISTROS";
-            this.btnLog.UseVisualStyleBackColor = true;
-            // 
-            // lbClick
-            // 
-            this.lbClick.AutoSize = true;
-            this.lbClick.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbClick.Location = new System.Drawing.Point(45, 734);
-            this.lbClick.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbClick.Name = "lbClick";
-            this.lbClick.Size = new System.Drawing.Size(395, 15);
-            this.lbClick.TabIndex = 7;
-            this.lbClick.Text = "Realiza click sobre la linea para seleccionar la Estancia o el Dispositivo";
+            this.lblClick.AutoSize = true;
+            this.lblClick.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClick.Location = new System.Drawing.Point(231, 780);
+            this.lblClick.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblClick.Name = "lblClick";
+            this.lblClick.Size = new System.Drawing.Size(395, 15);
+            this.lblClick.TabIndex = 7;
+            this.lblClick.Text = "Realiza click sobre la linea para seleccionar la Estancia o el Dispositivo";
+            this.lblClick.Visible = false;
             // 
             // lblReloj
             // 
             this.lblReloj.AutoSize = true;
-            this.lblReloj.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReloj.Location = new System.Drawing.Point(1175, 49);
+            this.lblReloj.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReloj.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblReloj.Location = new System.Drawing.Point(716, 21);
             this.lblReloj.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblReloj.Name = "lblReloj";
-            this.lblReloj.Size = new System.Drawing.Size(154, 29);
+            this.lblReloj.Size = new System.Drawing.Size(385, 76);
             this.lblReloj.TabIndex = 18;
             this.lblReloj.Text = "Reloj digital";
             // 
-            // ptbLogo
-            // 
-            this.ptbLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ptbLogo.Image = ((System.Drawing.Image)(resources.GetObject("ptbLogo.Image")));
-            this.ptbLogo.Location = new System.Drawing.Point(49, 14);
-            this.ptbLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ptbLogo.Name = "ptbLogo";
-            this.ptbLogo.Size = new System.Drawing.Size(279, 73);
-            this.ptbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbLogo.TabIndex = 19;
-            this.ptbLogo.TabStop = false;
-            // 
-            // grbCrearHogar
-            // 
-            this.grbCrearHogar.Controls.Add(this.btnAgregarHogar);
-            this.grbCrearHogar.Controls.Add(this.txtDireccionHogar);
-            this.grbCrearHogar.Controls.Add(this.btnEliminarHogar);
-            this.grbCrearHogar.Controls.Add(this.txtNombreHogar);
-            this.grbCrearHogar.Controls.Add(this.txtUsuario);
-            this.grbCrearHogar.Controls.Add(this.lblDireccion);
-            this.grbCrearHogar.Controls.Add(this.lblNombreHogar);
-            this.grbCrearHogar.Controls.Add(this.lblNombreUsuario);
-            this.grbCrearHogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbCrearHogar.Location = new System.Drawing.Point(49, 114);
-            this.grbCrearHogar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.grbCrearHogar.Name = "grbCrearHogar";
-            this.grbCrearHogar.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.grbCrearHogar.Size = new System.Drawing.Size(624, 165);
-            this.grbCrearHogar.TabIndex = 20;
-            this.grbCrearHogar.TabStop = false;
-            this.grbCrearHogar.Text = "Crear Hogar";
-            // 
-            // btnAgregarHogar
-            // 
-            this.btnAgregarHogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarHogar.Location = new System.Drawing.Point(8, 113);
-            this.btnAgregarHogar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnAgregarHogar.Name = "btnAgregarHogar";
-            this.btnAgregarHogar.Size = new System.Drawing.Size(193, 44);
-            this.btnAgregarHogar.TabIndex = 32;
-            this.btnAgregarHogar.Text = "Agregar Hogar";
-            this.btnAgregarHogar.UseVisualStyleBackColor = true;
-            // 
-            // txtDireccionHogar
-            // 
-            this.txtDireccionHogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDireccionHogar.Location = new System.Drawing.Point(141, 73);
-            this.txtDireccionHogar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtDireccionHogar.Name = "txtDireccionHogar";
-            this.txtDireccionHogar.Size = new System.Drawing.Size(448, 26);
-            this.txtDireccionHogar.TabIndex = 5;
-            // 
-            // btnEliminarHogar
-            // 
-            this.btnEliminarHogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarHogar.Location = new System.Drawing.Point(435, 113);
-            this.btnEliminarHogar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnEliminarHogar.Name = "btnEliminarHogar";
-            this.btnEliminarHogar.Size = new System.Drawing.Size(181, 44);
-            this.btnEliminarHogar.TabIndex = 31;
-            this.btnEliminarHogar.Text = "Elimina Hogar";
-            this.btnEliminarHogar.UseVisualStyleBackColor = true;
-            // 
-            // txtNombreHogar
-            // 
-            this.txtNombreHogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreHogar.Location = new System.Drawing.Point(460, 37);
-            this.txtNombreHogar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtNombreHogar.Name = "txtNombreHogar";
-            this.txtNombreHogar.Size = new System.Drawing.Size(129, 26);
-            this.txtNombreHogar.TabIndex = 4;
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(141, 38);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(107, 26);
-            this.txtUsuario.TabIndex = 3;
-            // 
-            // lblDireccion
-            // 
-            this.lblDireccion.AutoSize = true;
-            this.lblDireccion.Location = new System.Drawing.Point(25, 76);
-            this.lblDireccion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(99, 25);
-            this.lblDireccion.TabIndex = 2;
-            this.lblDireccion.Text = "Dirección:";
-            // 
-            // lblNombreHogar
-            // 
-            this.lblNombreHogar.AutoSize = true;
-            this.lblNombreHogar.Location = new System.Drawing.Point(263, 37);
-            this.lblNombreHogar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblNombreHogar.Name = "lblNombreHogar";
-            this.lblNombreHogar.Size = new System.Drawing.Size(176, 25);
-            this.lblNombreHogar.TabIndex = 1;
-            this.lblNombreHogar.Text = "Nombre del Hogar:";
-            // 
-            // lblNombreUsuario
-            // 
-            this.lblNombreUsuario.AutoSize = true;
-            this.lblNombreUsuario.Location = new System.Drawing.Point(40, 38);
-            this.lblNombreUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblNombreUsuario.Name = "lblNombreUsuario";
-            this.lblNombreUsuario.Size = new System.Drawing.Size(85, 25);
-            this.lblNombreUsuario.TabIndex = 0;
-            this.lblNombreUsuario.Text = "Usuario:";
-            // 
-            // grbCreaEstancia
-            // 
-            this.grbCreaEstancia.Controls.Add(this.btnAgregarEstancia);
-            this.grbCreaEstancia.Controls.Add(this.cmbSelecHogar);
-            this.grbCreaEstancia.Controls.Add(this.btnEliminaEstancia);
-            this.grbCreaEstancia.Controls.Add(this.txtEstancia);
-            this.grbCreaEstancia.Controls.Add(this.lblHogar);
-            this.grbCreaEstancia.Controls.Add(this.lblEstancia);
-            this.grbCreaEstancia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbCreaEstancia.Location = new System.Drawing.Point(49, 311);
-            this.grbCreaEstancia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.grbCreaEstancia.Name = "grbCreaEstancia";
-            this.grbCreaEstancia.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.grbCreaEstancia.Size = new System.Drawing.Size(624, 165);
-            this.grbCreaEstancia.TabIndex = 21;
-            this.grbCreaEstancia.TabStop = false;
-            this.grbCreaEstancia.Text = "Añade una Estancia";
-            // 
-            // btnAgregarEstancia
-            // 
-            this.btnAgregarEstancia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarEstancia.Location = new System.Drawing.Point(8, 113);
-            this.btnAgregarEstancia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnAgregarEstancia.Name = "btnAgregarEstancia";
-            this.btnAgregarEstancia.Size = new System.Drawing.Size(193, 44);
-            this.btnAgregarEstancia.TabIndex = 30;
-            this.btnAgregarEstancia.Text = "Agregar Estancia";
-            this.btnAgregarEstancia.UseVisualStyleBackColor = true;
-            // 
-            // cmbSelecHogar
-            // 
-            this.cmbSelecHogar.FormattingEnabled = true;
-            this.cmbSelecHogar.Location = new System.Drawing.Point(139, 37);
-            this.cmbSelecHogar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cmbSelecHogar.Name = "cmbSelecHogar";
-            this.cmbSelecHogar.Size = new System.Drawing.Size(160, 33);
-            this.cmbSelecHogar.TabIndex = 29;
-            // 
-            // btnEliminaEstancia
-            // 
-            this.btnEliminaEstancia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminaEstancia.Location = new System.Drawing.Point(435, 113);
-            this.btnEliminaEstancia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnEliminaEstancia.Name = "btnEliminaEstancia";
-            this.btnEliminaEstancia.Size = new System.Drawing.Size(181, 44);
-            this.btnEliminaEstancia.TabIndex = 23;
-            this.btnEliminaEstancia.Text = "Elimina Estancia";
-            this.btnEliminaEstancia.UseVisualStyleBackColor = true;
-            // 
-            // txtEstancia
-            // 
-            this.txtEstancia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEstancia.Location = new System.Drawing.Point(460, 37);
-            this.txtEstancia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtEstancia.Name = "txtEstancia";
-            this.txtEstancia.Size = new System.Drawing.Size(129, 26);
-            this.txtEstancia.TabIndex = 4;
-            // 
-            // lblHogar
-            // 
-            this.lblHogar.AutoSize = true;
-            this.lblHogar.Location = new System.Drawing.Point(55, 38);
-            this.lblHogar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblHogar.Name = "lblHogar";
-            this.lblHogar.Size = new System.Drawing.Size(71, 25);
-            this.lblHogar.TabIndex = 28;
-            this.lblHogar.Text = "Hogar:";
-            // 
-            // lblEstancia
-            // 
-            this.lblEstancia.AutoSize = true;
-            this.lblEstancia.Location = new System.Drawing.Point(352, 38);
-            this.lblEstancia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblEstancia.Name = "lblEstancia";
-            this.lblEstancia.Size = new System.Drawing.Size(93, 25);
-            this.lblEstancia.TabIndex = 1;
-            this.lblEstancia.Text = "Estancia:";
-            // 
             // grbAnyadirDispositivo
             // 
-            this.grbAnyadirDispositivo.Controls.Add(this.lblCalculo);
-            this.grbAnyadirDispositivo.Controls.Add(this.cmbConsumo);
-            this.grbAnyadirDispositivo.Controls.Add(this.lblConsumo);
-            this.grbAnyadirDispositivo.Controls.Add(this.cmbTipoElectro);
-            this.grbAnyadirDispositivo.Controls.Add(this.lblCantidad);
+            this.grbAnyadirDispositivo.Controls.Add(this.txtEuros);
+            this.grbAnyadirDispositivo.Controls.Add(this.lblPrecio);
+            this.grbAnyadirDispositivo.Controls.Add(this.txtW);
+            this.grbAnyadirDispositivo.Controls.Add(this.lblW);
             this.grbAnyadirDispositivo.Controls.Add(this.btnAgregarDispositivo);
-            this.grbAnyadirDispositivo.Controls.Add(this.btnEliminaDispositivo);
-            this.grbAnyadirDispositivo.Controls.Add(this.cmbSelecEstancia);
-            this.grbAnyadirDispositivo.Controls.Add(this.lblEstanciaDispo);
-            this.grbAnyadirDispositivo.Controls.Add(this.cmbHogar);
+            this.grbAnyadirDispositivo.Controls.Add(this.cmbCertificado);
+            this.grbAnyadirDispositivo.Controls.Add(this.lblCertificado);
+            this.grbAnyadirDispositivo.Controls.Add(this.cmbTipo);
             this.grbAnyadirDispositivo.Controls.Add(this.txtNombre);
-            this.grbAnyadirDispositivo.Controls.Add(this.textBox6);
-            this.grbAnyadirDispositivo.Controls.Add(this.lblNombre);
-            this.grbAnyadirDispositivo.Controls.Add(this.lblSelecHogar);
-            this.grbAnyadirDispositivo.Controls.Add(this.lblConsumoBase);
+            this.grbAnyadirDispositivo.Controls.Add(this.txtEstancia);
+            this.grbAnyadirDispositivo.Controls.Add(this.lblNombreDis);
+            this.grbAnyadirDispositivo.Controls.Add(this.lblTipo);
+            this.grbAnyadirDispositivo.Controls.Add(this.lblEstancia);
             this.grbAnyadirDispositivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbAnyadirDispositivo.Location = new System.Drawing.Point(713, 114);
-            this.grbAnyadirDispositivo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grbAnyadirDispositivo.Location = new System.Drawing.Point(236, 92);
+            this.grbAnyadirDispositivo.Margin = new System.Windows.Forms.Padding(4);
             this.grbAnyadirDispositivo.Name = "grbAnyadirDispositivo";
-            this.grbAnyadirDispositivo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.grbAnyadirDispositivo.Size = new System.Drawing.Size(624, 362);
+            this.grbAnyadirDispositivo.Padding = new System.Windows.Forms.Padding(4);
+            this.grbAnyadirDispositivo.Size = new System.Drawing.Size(611, 169);
             this.grbAnyadirDispositivo.TabIndex = 21;
             this.grbAnyadirDispositivo.TabStop = false;
             this.grbAnyadirDispositivo.Text = "Dispositivos";
+            this.grbAnyadirDispositivo.Visible = false;
             // 
-            // lblCantidad
+            // txtEuros
             // 
-            this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Location = new System.Drawing.Point(49, 135);
-            this.lblCantidad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(57, 25);
-            this.lblCantidad.TabIndex = 32;
-            this.lblCantidad.Text = "Tipo:";
+            this.txtEuros.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEuros.Location = new System.Drawing.Point(219, 130);
+            this.txtEuros.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEuros.Name = "txtEuros";
+            this.txtEuros.Size = new System.Drawing.Size(101, 26);
+            this.txtEuros.TabIndex = 32;
+            // 
+            // lblPrecio
+            // 
+            this.lblPrecio.AutoSize = true;
+            this.lblPrecio.Location = new System.Drawing.Point(195, 130);
+            this.lblPrecio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPrecio.Name = "lblPrecio";
+            this.lblPrecio.Size = new System.Drawing.Size(29, 25);
+            this.lblPrecio.TabIndex = 31;
+            this.lblPrecio.Text = "€:";
+            // 
+            // txtW
+            // 
+            this.txtW.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtW.Location = new System.Drawing.Point(116, 130);
+            this.txtW.Margin = new System.Windows.Forms.Padding(4);
+            this.txtW.Name = "txtW";
+            this.txtW.Size = new System.Drawing.Size(80, 26);
+            this.txtW.TabIndex = 30;
+            // 
+            // lblW
+            // 
+            this.lblW.AutoSize = true;
+            this.lblW.Location = new System.Drawing.Point(43, 129);
+            this.lblW.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblW.Name = "lblW";
+            this.lblW.Size = new System.Drawing.Size(73, 25);
+            this.lblW.TabIndex = 29;
+            this.lblW.Text = "Vatios:";
             // 
             // btnAgregarDispositivo
             // 
             this.btnAgregarDispositivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarDispositivo.Location = new System.Drawing.Point(8, 310);
-            this.btnAgregarDispositivo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregarDispositivo.Location = new System.Drawing.Point(348, 121);
+            this.btnAgregarDispositivo.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregarDispositivo.Name = "btnAgregarDispositivo";
-            this.btnAgregarDispositivo.Size = new System.Drawing.Size(217, 44);
+            this.btnAgregarDispositivo.Size = new System.Drawing.Size(255, 39);
             this.btnAgregarDispositivo.TabIndex = 28;
             this.btnAgregarDispositivo.Text = "Agregar Dispositivo";
             this.btnAgregarDispositivo.UseVisualStyleBackColor = true;
+            this.btnAgregarDispositivo.Click += new System.EventHandler(this.btnAgregarDispositivo_Click);
             // 
-            // btnEliminaDispositivo
+            // cmbCertificado
             // 
-            this.btnEliminaDispositivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminaDispositivo.Location = new System.Drawing.Point(399, 310);
-            this.btnEliminaDispositivo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnEliminaDispositivo.Name = "btnEliminaDispositivo";
-            this.btnEliminaDispositivo.Size = new System.Drawing.Size(217, 44);
-            this.btnEliminaDispositivo.TabIndex = 24;
-            this.btnEliminaDispositivo.Text = "Elimina Dispositivo";
-            this.btnEliminaDispositivo.UseVisualStyleBackColor = true;
+            this.cmbCertificado.FormattingEnabled = true;
+            this.cmbCertificado.Location = new System.Drawing.Point(116, 84);
+            this.cmbCertificado.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbCertificado.Name = "cmbCertificado";
+            this.cmbCertificado.Size = new System.Drawing.Size(151, 33);
+            this.cmbCertificado.TabIndex = 27;
             // 
-            // cmbSelecEstancia
+            // lblCertificado
             // 
-            this.cmbSelecEstancia.FormattingEnabled = true;
-            this.cmbSelecEstancia.Location = new System.Drawing.Point(116, 84);
-            this.cmbSelecEstancia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cmbSelecEstancia.Name = "cmbSelecEstancia";
-            this.cmbSelecEstancia.Size = new System.Drawing.Size(165, 33);
-            this.cmbSelecEstancia.TabIndex = 27;
+            this.lblCertificado.AutoSize = true;
+            this.lblCertificado.Location = new System.Drawing.Point(4, 92);
+            this.lblCertificado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCertificado.Name = "lblCertificado";
+            this.lblCertificado.Size = new System.Drawing.Size(111, 25);
+            this.lblCertificado.TabIndex = 26;
+            this.lblCertificado.Text = "Certificado:";
             // 
-            // lblEstanciaDispo
+            // cmbTipo
             // 
-            this.lblEstanciaDispo.AutoSize = true;
-            this.lblEstanciaDispo.Location = new System.Drawing.Point(13, 92);
-            this.lblEstanciaDispo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblEstanciaDispo.Name = "lblEstanciaDispo";
-            this.lblEstanciaDispo.Size = new System.Drawing.Size(93, 25);
-            this.lblEstanciaDispo.TabIndex = 26;
-            this.lblEstanciaDispo.Text = "Estancia:";
-            // 
-            // cmbHogar
-            // 
-            this.cmbHogar.FormattingEnabled = true;
-            this.cmbHogar.Location = new System.Drawing.Point(427, 40);
-            this.cmbHogar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cmbHogar.Name = "cmbHogar";
-            this.cmbHogar.Size = new System.Drawing.Size(165, 33);
-            this.cmbHogar.TabIndex = 25;
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Items.AddRange(new object[] {
+            "a"});
+            this.cmbTipo.Location = new System.Drawing.Point(436, 38);
+            this.cmbTipo.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(165, 33);
+            this.cmbTipo.TabIndex = 25;
             // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(115, 42);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(184, 26);
+            this.txtNombre.Size = new System.Drawing.Size(205, 26);
             this.txtNombre.TabIndex = 5;
             // 
-            // textBox6
+            // txtEstancia
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(485, 87);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(107, 26);
-            this.textBox6.TabIndex = 3;
+            this.txtEstancia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEstancia.Location = new System.Drawing.Point(496, 85);
+            this.txtEstancia.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEstancia.Name = "txtEstancia";
+            this.txtEstancia.Size = new System.Drawing.Size(107, 26);
+            this.txtEstancia.TabIndex = 3;
             // 
-            // lblNombre
+            // lblNombreDis
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(20, 43);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(87, 25);
-            this.lblNombre.TabIndex = 2;
-            this.lblNombre.Text = "Nombre:";
+            this.lblNombreDis.AutoSize = true;
+            this.lblNombreDis.Location = new System.Drawing.Point(20, 43);
+            this.lblNombreDis.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNombreDis.Name = "lblNombreDis";
+            this.lblNombreDis.Size = new System.Drawing.Size(87, 25);
+            this.lblNombreDis.TabIndex = 2;
+            this.lblNombreDis.Text = "Nombre:";
             // 
-            // lblSelecHogar
+            // lblTipo
             // 
-            this.lblSelecHogar.AutoSize = true;
-            this.lblSelecHogar.Location = new System.Drawing.Point(348, 43);
-            this.lblSelecHogar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblSelecHogar.Name = "lblSelecHogar";
-            this.lblSelecHogar.Size = new System.Drawing.Size(71, 25);
-            this.lblSelecHogar.TabIndex = 1;
-            this.lblSelecHogar.Text = "Hogar:";
+            this.lblTipo.AutoSize = true;
+            this.lblTipo.Location = new System.Drawing.Point(371, 41);
+            this.lblTipo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTipo.Name = "lblTipo";
+            this.lblTipo.Size = new System.Drawing.Size(57, 25);
+            this.lblTipo.TabIndex = 1;
+            this.lblTipo.Text = "Tipo:";
             // 
-            // lblConsumoBase
+            // lblEstancia
             // 
-            this.lblConsumoBase.AutoSize = true;
-            this.lblConsumoBase.Location = new System.Drawing.Point(319, 91);
-            this.lblConsumoBase.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblConsumoBase.Name = "lblConsumoBase";
-            this.lblConsumoBase.Size = new System.Drawing.Size(153, 25);
-            this.lblConsumoBase.TabIndex = 0;
-            this.lblConsumoBase.Text = "Consumo Base:";
+            this.lblEstancia.AutoSize = true;
+            this.lblEstancia.Location = new System.Drawing.Point(341, 86);
+            this.lblEstancia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEstancia.Name = "lblEstancia";
+            this.lblEstancia.Size = new System.Drawing.Size(98, 25);
+            this.lblEstancia.TabIndex = 0;
+            this.lblEstancia.Text = "Estancia: ";
             // 
             // lblPanelControl
             // 
             this.lblPanelControl.AutoSize = true;
-            this.lblPanelControl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblPanelControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPanelControl.Location = new System.Drawing.Point(519, 16);
+            this.lblPanelControl.Location = new System.Drawing.Point(236, 9);
             this.lblPanelControl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPanelControl.Name = "lblPanelControl";
-            this.lblPanelControl.Size = new System.Drawing.Size(335, 31);
+            this.lblPanelControl.Size = new System.Drawing.Size(333, 29);
             this.lblPanelControl.TabIndex = 22;
             this.lblPanelControl.Text = "Panel de Control myHomy";
-            // 
-            // ptbSalida
-            // 
-            this.ptbSalida.Image = ((System.Drawing.Image)(resources.GetObject("ptbSalida.Image")));
-            this.ptbSalida.Location = new System.Drawing.Point(1313, 737);
-            this.ptbSalida.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ptbSalida.Name = "ptbSalida";
-            this.ptbSalida.Size = new System.Drawing.Size(61, 57);
-            this.ptbSalida.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbSalida.TabIndex = 23;
-            this.ptbSalida.TabStop = false;
-            // 
-            // cmbTipoElectro
-            // 
-            this.cmbTipoElectro.FormattingEnabled = true;
-            this.cmbTipoElectro.Location = new System.Drawing.Point(115, 132);
-            this.cmbTipoElectro.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbTipoElectro.Name = "cmbTipoElectro";
-            this.cmbTipoElectro.Size = new System.Drawing.Size(165, 33);
-            this.cmbTipoElectro.TabIndex = 33;
             // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(1244, 12);
+            this.lblFecha.Location = new System.Drawing.Point(236, 38);
             this.lblFecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(85, 29);
             this.lblFecha.TabIndex = 24;
             this.lblFecha.Text = "Fecha";
             // 
-            // cmbConsumo
+            // lblIdioma
             // 
-            this.cmbConsumo.FormattingEnabled = true;
-            this.cmbConsumo.Location = new System.Drawing.Point(427, 132);
-            this.cmbConsumo.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbConsumo.Name = "cmbConsumo";
-            this.cmbConsumo.Size = new System.Drawing.Size(165, 33);
-            this.cmbConsumo.TabIndex = 35;
+            this.lblIdioma.AutoSize = true;
+            this.lblIdioma.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdioma.Location = new System.Drawing.Point(1156, 9);
+            this.lblIdioma.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIdioma.Name = "lblIdioma";
+            this.lblIdioma.Size = new System.Drawing.Size(99, 29);
+            this.lblIdioma.TabIndex = 38;
+            this.lblIdioma.Text = "Idioma:";
             // 
-            // lblConsumo
+            // cmbIdioma
             // 
-            this.lblConsumo.AutoSize = true;
-            this.lblConsumo.Location = new System.Drawing.Point(319, 135);
-            this.lblConsumo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblConsumo.Name = "lblConsumo";
-            this.lblConsumo.Size = new System.Drawing.Size(103, 25);
-            this.lblConsumo.TabIndex = 34;
-            this.lblConsumo.Text = "Consumo:";
+            this.cmbIdioma.FormattingEnabled = true;
+            this.cmbIdioma.Items.AddRange(new object[] {
+            "Castellano",
+            "English"});
+            this.cmbIdioma.Location = new System.Drawing.Point(1316, 9);
+            this.cmbIdioma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbIdioma.Name = "cmbIdioma";
+            this.cmbIdioma.Size = new System.Drawing.Size(121, 24);
+            this.cmbIdioma.TabIndex = 39;
+            this.cmbIdioma.SelectedIndexChanged += new System.EventHandler(this.cmbIdioma_SelectedIndexChanged);
             // 
-            // lblCalculo
+            // timer1
             // 
-            this.lblCalculo.AutoSize = true;
-            this.lblCalculo.Location = new System.Drawing.Point(514, 181);
-            this.lblCalculo.Name = "lblCalculo";
-            this.lblCalculo.Size = new System.Drawing.Size(78, 25);
-            this.lblCalculo.TabIndex = 36;
-            this.lblCalculo.Text = "Cálculo";
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // grbModificar
+            // 
+            this.grbModificar.Controls.Add(this.txtEuros2);
+            this.grbModificar.Controls.Add(this.lblPrecio2);
+            this.grbModificar.Controls.Add(this.btnEliminar);
+            this.grbModificar.Controls.Add(this.cmbDispositivos2);
+            this.grbModificar.Controls.Add(this.txtW2);
+            this.grbModificar.Controls.Add(this.lblW2);
+            this.grbModificar.Controls.Add(this.btnModificar);
+            this.grbModificar.Controls.Add(this.cmbCertificado2);
+            this.grbModificar.Controls.Add(this.lblCertificado2);
+            this.grbModificar.Controls.Add(this.cmbTipo2);
+            this.grbModificar.Controls.Add(this.txtEstancia2);
+            this.grbModificar.Controls.Add(this.lblDispositivo);
+            this.grbModificar.Controls.Add(this.lblTipo2);
+            this.grbModificar.Controls.Add(this.lblEstancia2);
+            this.grbModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbModificar.Location = new System.Drawing.Point(869, 92);
+            this.grbModificar.Margin = new System.Windows.Forms.Padding(4);
+            this.grbModificar.Name = "grbModificar";
+            this.grbModificar.Padding = new System.Windows.Forms.Padding(4);
+            this.grbModificar.Size = new System.Drawing.Size(568, 169);
+            this.grbModificar.TabIndex = 31;
+            this.grbModificar.TabStop = false;
+            this.grbModificar.Text = "Modificar Dispositivos";
+            this.grbModificar.Visible = false;
+            // 
+            // txtEuros2
+            // 
+            this.txtEuros2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEuros2.Location = new System.Drawing.Point(237, 135);
+            this.txtEuros2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEuros2.Name = "txtEuros2";
+            this.txtEuros2.Size = new System.Drawing.Size(79, 26);
+            this.txtEuros2.TabIndex = 34;
+            // 
+            // lblPrecio2
+            // 
+            this.lblPrecio2.AutoSize = true;
+            this.lblPrecio2.Location = new System.Drawing.Point(208, 135);
+            this.lblPrecio2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPrecio2.Name = "lblPrecio2";
+            this.lblPrecio2.Size = new System.Drawing.Size(29, 25);
+            this.lblPrecio2.TabIndex = 33;
+            this.lblPrecio2.Text = "€:";
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackgroundImage = global::PiNaranja.Properties.Resources._9035535_trash_outline_icon;
+            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(453, 121);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(107, 39);
+            this.btnEliminar.TabIndex = 32;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // cmbDispositivos2
+            // 
+            this.cmbDispositivos2.FormattingEnabled = true;
+            this.cmbDispositivos2.Location = new System.Drawing.Point(116, 38);
+            this.cmbDispositivos2.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbDispositivos2.Name = "cmbDispositivos2";
+            this.cmbDispositivos2.Size = new System.Drawing.Size(151, 33);
+            this.cmbDispositivos2.TabIndex = 31;
+            this.cmbDispositivos2.SelectedIndexChanged += new System.EventHandler(this.cmbDispositivos2_SelectedIndexChanged);
+            // 
+            // txtW2
+            // 
+            this.txtW2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtW2.Location = new System.Drawing.Point(116, 135);
+            this.txtW2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtW2.Name = "txtW2";
+            this.txtW2.Size = new System.Drawing.Size(81, 26);
+            this.txtW2.TabIndex = 30;
+            // 
+            // lblW2
+            // 
+            this.lblW2.AutoSize = true;
+            this.lblW2.Location = new System.Drawing.Point(43, 134);
+            this.lblW2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblW2.Name = "lblW2";
+            this.lblW2.Size = new System.Drawing.Size(73, 25);
+            this.lblW2.TabIndex = 29;
+            this.lblW2.Text = "Vatios:";
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Location = new System.Drawing.Point(339, 121);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(107, 39);
+            this.btnModificar.TabIndex = 28;
+            this.btnModificar.Text = "Cambiar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // cmbCertificado2
+            // 
+            this.cmbCertificado2.FormattingEnabled = true;
+            this.cmbCertificado2.Location = new System.Drawing.Point(116, 89);
+            this.cmbCertificado2.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbCertificado2.Name = "cmbCertificado2";
+            this.cmbCertificado2.Size = new System.Drawing.Size(151, 33);
+            this.cmbCertificado2.TabIndex = 27;
+            // 
+            // lblCertificado2
+            // 
+            this.lblCertificado2.AutoSize = true;
+            this.lblCertificado2.Location = new System.Drawing.Point(4, 92);
+            this.lblCertificado2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCertificado2.Name = "lblCertificado2";
+            this.lblCertificado2.Size = new System.Drawing.Size(111, 25);
+            this.lblCertificado2.TabIndex = 26;
+            this.lblCertificado2.Text = "Certificado:";
+            // 
+            // cmbTipo2
+            // 
+            this.cmbTipo2.FormattingEnabled = true;
+            this.cmbTipo2.Location = new System.Drawing.Point(385, 38);
+            this.cmbTipo2.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbTipo2.Name = "cmbTipo2";
+            this.cmbTipo2.Size = new System.Drawing.Size(165, 33);
+            this.cmbTipo2.TabIndex = 25;
+            // 
+            // txtEstancia2
+            // 
+            this.txtEstancia2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEstancia2.Location = new System.Drawing.Point(443, 82);
+            this.txtEstancia2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEstancia2.Name = "txtEstancia2";
+            this.txtEstancia2.Size = new System.Drawing.Size(107, 26);
+            this.txtEstancia2.TabIndex = 3;
+            // 
+            // lblDispositivo
+            // 
+            this.lblDispositivo.AutoSize = true;
+            this.lblDispositivo.Location = new System.Drawing.Point(3, 41);
+            this.lblDispositivo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDispositivo.Name = "lblDispositivo";
+            this.lblDispositivo.Size = new System.Drawing.Size(117, 25);
+            this.lblDispositivo.TabIndex = 2;
+            this.lblDispositivo.Text = "Dispositivo: ";
+            // 
+            // lblTipo2
+            // 
+            this.lblTipo2.AutoSize = true;
+            this.lblTipo2.Location = new System.Drawing.Point(305, 41);
+            this.lblTipo2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTipo2.Name = "lblTipo2";
+            this.lblTipo2.Size = new System.Drawing.Size(57, 25);
+            this.lblTipo2.TabIndex = 1;
+            this.lblTipo2.Text = "Tipo:";
+            // 
+            // lblEstancia2
+            // 
+            this.lblEstancia2.AutoSize = true;
+            this.lblEstancia2.Location = new System.Drawing.Point(305, 82);
+            this.lblEstancia2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEstancia2.Name = "lblEstancia2";
+            this.lblEstancia2.Size = new System.Drawing.Size(98, 25);
+            this.lblEstancia2.TabIndex = 0;
+            this.lblEstancia2.Text = "Estancia: ";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.groupBox1.Controls.Add(this.pictureBox7);
+            this.groupBox1.Controls.Add(this.pictureBox6);
+            this.groupBox1.Controls.Add(this.btnDeleteHome);
+            this.groupBox1.Controls.Add(this.btnEliminarCuenta);
+            this.groupBox1.Controls.Add(this.btnSalir);
+            this.groupBox1.Controls.Add(this.pictureBox5);
+            this.groupBox1.Controls.Add(this.pictureBox4);
+            this.groupBox1.Controls.Add(this.pictureBox3);
+            this.groupBox1.Controls.Add(this.pictureBox2);
+            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.button4);
+            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.ptbLogo);
+            this.groupBox1.Controls.Add(this.btnMostrarModDis);
+            this.groupBox1.Controls.Add(this.btnMostrarDis);
+            this.groupBox1.Location = new System.Drawing.Point(-1, -17);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(229, 836);
+            this.groupBox1.TabIndex = 40;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::PiNaranja.Properties.Resources.trash_xxl;
+            this.pictureBox7.Location = new System.Drawing.Point(13, 581);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(52, 50);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 24;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::PiNaranja.Properties.Resources.disapprove_xxl;
+            this.pictureBox6.Location = new System.Drawing.Point(13, 514);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(52, 50);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 23;
+            this.pictureBox6.TabStop = false;
+            // 
+            // btnDeleteHome
+            // 
+            this.btnDeleteHome.FlatAppearance.BorderSize = 0;
+            this.btnDeleteHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteHome.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnDeleteHome.Location = new System.Drawing.Point(65, 581);
+            this.btnDeleteHome.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDeleteHome.Name = "btnDeleteHome";
+            this.btnDeleteHome.Size = new System.Drawing.Size(141, 50);
+            this.btnDeleteHome.TabIndex = 22;
+            this.btnDeleteHome.Text = "Eliminar Casa";
+            this.btnDeleteHome.UseVisualStyleBackColor = true;
+            this.btnDeleteHome.Click += new System.EventHandler(this.btnDeleteHome_Click);
+            // 
+            // btnEliminarCuenta
+            // 
+            this.btnEliminarCuenta.FlatAppearance.BorderSize = 0;
+            this.btnEliminarCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarCuenta.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnEliminarCuenta.Location = new System.Drawing.Point(65, 514);
+            this.btnEliminarCuenta.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminarCuenta.Name = "btnEliminarCuenta";
+            this.btnEliminarCuenta.Size = new System.Drawing.Size(141, 50);
+            this.btnEliminarCuenta.TabIndex = 21;
+            this.btnEliminarCuenta.Text = "Eliminar Cuenta";
+            this.btnEliminarCuenta.UseVisualStyleBackColor = true;
+            this.btnEliminarCuenta.Click += new System.EventHandler(this.btnEliminarCuenta_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnSalir.BackgroundImage = global::PiNaranja.Properties.Resources.door_5_xxl;
+            this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSalir.Location = new System.Drawing.Point(65, 737);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(77, 73);
+            this.btnSalir.TabIndex = 20;
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::PiNaranja.Properties.Resources.time_13_xxl;
+            this.pictureBox5.Location = new System.Drawing.Point(13, 434);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(52, 50);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 10;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::PiNaranja.Properties.Resources.literature_xxl;
+            this.pictureBox4.Location = new System.Drawing.Point(13, 357);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(52, 50);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::PiNaranja.Properties.Resources.info_2_xxl;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 277);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(53, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PiNaranja.Properties.Resources.website_design_2_xxl;
+            this.pictureBox2.Location = new System.Drawing.Point(13, 194);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(52, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PiNaranja.Properties.Resources.box_5_xxl;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 110);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(52, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button4
+            // 
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.SystemColors.Control;
+            this.button4.Location = new System.Drawing.Point(65, 434);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(141, 50);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "Temporizador";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.SystemColors.Control;
+            this.button3.Location = new System.Drawing.Point(65, 357);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(141, 50);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Registros";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.SystemColors.Control;
+            this.button2.Location = new System.Drawing.Point(65, 277);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(141, 50);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Info Dispositivo";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // ptbLogo
+            // 
+            this.ptbLogo.Image = ((System.Drawing.Image)(resources.GetObject("ptbLogo.Image")));
+            this.ptbLogo.Location = new System.Drawing.Point(0, 16);
+            this.ptbLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.ptbLogo.Name = "ptbLogo";
+            this.ptbLogo.Size = new System.Drawing.Size(229, 73);
+            this.ptbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbLogo.TabIndex = 19;
+            this.ptbLogo.TabStop = false;
+            // 
+            // btnMostrarModDis
+            // 
+            this.btnMostrarModDis.FlatAppearance.BorderSize = 0;
+            this.btnMostrarModDis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMostrarModDis.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnMostrarModDis.Location = new System.Drawing.Point(71, 193);
+            this.btnMostrarModDis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMostrarModDis.Name = "btnMostrarModDis";
+            this.btnMostrarModDis.Size = new System.Drawing.Size(135, 50);
+            this.btnMostrarModDis.TabIndex = 1;
+            this.btnMostrarModDis.Text = "Modificar Dispositivo";
+            this.btnMostrarModDis.UseVisualStyleBackColor = true;
+            this.btnMostrarModDis.Click += new System.EventHandler(this.btnMostrarModDis_Click);
+            // 
+            // btnMostrarDis
+            // 
+            this.btnMostrarDis.FlatAppearance.BorderSize = 0;
+            this.btnMostrarDis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMostrarDis.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnMostrarDis.Location = new System.Drawing.Point(65, 110);
+            this.btnMostrarDis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMostrarDis.Name = "btnMostrarDis";
+            this.btnMostrarDis.Size = new System.Drawing.Size(141, 50);
+            this.btnMostrarDis.TabIndex = 0;
+            this.btnMostrarDis.Text = "Nuevo DIspositivo";
+            this.btnMostrarDis.UseVisualStyleBackColor = true;
+            this.btnMostrarDis.Click += new System.EventHandler(this.btnMostrarDis_Click);
+            // 
+            // grbtemporizadores
+            // 
+            this.grbtemporizadores.Controls.Add(this.comboBox2);
+            this.grbtemporizadores.Controls.Add(this.comboBox1);
+            this.grbtemporizadores.Controls.Add(this.lblFaltan2);
+            this.grbtemporizadores.Controls.Add(this.lblFaltan);
+            this.grbtemporizadores.Controls.Add(this.btnParar2);
+            this.grbtemporizadores.Controls.Add(this.btnParar);
+            this.grbtemporizadores.Controls.Add(this.btnConfigurar2);
+            this.grbtemporizadores.Controls.Add(this.btnConfigurar);
+            this.grbtemporizadores.Controls.Add(this.mtxtTemp2);
+            this.grbtemporizadores.Controls.Add(this.mtxtTemp);
+            this.grbtemporizadores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbtemporizadores.Location = new System.Drawing.Point(235, 270);
+            this.grbtemporizadores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbtemporizadores.Name = "grbtemporizadores";
+            this.grbtemporizadores.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbtemporizadores.Size = new System.Drawing.Size(613, 226);
+            this.grbtemporizadores.TabIndex = 42;
+            this.grbtemporizadores.TabStop = false;
+            this.grbtemporizadores.Text = "Temporizadores ";
+            this.grbtemporizadores.Visible = false;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(319, 37);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(249, 33);
+            this.comboBox2.TabIndex = 9;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(11, 37);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(241, 33);
+            this.comboBox1.TabIndex = 8;
+            // 
+            // lblFaltan2
+            // 
+            this.lblFaltan2.AutoSize = true;
+            this.lblFaltan2.Location = new System.Drawing.Point(315, 174);
+            this.lblFaltan2.Name = "lblFaltan2";
+            this.lblFaltan2.Size = new System.Drawing.Size(77, 25);
+            this.lblFaltan2.TabIndex = 7;
+            this.lblFaltan2.Text = "Faltan2";
+            // 
+            // lblFaltan
+            // 
+            this.lblFaltan.AutoSize = true;
+            this.lblFaltan.Location = new System.Drawing.Point(16, 178);
+            this.lblFaltan.Name = "lblFaltan";
+            this.lblFaltan.Size = new System.Drawing.Size(66, 25);
+            this.lblFaltan.TabIndex = 6;
+            this.lblFaltan.Text = "Faltan";
+            // 
+            // btnParar2
+            // 
+            this.btnParar2.Location = new System.Drawing.Point(447, 76);
+            this.btnParar2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnParar2.Name = "btnParar2";
+            this.btnParar2.Size = new System.Drawing.Size(123, 34);
+            this.btnParar2.TabIndex = 5;
+            this.btnParar2.Text = "Detener";
+            this.btnParar2.UseVisualStyleBackColor = true;
+            this.btnParar2.Click += new System.EventHandler(this.btnParar2_Click);
+            // 
+            // btnParar
+            // 
+            this.btnParar.Location = new System.Drawing.Point(141, 78);
+            this.btnParar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnParar.Name = "btnParar";
+            this.btnParar.Size = new System.Drawing.Size(112, 34);
+            this.btnParar.TabIndex = 4;
+            this.btnParar.Text = "Detener";
+            this.btnParar.UseVisualStyleBackColor = true;
+            this.btnParar.Click += new System.EventHandler(this.btnParar_Click);
+            // 
+            // btnConfigurar2
+            // 
+            this.btnConfigurar2.Location = new System.Drawing.Point(319, 116);
+            this.btnConfigurar2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnConfigurar2.Name = "btnConfigurar2";
+            this.btnConfigurar2.Size = new System.Drawing.Size(251, 41);
+            this.btnConfigurar2.TabIndex = 3;
+            this.btnConfigurar2.Text = "Configurar/Reanudar";
+            this.btnConfigurar2.UseVisualStyleBackColor = true;
+            this.btnConfigurar2.Click += new System.EventHandler(this.btnConfigurar2_Click);
+            // 
+            // btnConfigurar
+            // 
+            this.btnConfigurar.Location = new System.Drawing.Point(11, 122);
+            this.btnConfigurar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnConfigurar.Name = "btnConfigurar";
+            this.btnConfigurar.Size = new System.Drawing.Size(243, 41);
+            this.btnConfigurar.TabIndex = 2;
+            this.btnConfigurar.Text = "Configurar/Reanudar";
+            this.btnConfigurar.UseVisualStyleBackColor = true;
+            this.btnConfigurar.Click += new System.EventHandler(this.btnConfigurar_Click);
+            // 
+            // mtxtTemp2
+            // 
+            this.mtxtTemp2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtxtTemp2.Location = new System.Drawing.Point(319, 78);
+            this.mtxtTemp2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.mtxtTemp2.Mask = "00:00:00";
+            this.mtxtTemp2.Name = "mtxtTemp2";
+            this.mtxtTemp2.Size = new System.Drawing.Size(121, 34);
+            this.mtxtTemp2.TabIndex = 1;
+            this.mtxtTemp2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mtxtTemp2.ValidatingType = typeof(System.DateTime);
+            // 
+            // mtxtTemp
+            // 
+            this.mtxtTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtxtTemp.Location = new System.Drawing.Point(11, 76);
+            this.mtxtTemp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.mtxtTemp.Mask = "00:00:00";
+            this.mtxtTemp.Name = "mtxtTemp";
+            this.mtxtTemp.Size = new System.Drawing.Size(124, 34);
+            this.mtxtTemp.TabIndex = 0;
+            this.mtxtTemp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mtxtTemp.ValidatingType = typeof(System.DateTime);
+            // 
+            // tmrCrono
+            // 
+            this.tmrCrono.Interval = 1000;
+            this.tmrCrono.Tick += new System.EventHandler(this.tmrCrono_Tick);
+            // 
+            // tmrCrono2
+            // 
+            this.tmrCrono2.Interval = 1000;
+            this.tmrCrono2.Tick += new System.EventHandler(this.tmrCrono2_Tick);
+            // 
+            // lblnamehouse
+            // 
+            this.lblnamehouse.AutoSize = true;
+            this.lblnamehouse.Location = new System.Drawing.Point(243, 70);
+            this.lblnamehouse.Name = "lblnamehouse";
+            this.lblnamehouse.Size = new System.Drawing.Size(92, 16);
+            this.lblnamehouse.TabIndex = 43;
+            this.lblnamehouse.Text = "lblnamehouse";
             // 
             // FrmPanelControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ClientSize = new System.Drawing.Size(1391, 804);
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.ClientSize = new System.Drawing.Size(1444, 804);
+            this.Controls.Add(this.lblnamehouse);
+            this.Controls.Add(this.grbtemporizadores);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grbModificar);
+            this.Controls.Add(this.cmbIdioma);
+            this.Controls.Add(this.lblIdioma);
             this.Controls.Add(this.lblFecha);
-            this.Controls.Add(this.ptbSalida);
             this.Controls.Add(this.lblPanelControl);
             this.Controls.Add(this.grbAnyadirDispositivo);
-            this.Controls.Add(this.grbCreaEstancia);
-            this.Controls.Add(this.grbCrearHogar);
-            this.Controls.Add(this.ptbLogo);
             this.Controls.Add(this.lblReloj);
-            this.Controls.Add(this.lbClick);
-            this.Controls.Add(this.btnLog);
-            this.Controls.Add(this.lblTotalConsumo1);
-            this.Controls.Add(this.lblTotalConsumo);
+            this.Controls.Add(this.lblClick);
             this.Controls.Add(this.lblDispositivosRegistrados);
-            this.Controls.Add(this.lblEstanciasRegistradas);
-            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dtv);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmPanelControl";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Panel de Control";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtv)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).EndInit();
-            this.grbCrearHogar.ResumeLayout(false);
-            this.grbCrearHogar.PerformLayout();
-            this.grbCreaEstancia.ResumeLayout(false);
-            this.grbCreaEstancia.PerformLayout();
             this.grbAnyadirDispositivo.ResumeLayout(false);
             this.grbAnyadirDispositivo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbSalida)).EndInit();
+            this.grbModificar.ResumeLayout(false);
+            this.grbModificar.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).EndInit();
+            this.grbtemporizadores.ResumeLayout(false);
+            this.grbtemporizadores.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -621,49 +956,73 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dtv;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Label lblEstanciasRegistradas;
         private System.Windows.Forms.Label lblDispositivosRegistrados;
-        private System.Windows.Forms.Label lblTotalConsumo;
-        private System.Windows.Forms.Label lblTotalConsumo1;
-        private System.Windows.Forms.Button btnLog;
-        private System.Windows.Forms.Label lbClick;
+        private System.Windows.Forms.Label lblClick;
         private System.Windows.Forms.Label lblReloj;
         private System.Windows.Forms.PictureBox ptbLogo;
-        private System.Windows.Forms.GroupBox grbCrearHogar;
-        private System.Windows.Forms.TextBox txtDireccionHogar;
-        private System.Windows.Forms.TextBox txtNombreHogar;
-        private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.Label lblDireccion;
-        private System.Windows.Forms.Label lblNombreHogar;
-        private System.Windows.Forms.Label lblNombreUsuario;
-        private System.Windows.Forms.GroupBox grbCreaEstancia;
-        private System.Windows.Forms.TextBox txtEstancia;
-        private System.Windows.Forms.Label lblEstancia;
         private System.Windows.Forms.GroupBox grbAnyadirDispositivo;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.Label lblSelecHogar;
-        private System.Windows.Forms.Label lblConsumoBase;
+        private System.Windows.Forms.Label lblNombreDis;
+        private System.Windows.Forms.Label lblTipo;
+        private System.Windows.Forms.Label lblEstancia;
         private System.Windows.Forms.Label lblPanelControl;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.ComboBox cmbSelecEstancia;
-        private System.Windows.Forms.Label lblEstanciaDispo;
-        private System.Windows.Forms.ComboBox cmbHogar;
-        private System.Windows.Forms.Button btnEliminaEstancia;
-        private System.Windows.Forms.Button btnEliminaDispositivo;
-        private System.Windows.Forms.Button btnAgregarHogar;
-        private System.Windows.Forms.Button btnEliminarHogar;
-        private System.Windows.Forms.Button btnAgregarEstancia;
-        private System.Windows.Forms.ComboBox cmbSelecHogar;
-        private System.Windows.Forms.Label lblHogar;
+        private System.Windows.Forms.TextBox txtEstancia;
+        private System.Windows.Forms.ComboBox cmbCertificado;
+        private System.Windows.Forms.Label lblCertificado;
+        private System.Windows.Forms.ComboBox cmbTipo;
         private System.Windows.Forms.Button btnAgregarDispositivo;
-        private System.Windows.Forms.Label lblCantidad;
-        private System.Windows.Forms.PictureBox ptbSalida;
-        private System.Windows.Forms.ComboBox cmbTipoElectro;
         private System.Windows.Forms.Label lblFecha;
-        private System.Windows.Forms.Label lblCalculo;
-        private System.Windows.Forms.ComboBox cmbConsumo;
-        private System.Windows.Forms.Label lblConsumo;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label lblIdioma;
+        private System.Windows.Forms.ComboBox cmbIdioma;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox txtW;
+        private System.Windows.Forms.Label lblW;
+        private System.Windows.Forms.TextBox txtEuros;
+        private System.Windows.Forms.Label lblPrecio;
+        private System.Windows.Forms.GroupBox grbModificar;
+        private System.Windows.Forms.TextBox txtEuros2;
+        private System.Windows.Forms.Label lblPrecio2;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.ComboBox cmbDispositivos2;
+        private System.Windows.Forms.TextBox txtW2;
+        private System.Windows.Forms.Label lblW2;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.ComboBox cmbCertificado2;
+        private System.Windows.Forms.Label lblCertificado2;
+        private System.Windows.Forms.ComboBox cmbTipo2;
+        private System.Windows.Forms.TextBox txtEstancia2;
+        private System.Windows.Forms.Label lblDispositivo;
+        private System.Windows.Forms.Label lblTipo2;
+        private System.Windows.Forms.Label lblEstancia2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnMostrarModDis;
+        private System.Windows.Forms.Button btnMostrarDis;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.GroupBox grbtemporizadores;
+        private System.Windows.Forms.Button btnConfigurar2;
+        private System.Windows.Forms.Button btnConfigurar;
+        private System.Windows.Forms.MaskedTextBox mtxtTemp2;
+        private System.Windows.Forms.MaskedTextBox mtxtTemp;
+        private System.Windows.Forms.Label lblFaltan2;
+        private System.Windows.Forms.Label lblFaltan;
+        private System.Windows.Forms.Button btnParar2;
+        private System.Windows.Forms.Button btnParar;
+        private System.Windows.Forms.Timer tmrCrono;
+        private System.Windows.Forms.Timer tmrCrono2;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblnamehouse;
+        private System.Windows.Forms.Button btnEliminarCuenta;
+        private System.Windows.Forms.Button btnDeleteHome;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }

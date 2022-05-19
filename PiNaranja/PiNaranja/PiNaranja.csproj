@@ -49,8 +49,10 @@
   <ItemGroup>
     <Compile Include="Clases\Casa.cs" />
     <Compile Include="Clases\ConBD.cs" />
+    <Compile Include="Clases\Correo.cs" />
     <Compile Include="Clases\Dispositivo.cs" />
     <Compile Include="Clases\Estancia.cs" />
+    <Compile Include="Clases\Log.cs" />
     <Compile Include="Clases\Usuario.cs" />
     <Compile Include="FrmPanelControl.cs">
       <SubType>Form</SubType>
@@ -70,8 +72,36 @@
     <Compile Include="FrmCreaCuenta.Designer.cs">
       <DependentUpon>FrmCreaCuenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmRecuperarCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRecuperarCuenta.Designer.cs">
+      <DependentUpon>FrmRecuperarCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReemplazarCasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReemplazarCasa.Designer.cs">
+      <DependentUpon>FrmReemplazarCasa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recursos\Idioma.EN-GB.Designer.cs">
+      <DependentUpon>Idioma.EN-GB.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Recursos\Idioma.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Idioma.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVerificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVerificacion.Designer.cs">
+      <DependentUpon>FrmVerificacion.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmPanelControl.resx">
       <DependentUpon>FrmPanelControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,6 +111,12 @@
     <EmbeddedResource Include="FrmCreaCuenta.resx">
       <DependentUpon>FrmCreaCuenta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmRecuperarCuenta.resx">
+      <DependentUpon>FrmRecuperarCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReemplazarCasa.resx">
+      <DependentUpon>FrmReemplazarCasa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -89,7 +125,19 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Recursos\Idioma.EN-GB.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Idioma.EN-GB.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursos\Idioma.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Idioma.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVerificacion.resx">
+      <DependentUpon>FrmVerificacion.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -102,6 +150,132 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box-5-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-9-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-property-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email-2-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\euro-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filled-box-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full-folder-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-2-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inbox-6-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-2-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key-2-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key-6-xl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list-2-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list-view-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\literature-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mobile-marketing-3-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\network-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\project-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings-5-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\software-box-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\solutions-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tabletop-radio-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time-5-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time-13-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo-2-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usb-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-details-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\website-design-2-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrench-4-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-mark-2-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-mark-3-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\103737_trash_full_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211934_trash_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3844425_can_trash_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9035535_trash_outline_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disapprove-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door-5-xxl.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
