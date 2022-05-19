@@ -28,12 +28,11 @@ namespace PInaranja.Clases
         {
             int retorno;
 
-            string consulta = String.Format("INSERT INTO casa (nombrecasa,propietario) VALUES " +
-                "('@nomCasa','@prop')");
+            string consulta = String.Format("INSERT INTO casa (nombrecasa,propietario) VALUES ('{0}','{1}')", cas.nombreCasa, cas.propietario);
 
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
-            comando.Parameters.AddWithValue("nomCasa", cas.nombreCasa);
-            comando.Parameters.AddWithValue("prop", cas.propietario);
+            //comando.Parameters.AddWithValue("nomCasa", cas.nombreCasa);
+            //comando.Parameters.AddWithValue("prop", cas.propietario);
             retorno = comando.ExecuteNonQuery();
 
             return retorno;
@@ -49,14 +48,13 @@ namespace PInaranja.Clases
             retorno = comando.ExecuteNonQuery();
             return retorno;
         }
-
+        
         public static string ObtenerCasa(string usu)
         {
-            string consulta = string.Format("SELECT nombreCasa from casa" +
-                "Where propietario='@nom';");
+            string consulta = string.Format("SELECT nombreCasa from casa Where propietario = '{0}';",usu);
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
-            comando.Parameters.AddWithValue("@nom", usu);
-            MySqlDataReader reader = comando.ExecuteReader();
+            //comando.Parameters.AddWithValue("@nom", usu);
+            string reader = (string)comando.ExecuteScalar();
             return reader.ToString();
         }
     }

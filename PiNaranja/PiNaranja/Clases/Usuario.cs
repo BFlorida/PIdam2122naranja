@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 
 namespace PInaranja.Clases
 {
@@ -63,10 +64,7 @@ namespace PInaranja.Clases
         public static int EliminaUsuario(string nombre)
         {
             int retorno;
-
-
-            string consulta = String.Format("DELETE FROM cuenta WHERE nombreUsu='{0}', ON" +
-                "DELETE CASCADE", nombre);
+            string consulta = String.Format("DELETE FROM cuenta WHERE nombreUsu='{0}';", nombre);
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
             retorno = comando.ExecuteNonQuery();
             return retorno;
@@ -113,7 +111,7 @@ namespace PInaranja.Clases
         public static bool CorreoYaRegistrado(string correo)
         {
             string consulta = string.Format("SELECT * from cuenta" +
-                "Where correo='@cor';");
+                "Where correo='@cor'");
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
             comando.Parameters.AddWithValue("@cor", correo);
             MySqlDataReader reader = comando.ExecuteReader();
@@ -128,14 +126,22 @@ namespace PInaranja.Clases
                 return false;
             }
         }
+        public static string ObtenerCasa(string usu)
+        {
+            string consulta = string.Format("SELECT nombreCasa from casa Where propietario = '{0}';", usu);
+            MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
+            //comando.Parameters.AddWithValue("@nom", usu);
+            string reader = (string)comando.ExecuteScalar();
+            return reader.ToString();
+        }
         public static int GetCodigo(string usu)
         {
-            string consulta = string.Format("SELECT codigo from cuenta" +
-                "Where usuario='@nom';");
+            int retorno = 0;
+            string consulta = String.Format("SELECT codigo from cuenta Where nombreUsu = '{0}';",usu);
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
-            comando.Parameters.AddWithValue("@nom", usu);
-            MySqlDataReader reader = comando.ExecuteReader();
-            return Convert.ToInt32(reader);
+            //comando.Parameters.AddWithValue("@nom", usu);
+            retorno = (int)comando.ExecuteScalar();
+            return retorno;
         }
         public static int CambiaCodigo(string nom, int vCode)
         {
@@ -152,9 +158,9 @@ namespace PInaranja.Clases
         }
         public static int ActivarVerificacion(string nom)
         {
-            int retorno = 0;
+            int retorno;
 
-            string consulta = String.Format("UPDATE cuenta SET validado = true WHERE nombreDispo = @nom;");
+            string consulta = String.Format("UPDATE cuenta SET validado = 1 WHERE nombreUsu = @nom;");
 
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
             comando.Parameters.AddWithValue("@nom", nom);
@@ -164,11 +170,10 @@ namespace PInaranja.Clases
         }
         public static bool UsuarioValidado(string usu)
         {
-            string consulta = String.Format("SELECT * FROM cuenta" +
-            " WHERE nombreUsu='@nom' AND validado=TRUE;");
+            string consulta = String.Format("SELECT * FROM cuenta WHERE nombreUsu='{0}' AND validado=TRUE;",usu);
 
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
-            comando.Parameters.AddWithValue("@nom", usu);
+            //comando.Parameters.AddWithValue("@nom", usu);
             MySqlDataReader reader = comando.ExecuteReader();
             if (reader.HasRows)
             {
@@ -181,5 +186,9 @@ namespace PInaranja.Clases
                 return false;
             }
         }
+
+
+
+
     }
 }

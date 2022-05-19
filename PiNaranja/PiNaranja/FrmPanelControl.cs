@@ -27,10 +27,17 @@ namespace PiNaranja
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            if (ConBD.Conexion != null)
+            {
+                ConBD.AbrirConexion();
+                casa = Casa.ObtenerCasa(usuario);
+                ConBD.CerrarConexion();
+            }
             lblFecha.Text = DateTime.Now.ToShortDateString();
             cmbIdioma.Text = "Castellano";
             AplicarIdioma();
+            MessageBox.Show("" + usuario + casa);
+            lblnamehouse.Text =  casa.ToString();
         }
 
         DateTime ahora = DateTime.Now;
@@ -220,6 +227,21 @@ namespace PiNaranja
             FrmInicioSesion inicio = new FrmInicioSesion();
             this.Dispose();
             inicio.Show();
+        }
+
+        private void btnEliminarCuenta_Click(object sender, EventArgs e)
+        {
+            if (ConBD.Conexion != null)
+            {
+                ConBD.AbrirConexion();
+                Usuario.EliminaUsuario(usuario);
+                ConBD.CerrarConexion();
+                MessageBox.Show("Usuario Eliminado");
+                FrmInicioSesion inicio = new FrmInicioSesion();
+                this.Dispose();
+                inicio.Show();
+            }
+
         }
     }
 }

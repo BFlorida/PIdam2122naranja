@@ -72,6 +72,12 @@
     <Compile Include="FrmCreaCuenta.Designer.cs">
       <DependentUpon>FrmCreaCuenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmReemplazarCasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReemplazarCasa.Designer.cs">
+      <DependentUpon>FrmReemplazarCasa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recursos\Idioma.EN-GB.Designer.cs">
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCreaCuenta.resx">
       <DependentUpon>FrmCreaCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReemplazarCasa.resx">
+      <DependentUpon>FrmReemplazarCasa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -26,14 +26,15 @@ namespace PiNaranja
 
         private void Verificacion_Load(object sender, EventArgs e)
         {
-            string usu = "nombreUsu"; //obtencion de nombreUsu como sea
+            MessageBox.Show(usuario);
             Random random = new Random();
             int verifyCode = random.Next(100000, 999999);
+            MessageBox.Show(verifyCode.ToString());
             string mensaje = "Código de verificación para validación de la Cuenta de myHomy: \n\n" + verifyCode + "\n\n";
             if (ConBD.Conexion != null)
             {
                 ConBD.AbrirConexion();
-                Usuario.CambiaCodigo(usu, verifyCode);
+                Usuario.CambiaCodigo(usuario, verifyCode);
                 ConBD.CerrarConexion();
             }
             StringBuilder stringBuilder = new StringBuilder();
@@ -47,13 +48,12 @@ namespace PiNaranja
         private void btnCheckVCode_Click(object sender, EventArgs e)
         {
             FrmPanelControl panel = new FrmPanelControl(usuario);
-            string usu = "nombreUsu"; //obtencion de nombreUsu como sea
             int codigo;
             int verifyCode = Convert.ToInt32(txtCode.Text);
             if (ConBD.Conexion != null)
             {
                 ConBD.AbrirConexion();
-                codigo = Usuario.GetCodigo(usu);
+                codigo = Usuario.GetCodigo(usuario);
                 ConBD.CerrarConexion();
             }
             else
@@ -65,7 +65,7 @@ namespace PiNaranja
                 if (ConBD.Conexion != null)
                 {
                     ConBD.AbrirConexion();
-                    Usuario.ActivarVerificacion(usu);
+                    Usuario.ActivarVerificacion(usuario);
                     ConBD.CerrarConexion();
                     panel.Show();
                     this.Hide();

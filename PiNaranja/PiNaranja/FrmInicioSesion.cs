@@ -46,17 +46,21 @@ namespace PiNaranja
                             if (ConBD.Conexion != null)
                             {
                                 ConBD.AbrirConexion();
-                                if (Usuario.UsuarioValidado(txtUsuario.Text))
+                                bool validado = Usuario.UsuarioValidado(txtUsuario.Text);
+                                MessageBox.Show(validado.ToString());
+                                if (validado == true)
                                 {
                                     usuario = txtUsuario.Text;
                                     FrmPanelControl frmpc = new FrmPanelControl(usuario);
-                                    
+                                    ConBD.CerrarConexion();
                                     frmpc.Show();
                                     this.Hide();
                                 }
                                 else
                                 {
+                                    usuario = txtUsuario.Text;
                                     FrmVerificacion frmv = new FrmVerificacion(usuario);
+                                    ConBD.CerrarConexion();
                                     frmv.Show();
                                     this.Hide();
                                 }
