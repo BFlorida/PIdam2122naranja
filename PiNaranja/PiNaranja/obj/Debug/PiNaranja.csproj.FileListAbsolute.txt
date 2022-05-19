@@ -224,4 +224,7 @@ C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\PiNaranja\PiNaranja\obj\
 C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\PiNaranja\PiNaranja\obj\Debug\PiNaranja.csproj.CopyComplete
 C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\PiNaranja\PiNaranja\obj\Debug\PiNaranja.exe
 C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\PiNaranja\PiNaranja\obj\Debug\PiNaranja.pdb
+<<<<<<< HEAD
 C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\PiNaranja\PiNaranja\obj\Debug\PiNaranja.FrmReemplazarCasa.resources
+=======
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9

@@ -51,16 +51,26 @@ namespace PiNaranja
                                 if (validado == true)
                                 {
                                     usuario = txtUsuario.Text;
+<<<<<<< HEAD
                                     ConBD.CerrarConexion();
                                     FrmPanelControl frmpc = new FrmPanelControl(usuario);
+=======
+                                    FrmPanelControl frmpc = new FrmPanelControl(usuario);
+                                    ConBD.CerrarConexion();
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
                                     frmpc.Show();
                                     this.Hide();
                                 }
                                 else
                                 {
                                     usuario = txtUsuario.Text;
+<<<<<<< HEAD
                                     ConBD.CerrarConexion();
                                     FrmVerificacion frmv = new FrmVerificacion(usuario);
+=======
+                                    FrmVerificacion frmv = new FrmVerificacion(usuario);
+                                    ConBD.CerrarConexion();
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
                                     frmv.Show();
                                     this.Hide();
                                 }

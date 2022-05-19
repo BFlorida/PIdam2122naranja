@@ -18,17 +18,23 @@ namespace PiNaranja
     public partial class FrmVerificacion : Form
     {
         private string usuario;
+<<<<<<< HEAD
         private string correo;
+=======
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
         public FrmVerificacion(string usu)
         {
             InitializeComponent();
             usuario = usu;
+<<<<<<< HEAD
             if (ConBD.Conexion != null)
             {
                 ConBD.AbrirConexion();
                 correo = Usuario.GetCorreo(usuario);
                 ConBD.CerrarConexion();
             }
+=======
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
         }
 
         private void Verificacion_Load(object sender, EventArgs e)
@@ -46,7 +52,11 @@ namespace PiNaranja
             }
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.Append(mensaje.Trim());
+<<<<<<< HEAD
             string para = correo; //obtencion de correo como sea
+=======
+            string para = "pabloski.2002@gmail.com"; //obtencion de correo como sea
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
             string asunto = "Validación del correo";
             string error = "";
             Correo.EnviarCorreo(stringBuilder, DateTime.Now, para.Trim(), asunto.Trim(), out error);

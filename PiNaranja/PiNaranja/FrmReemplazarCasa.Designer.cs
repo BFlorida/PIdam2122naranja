@@ -29,7 +29,11 @@
         private void InitializeComponent()
         {
             this.lbl = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.txtNewHome = new System.Windows.Forms.TextBox();
+=======
+            this.textBox1 = new System.Windows.Forms.TextBox();
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
             this.btnCancelarBorrado = new System.Windows.Forms.Button();
             this.btnActualizarCasa = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -43,12 +47,21 @@
             this.lbl.TabIndex = 0;
             this.lbl.Text = "label1";
             // 
+<<<<<<< HEAD
             // txtNewHome
             // 
             this.txtNewHome.Location = new System.Drawing.Point(135, 194);
             this.txtNewHome.Name = "txtNewHome";
             this.txtNewHome.Size = new System.Drawing.Size(260, 20);
             this.txtNewHome.TabIndex = 1;
+=======
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(135, 194);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(260, 20);
+            this.textBox1.TabIndex = 1;
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
             // 
             // btnCancelarBorrado
             // 
@@ -77,10 +90,16 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnActualizarCasa);
             this.Controls.Add(this.btnCancelarBorrado);
+<<<<<<< HEAD
             this.Controls.Add(this.txtNewHome);
             this.Controls.Add(this.lbl);
             this.Name = "FrmReemplazarCasa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+=======
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lbl);
+            this.Name = "FrmReemplazarCasa";
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
             this.Text = "FrmReemplazarCasa";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -90,7 +109,11 @@
         #endregion
 
         private System.Windows.Forms.Label lbl;
+<<<<<<< HEAD
         private System.Windows.Forms.TextBox txtNewHome;
+=======
+        private System.Windows.Forms.TextBox textBox1;
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
         private System.Windows.Forms.Button btnCancelarBorrado;
         private System.Windows.Forms.Button btnActualizarCasa;
     }

@@ -61,11 +61,14 @@ namespace PInaranja.Clases
                 return retorno;
             }
 
+<<<<<<< HEAD
         /// <summary>
         /// Elimina usuario.
         /// </summary>
         /// <param name="nombre">String con nombre de usuario</param>
         /// <returns>Número de control para determinar si se ha modificado una columna.</returns>
+=======
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
         public static int EliminaUsuario(string nombre)
         {
             int retorno;
@@ -75,6 +78,7 @@ namespace PInaranja.Clases
             return retorno;
         }
 
+<<<<<<< HEAD
         /// <summary>
         /// Valida la contraseña
         /// </summary>
@@ -107,10 +111,18 @@ namespace PInaranja.Clases
         /// <param string="usu">Nombre del usuario</param>
         /// <returns>Devuelve true si existe la cuenta y false si no existe.</returns>
         public static bool UsuarioYaRegistrado(string usu)
+=======
+        public static bool ValidaConstrasenya(string contra)
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
         {
             string consulta = String.Format("SELECT * FROM cuenta" +
             " WHERE nombreUsu='{0}'", usu);
 
+<<<<<<< HEAD
+=======
+            string consulta = String.Format("SELECT correo FROM cuenta WHERE contrasenya='{0}'", contra);
+
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
             if (reader.HasRows)
@@ -123,7 +135,17 @@ namespace PInaranja.Clases
                 reader.Close();
                 return false;
             }
+<<<<<<< HEAD
         }
+=======
+
+        }
+
+        public static bool UsuarioYaRegistrado(string usu)
+        {
+            string consulta = String.Format("SELECT * FROM cuenta" +
+            " WHERE nombreUsu='{0}'", usu);
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
 
         /// <summary>
         ///Comprueba si el correo existe. 
@@ -148,6 +170,7 @@ namespace PInaranja.Clases
                 return false;
             }
         }
+<<<<<<< HEAD
 
 
         /// <summary>
@@ -191,9 +214,67 @@ namespace PInaranja.Clases
             comando.Parameters.AddWithValue("vCode", vCode);
             retorno = comando.ExecuteNonQuery();
 
+=======
+        public static bool CorreoYaRegistrado(string correo)
+        {
+            string consulta = string.Format("SELECT * from cuenta" +
+                "Where correo='@cor'");
+            MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
+            comando.Parameters.AddWithValue("@cor", correo);
+            MySqlDataReader reader = comando.ExecuteReader();
+            if (reader.HasRows)
+            {
+                reader.Close();
+                return true;
+            }
+            else
+            {
+                reader.Close();
+                return false;
+            }
+        }
+        public static string ObtenerCasa(string usu)
+        {
+            string consulta = string.Format("SELECT nombreCasa from casa Where propietario = '{0}';", usu);
+            MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
+            //comando.Parameters.AddWithValue("@nom", usu);
+            string reader = (string)comando.ExecuteScalar();
+            return reader.ToString();
+        }
+        public static int GetCodigo(string usu)
+        {
+            int retorno = 0;
+            string consulta = String.Format("SELECT codigo from cuenta Where nombreUsu = '{0}';",usu);
+            MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
+            //comando.Parameters.AddWithValue("@nom", usu);
+            retorno = (int)comando.ExecuteScalar();
             return retorno;
         }
+        public static int CambiaCodigo(string nom, int vCode)
+        {
+            int retorno = 0;
 
+            string consulta = String.Format("UPDATE cuenta SET codigo = @vCode WHERE nombreUsu = @nom;");
+
+            MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
+            comando.Parameters.AddWithValue("@nom", nom);
+            comando.Parameters.AddWithValue("vCode", vCode);
+            retorno = comando.ExecuteNonQuery();
+
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
+            return retorno;
+        }
+        public static int ActivarVerificacion(string nom)
+        {
+            int retorno;
+
+            string consulta = String.Format("UPDATE cuenta SET validado = 1 WHERE nombreUsu = @nom;");
+
+            MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
+            comando.Parameters.AddWithValue("@nom", nom);
+            retorno = comando.ExecuteNonQuery();
+
+<<<<<<< HEAD
 
         /// <summary>
         /// 
@@ -218,6 +299,15 @@ namespace PInaranja.Clases
             string consulta = String.Format("SELECT * FROM cuenta WHERE nombreUsu='{0}' AND validado=TRUE;",usu);
 
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
+=======
+            return retorno;
+        }
+        public static bool UsuarioValidado(string usu)
+        {
+            string consulta = String.Format("SELECT * FROM cuenta WHERE nombreUsu='{0}' AND validado=TRUE;",usu);
+
+            MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
             //comando.Parameters.AddWithValue("@nom", usu);
             MySqlDataReader reader = comando.ExecuteReader();
             if (reader.HasRows)

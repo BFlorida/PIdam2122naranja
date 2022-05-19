@@ -24,11 +24,14 @@ namespace PInaranja.Clases
         public Casa() { }
 
 
+<<<<<<< HEAD
         /// <summary>
         ///Agrega la casa del usuario
         /// </summary>
         /// <param casa="Cas">Objeto casa</param>
         /// <returns>Devuelve numero de control para determinar si se ha creado una casa 1 o no 0.</returns>
+=======
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
         public static int AgregaCasa(Casa cas)
         {
             int retorno;
@@ -43,6 +46,7 @@ namespace PInaranja.Clases
             return retorno;
         }
 
+<<<<<<< HEAD
 
         /// <summary>
         ///Elimina casa
@@ -54,10 +58,19 @@ namespace PInaranja.Clases
             //se tiene que rehacer esta parte para que se elimine todo lo registrao para el usuario
             int retorno;
             string consulta = String.Format("DELETE FROM casa WHERE propietario='{0}';", prop);
+=======
+        public static int EliminaUsuario(string nomCasa, string prop)
+        {
+            //se tiene que rehacer esta parte para que se elimine todo lo registrao para el usuario
+            int retorno;
+            string consulta = String.Format("DELETE FROM casa WHERE nombrecasa='{0}' AND propietario='{1}', ON" +
+                "DELETE CASCADE", nomCasa, prop);
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
             retorno = comando.ExecuteNonQuery();
             return retorno;
         }
+<<<<<<< HEAD
 
 
         /// <summary>
@@ -84,20 +97,21 @@ namespace PInaranja.Clases
         {
             string consulta = String.Format("SELECT * FROM casa WHERE nombreCasa='{0}'", casa);
 
+=======
+        
+        public static string ObtenerCasa(string usu)
+        {
+            string consulta = string.Format("SELECT nombreCasa from casa Where propietario = '{0}';",usu);
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
-            MySqlDataReader reader = comando.ExecuteReader();
-            if (reader.HasRows)
-            {
-                reader.Close();
-                return true;
-            }
-            else
-            {
-                reader.Close();
-                return false;
-            }
+            //comando.Parameters.AddWithValue("@nom", usu);
+            string reader = (string)comando.ExecuteScalar();
+            return reader.ToString();
         }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
     }
 }
