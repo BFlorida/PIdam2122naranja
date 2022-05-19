@@ -28,6 +28,7 @@ namespace PInaranja.Clases
         public string Tipo { get => tipo; set => tipo = value; }
         public double ConsumoPrecio { get => consumoPrecio; set => consumoPrecio = value; }
         public string Certificado { get => certificado; set => certificado = value; }
+<<<<<<< HEAD
         public string NomCasa { get => nomCasa; set => nomCasa = value; }
 
         public Dispositivo(string nombre, bool encendido, string certificado,string tipo, double consumoBase, double precioBase, string estancia, string casa)
@@ -69,6 +70,19 @@ namespace PInaranja.Clases
             this.tipo = tipo;
             this.estancia = estancia;
             this.NomCasa = nomCasa;
+=======
+
+        //Constructor para dispositivos que no esten en la base de datos.
+        public Dispositivo(string nombre, string tipo, string estancia, string certificado)
+        {
+            this.nombre = nombre;
+            this.encendido = false;
+            this.consumoBase = CalcularConsumo(tipo,certificado);
+            this.consumoPrecio = CalcularPrecio(consumoBase);
+            this.certificado = certificado;
+            this.tipo = tipo;
+            this.estancia = estancia;
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
         }
 
         //Constuctor que recibe los datos de la base de datos.
@@ -78,7 +92,11 @@ namespace PInaranja.Clases
             this.encendido = encendido;
             this.consumoBase = consumoBase;
             this.estancia = estancia;
+<<<<<<< HEAD
             this.NomCasa = nomCasa;
+=======
+            this.nomCasa = nomCasa;
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
         }
         //Constructor por si acaso.
         public Dispositivo()
@@ -95,6 +113,7 @@ namespace PInaranja.Clases
         {
             int retorno;
 
+<<<<<<< HEAD
             string consulta = String.Format("INSERT INTO dispositivo VALUES (@nom,FALSE,@cert,@tipo,@cBa,@preBa,@est,@nCa);");
 
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
@@ -103,6 +122,14 @@ namespace PInaranja.Clases
             comando.Parameters.AddWithValue("tipo", disp.tipo);
             comando.Parameters.AddWithValue("cBa", disp.consumoBase);
             comando.Parameters.AddWithValue("preBa", disp.consumoPrecio);
+=======
+            string consulta = String.Format("INSERT INTO dispositivos VALUES ('@nom','@enc','@cBa',@est','@cer','@nCa');");
+
+            MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
+            comando.Parameters.AddWithValue("nom", disp.nombre);
+            comando.Parameters.AddWithValue("enc", disp.encendido);
+            comando.Parameters.AddWithValue("cBa", disp.consumoBase);
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
             comando.Parameters.AddWithValue("est", disp.estancia);
             comando.Parameters.AddWithValue("nCa", disp.nomCasa);
             retorno = comando.ExecuteNonQuery();
@@ -115,6 +142,7 @@ namespace PInaranja.Clases
         /// </summary>
         /// <param name="Objeto Dispositivo"></param>
         /// <returns>Número entero (0-1)que determinará si se ha eliminado el dispositivo o no</returns>
+<<<<<<< HEAD
         public static int EliminarDispositivos(string disp)
         {
             int retorno;
@@ -124,6 +152,17 @@ namespace PInaranja.Clases
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
             comando.Parameters.AddWithValue("nom", disp);
 
+=======
+        public static int EliminarDispositivos(Dispositivo disp)
+        {
+            int retorno;
+
+            string consulta = String.Format("DELETE FROM dispositivos WHERE nombreDispo = @nom;");
+
+            MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
+            comando.Parameters.AddWithValue("nom", disp.nombre);
+            
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
             retorno = comando.ExecuteNonQuery();
 
             return retorno;
@@ -137,7 +176,11 @@ namespace PInaranja.Clases
         /// <returns>Devuelve true si ya existe el dispositivo. false si no existe. </returns>
         public static bool ValidarDispositivos(string nom)
         {
+<<<<<<< HEAD
             string consulta = String.Format("Select nombreDispo FROM dispositivo WHERE nombreDispo = @nom;");
+=======
+            string consulta = String.Format("Select nombreDispo FROM dispositivos WHERE nombreDispo = @nom;");
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
 
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
             comando.Parameters.AddWithValue("nom", nom);
@@ -156,9 +199,20 @@ namespace PInaranja.Clases
         {
             int retorno;
 
+<<<<<<< HEAD
             string consulta = String.Format("UPDATE dispositivo SET consumoBase = '{0}' WHERE nombreDispo = '{1}'",Dispositivo.CalcularConsumo(tipo,certificado),nombre);
 
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
+=======
+            string consulta = String.Format("UPDATE dispositivo SET consumoBase = @cBa WHERE nombreDispo = @nom;");
+
+            MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
+            comando.Parameters.AddWithValue("nom", nombre);
+            comando.Parameters.AddWithValue("cBa", CalcularConsumo(tipo,certificado));
+            comando.Parameters.AddWithValue("est", estancia);
+            comando.Parameters.AddWithValue("cer", certificado);
+            comando.Parameters.AddWithValue("nCa", nomCasa);
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
             retorno = comando.ExecuteNonQuery();
 
             return retorno;
@@ -169,6 +223,7 @@ namespace PInaranja.Clases
         /// </summary>
         /// <param name="nombre del dispositivom(campo clave de Dispositivo)"></param>
         /// <returns>Número entero (0-1)que determinará si se ha eliminado el dispositivo o no</returns>
+<<<<<<< HEAD
         public static int Encender(Dispositivo disp)
         {
             int retorno;
@@ -176,6 +231,16 @@ namespace PInaranja.Clases
             string consulta = String.Format("UPDATE dispositivo SET encendido = TRUE WHERE nombreDispo = '{0}'",disp.encendido);
 
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
+=======
+        public static int Encender(string nom)
+        {
+            int retorno;
+
+            string consulta = String.Format("UPDATE dispositivo SET encendido = TRUE WHERE nombreDispo = @nom;");
+
+            MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
+            comando.Parameters.AddWithValue("nom", nom);
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
             retorno = comando.ExecuteNonQuery();
 
             return retorno;
@@ -186,6 +251,7 @@ namespace PInaranja.Clases
         /// </summary>
         /// <param name="nombre del dispositivom(campo clave de Dispositivo)"></param>
         /// <returns>Número entero (0-1)que determinará si se ha eliminado el dispositivo o no.</returns>
+<<<<<<< HEAD
         public static int Apagar(Dispositivo disp)
         {
             int retorno;
@@ -193,6 +259,16 @@ namespace PInaranja.Clases
             string consulta = String.Format("UPDATE dispositivo SET encendido = FALSE WHERE nombreDispo = '{0}'",disp.encendido);
 
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
+=======
+        public static int Apagar(string nom)
+        {
+            int retorno;
+
+            string consulta = String.Format("UPDATE dispositivo SET encendido = FALSE WHERE nombreDispo = @nom;");
+
+            MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
+            comando.Parameters.AddWithValue("nom", nom);
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
             retorno = comando.ExecuteNonQuery();
 
             return retorno;
@@ -284,7 +360,11 @@ namespace PInaranja.Clases
         }
 
 
+<<<<<<< HEAD
         public static List<Dispositivo> ListaDispositivos1()
+=======
+        public static List<Dispositivo> ListaDispositivos()
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
         {
             List<Dispositivo> lista = new List<Dispositivo>();
             String consulta = String.Format("SELECT * FROM dispositivo;");
@@ -293,6 +373,7 @@ namespace PInaranja.Clases
 
             while (reader.Read())
             {
+<<<<<<< HEAD
                 lista.Add(new Dispositivo(reader.GetString(0), reader.GetBoolean(1), reader.GetString(2), reader.GetString(3),
                     reader.GetDouble(4), reader.GetDouble(5), reader.GetString(6), reader.GetString(7)));
             }
@@ -308,6 +389,10 @@ namespace PInaranja.Clases
             while (reader.Read())
             {
                 lista.Add(new Dispositivo(reader.GetString(0)));
+=======
+                lista.Add(new Dispositivo(reader.GetString(0), reader.GetBoolean(1), reader.GetDouble(2),
+                    reader.GetString(3), reader.GetString(4)));
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
             }
             return lista;
         }

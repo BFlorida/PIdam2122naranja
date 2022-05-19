@@ -12,9 +12,15 @@ namespace PInaranja.Clases
     {
         private string nombreCasa;
         private string propietario;
+<<<<<<< HEAD
         //Lista de dispositivos?
         public string NombreCasa { get { return nombreCasa; } set { nombreCasa = value; } }
         public string Propietario { get { return propietario; } set { propietario = value; } } //Nombre del propietario (Foreign Key hacia cuenta)
+=======
+
+        public string NombreCasa { get { return nombreCasa; } set { nombreCasa = value; } }
+        public string Propietario { get { return propietario; } set { propietario = value; } }
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
         public Casa(string nomCasa, string prop)
         {
             this.nombreCasa = nomCasa;
@@ -24,11 +30,20 @@ namespace PInaranja.Clases
         public Casa() { }
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
         /// <summary>
         ///Agrega la casa del usuario
         /// </summary>
         /// <param casa="Cas">Objeto casa</param>
         /// <returns>Devuelve numero de control para determinar si se ha creado una casa 1 o no 0.</returns>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
         public static int AgregaCasa(Casa cas)
         {
             int retorno;
@@ -43,6 +58,10 @@ namespace PInaranja.Clases
             return retorno;
         }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
 
         /// <summary>
         ///Elimina casa
@@ -54,10 +73,22 @@ namespace PInaranja.Clases
             //se tiene que rehacer esta parte para que se elimine todo lo registrao para el usuario
             int retorno;
             string consulta = String.Format("DELETE FROM casa WHERE propietario='{0}';", prop);
+<<<<<<< HEAD
+=======
+=======
+        public static int EliminaUsuario(string nomCasa, string prop)
+        {
+            //se tiene que rehacer esta parte para que se elimine todo lo registrao para el usuario
+            int retorno;
+            string consulta = String.Format("DELETE FROM casa WHERE nombrecasa='{0}' AND propietario='{1}', ON" +
+                "DELETE CASCADE", nomCasa, prop);
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
             retorno = comando.ExecuteNonQuery();
             return retorno;
         }
+<<<<<<< HEAD
 
 
         /// <summary>
@@ -68,6 +99,7 @@ namespace PInaranja.Clases
         public static string ObtenerCasa(string usu)
         {
             string consulta = string.Format("SELECT nombreCasa from casa Where propietario = '{0}';",usu);
+<<<<<<< HEAD
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
             //comando.Parameters.AddWithValue("@nom", usu);
             string reader = (string)comando.ExecuteScalar();
@@ -84,20 +116,42 @@ namespace PInaranja.Clases
         {
             string consulta = String.Format("SELECT * FROM casa WHERE nombreCasa='{0}'", casa);
 
+=======
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
-            MySqlDataReader reader = comando.ExecuteReader();
-            if (reader.HasRows)
-            {
-                reader.Close();
-                return true;
-            }
-            else
-            {
-                reader.Close();
-                return false;
-            }
+            //comando.Parameters.AddWithValue("@nom", usu);
+            string reader = (string)comando.ExecuteScalar();
+            return reader.ToString();
         }
 
 
+<<<<<<< HEAD
+=======
+        /// <summary>
+        ///Obtiene toda la informacion de casa. 
+        /// </summary>
+        /// <param string="casa">nombre de la casa</param>
+        /// <returns>Devuelve true si la casa existe y false si no existe. </returns>
+        public static bool CasaYaRegistrada(string casa)
+        {
+            string consulta = String.Format("SELECT * FROM casa WHERE nombreCasa='{0}'", casa);
+
+=======
+        
+        public static string ObtenerCasa(string usu)
+        {
+            string consulta = string.Format("SELECT nombreCasa from casa Where propietario = '{0}';",usu);
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
+            MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
+            //comando.Parameters.AddWithValue("@nom", usu);
+            string reader = (string)comando.ExecuteScalar();
+            return reader.ToString();
+        }
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
     }
 }

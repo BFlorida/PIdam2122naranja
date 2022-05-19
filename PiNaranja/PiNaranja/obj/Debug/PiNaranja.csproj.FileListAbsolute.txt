@@ -224,6 +224,7 @@ C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\PiNaranja\PiNaranja\obj\
 C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\PiNaranja\PiNaranja\obj\Debug\PiNaranja.csproj.CopyComplete
 C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\PiNaranja\PiNaranja\obj\Debug\PiNaranja.exe
 C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\PiNaranja\PiNaranja\obj\Debug\PiNaranja.pdb
+<<<<<<< HEAD
 C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\PiNaranja\PiNaranja\obj\Debug\PiNaranja.FrmReemplazarCasa.resources
 C:\Users\borji\OneDrive\Escritorio\PIULTIMO\PiNaranja\bin\Debug\PiNaranja.exe.config
 C:\Users\borji\OneDrive\Escritorio\PIULTIMO\PiNaranja\bin\Debug\PiNaranja.exe
@@ -354,3 +355,9 @@ C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\obj\Debug\EN-GB\PiNaranja.resources.
 C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\obj\Debug\PiNaranja.csproj.CopyComplete
 C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\obj\Debug\PiNaranja.exe
 C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\obj\Debug\PiNaranja.pdb
+=======
+<<<<<<< HEAD
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\PiNaranja\PiNaranja\obj\Debug\PiNaranja.FrmReemplazarCasa.resources
+=======
+>>>>>>> 19e1441a09eab5b4558e68b0970ce930aec73bd9
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b

@@ -118,15 +118,23 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+<<<<<<< HEAD
   <data name="x-mark-3-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\x-mark-3-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+=======
+  <data name="box-5-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\box-5-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
   </data>
   <data name="house-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\house-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+<<<<<<< HEAD
   <data name="9035535_trash_outline_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\9035535_trash_outline_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+=======
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
   <data name="view-details-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\view-details-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,24 +147,38 @@
   <data name="software-box-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\software-box-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+<<<<<<< HEAD
   <data name="disapprove-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\disapprove-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tabletop-radio-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tabletop-radio-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+=======
+  <data name="key-6-xl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\key-6-xl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
   </data>
   <data name="wrench-4-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wrench-4-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+<<<<<<< HEAD
   <data name="3844425_can_trash_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3844425_can_trash_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+=======
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
   <data name="full-folder-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\full-folder-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="network-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\network-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+<<<<<<< HEAD
+=======
+  <data name="x-mark-3-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\x-mark-3-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
   <data name="settings-5-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\settings-5-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -169,9 +191,12 @@
   <data name="website-design-2-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\website-design-2-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+<<<<<<< HEAD
   <data name="literature-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\literature-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+=======
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
   <data name="email-2-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\email-2-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -181,17 +206,25 @@
   <data name="mobile-marketing-3-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mobile-marketing-3-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+<<<<<<< HEAD
   <data name="103737_trash_full_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\103737_trash_full_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+=======
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
   <data name="time-13-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\time-13-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="key-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\key-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+<<<<<<< HEAD
   <data name="key-6-xl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\key-6-xl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+=======
+  <data name="literature-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\literature-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
   </data>
   <data name="exit-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exit-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,17 +253,25 @@
   <data name="project-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\project-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+<<<<<<< HEAD
   <data name="211934_trash_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\211934_trash_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+=======
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
   <data name="list-view-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\list-view-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="key-2-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\key-2-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+<<<<<<< HEAD
   <data name="box-5-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\box-5-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+=======
+  <data name="tabletop-radio-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tabletop-radio-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
   </data>
   <data name="inbox-6-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\inbox-6-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,7 +282,21 @@
   <data name="usb-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\usb-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+<<<<<<< HEAD
   <data name="door-5-xxl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\door-5-xxl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+=======
+  <data name="103737_trash_full_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\103737_trash_full_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="211934_trash_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\211934_trash_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3844425_can_trash_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3844425_can_trash_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9035535_trash_outline_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9035535_trash_outline_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+>>>>>>> 83d387e8e56e510d28c0b4d3db53669ef61d935b
   </data>
 </root>
