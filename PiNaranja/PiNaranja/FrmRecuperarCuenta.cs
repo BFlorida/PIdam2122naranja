@@ -15,50 +15,53 @@ using MySql.Data.MySqlClient;
 
 namespace PiNaranja
 {
-    public partial class FrmVerificacion : Form
+    public partial class FrmRecuperarCuenta : Form
     {
-        private string usuario;
-        private string correo;
-        public FrmVerificacion(string usu)
+        string correo;
+        FrmInicioSesion inicio = new FrmInicioSesion();
+        public FrmRecuperarCuenta()
         {
             InitializeComponent();
-            usuario = usu;
-            if (ConBD.Conexion != null)
-            {
-                ConBD.AbrirConexion();
-                correo = Usuario.GetCorreo(usuario);
-                ConBD.CerrarConexion();
-            }
         }
 
-        private void Verificacion_Load(object sender, EventArgs e)
+        private void FrmRecuperarCuenta_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEnviarMail_Click(object sender, EventArgs e)
         {
             Random random = new Random();
             int verifyCode = random.Next(100000, 999999);
-            string mensaje = "Código de verificación para validación de la Cuenta de myHomy: \n\n" + verifyCode + "\n\n";
+            string mensaje = "Código de verificación para el cambio de la contraseña olvidada de la Cuenta de myHomy: \n\n" + verifyCode + "\n\n";
             if (ConBD.Conexion != null)
             {
                 ConBD.AbrirConexion();
-                Usuario.CambiaCodigo(usuario, verifyCode);
+                Usuario.CambiaCodigo(txtUsuario.Text, verifyCode);
+                ConBD.CerrarConexion();
+            }
+            if (ConBD.Conexion != null)
+            {
+                ConBD.AbrirConexion();
+                correo = Usuario.GetCorreo(txtUsuario.Text);
                 ConBD.CerrarConexion();
             }
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.Append(mensaje.Trim());
             string para = correo; //obtencion de correo como sea
-            string asunto = "Validación del correo";
+            string asunto = "Recuperacion de cuentas";
             string error = "";
             Correo.EnviarCorreo(stringBuilder, DateTime.Now, para.Trim(), asunto.Trim(), out error);
         }
 
-        private void btnCheckVCode_Click(object sender, EventArgs e)
+        private void btnCambiarContrasenya_Click(object sender, EventArgs e)
         {
-            pcbCertificado panel = new pcbCertificado(usuario);
             int codigo;
-            int verifyCode = Convert.ToInt32(txtCode.Text);
+            int verifyCode = Convert.ToInt32(txtCodigo.Text);
             if (ConBD.Conexion != null)
             {
                 ConBD.AbrirConexion();
-                codigo = Usuario.GetCodigo(usuario);
+                codigo = Usuario.GetCodigo(txtUsuario.Text);
                 ConBD.CerrarConexion();
             }
             else
@@ -70,9 +73,9 @@ namespace PiNaranja
                 if (ConBD.Conexion != null)
                 {
                     ConBD.AbrirConexion();
-                    Usuario.ActivarVerificacion(usuario);
+                    Usuario.CambiarContrasenya(txtUsuario.Text,txtContrasenya.Text);
                     ConBD.CerrarConexion();
-                    panel.Show();
+                    inicio.Show();
                     this.Hide();
                 }
             }
@@ -82,9 +85,8 @@ namespace PiNaranja
             }
         }
 
-        private void btnReturn_Click(object sender, EventArgs e)
+        private void btnVolver_Click(object sender, EventArgs e)
         {
-            FrmInicioSesion inicio = new FrmInicioSesion();
             inicio.Show();
             this.Hide();
         }

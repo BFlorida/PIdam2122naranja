@@ -46,16 +46,19 @@ namespace PiNaranja
                             if (ConBD.Conexion != null)
                             {
                                 ConBD.AbrirConexion();
-                                if (Usuario.UsuarioValidado(txtUsuario.Text))
+                                bool validado = Usuario.UsuarioValidado(txtUsuario.Text);
+                                if (validado == true)
                                 {
                                     usuario = txtUsuario.Text;
-                                    FrmPanelControl frmpc = new FrmPanelControl(usuario);
-                                    
+                                    ConBD.CerrarConexion();
+                                    pcbCertificado frmpc = new pcbCertificado(usuario);
                                     frmpc.Show();
                                     this.Hide();
                                 }
                                 else
                                 {
+                                    usuario = txtUsuario.Text;
+                                    ConBD.CerrarConexion();
                                     FrmVerificacion frmv = new FrmVerificacion(usuario);
                                     frmv.Show();
                                     this.Hide();
@@ -131,6 +134,13 @@ namespace PiNaranja
             }
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
             AplicarIdioma();
+        }
+
+        private void btnRecContr_Click(object sender, EventArgs e)
+        {
+            FrmRecuperarCuenta rCuenta = new FrmRecuperarCuenta();
+            rCuenta.Show();
+            this.Hide();
         }
     }
 }
