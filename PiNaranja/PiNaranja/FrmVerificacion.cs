@@ -52,7 +52,11 @@ namespace PiNaranja
 
         private void btnCheckVCode_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             pcbCertificado panel = new pcbCertificado(usuario);
+=======
+            FrmPanelControl panel = new FrmPanelControl(usuario);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             int codigo;
             int verifyCode = Convert.ToInt32(txtCode.Text);
             if (ConBD.Conexion != null)

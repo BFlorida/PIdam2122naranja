@@ -77,7 +77,10 @@
             this.txtContrasenya.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContrasenya.Location = new System.Drawing.Point(208, 344);
             this.txtContrasenya.Name = "txtContrasenya";
+<<<<<<< HEAD
             this.txtContrasenya.PasswordChar = '*';
+=======
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.txtContrasenya.Size = new System.Drawing.Size(224, 30);
             this.txtContrasenya.TabIndex = 4;
             // 
@@ -155,7 +158,10 @@
             this.btnRecContr.TabIndex = 11;
             this.btnRecContr.Text = "Recuperar Contraseña";
             this.btnRecContr.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
             this.btnRecContr.Click += new System.EventHandler(this.btnRecContr_Click);
+=======
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             // 
             // FrmInicioSesion
             // 

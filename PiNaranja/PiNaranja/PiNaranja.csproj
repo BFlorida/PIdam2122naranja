@@ -277,6 +277,7 @@
   <ItemGroup>
     <None Include="Resources\door-5-xxl.png" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <None Include="Resources\nombre.png" />
   </ItemGroup>
@@ -310,5 +311,7 @@
   <ItemGroup>
     <None Include="Resources\simbolo.png" />
   </ItemGroup>
+=======
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

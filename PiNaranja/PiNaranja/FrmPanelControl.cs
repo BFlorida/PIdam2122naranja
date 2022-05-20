@@ -15,12 +15,20 @@ using System.Windows.Forms;
 namespace PiNaranja
 {
     //To do HAcer invisibles los label de temporizador antes de darle al boton para que no aparezca "faltan..."
+<<<<<<< HEAD
     public partial class pcbCertificado : Form
+=======
+    public partial class FrmPanelControl : Form
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
     {
         private string usuario;
         private string casa;
         private Dispositivo dispo = new Dispositivo();
+<<<<<<< HEAD
         public pcbCertificado(string usu)
+=======
+        public FrmPanelControl(string usu)
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
         {
             InitializeComponent();
             usuario = usu;
@@ -38,7 +46,11 @@ namespace PiNaranja
             lblFecha.Text = DateTime.Now.ToShortDateString();
             cmbIdioma.Text = "Castellano";
             AplicarIdioma();
+<<<<<<< HEAD
             
+=======
+            lblnamehouse.Text = casa.ToString();
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             Refrescar();
         }
 
@@ -249,6 +261,7 @@ namespace PiNaranja
 
         private void btnEliminarCuenta_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             DialogResult borrado = MessageBox.Show("Vas a borrar la cuenta",
             "\n¿Estás seguro de borrarla?", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
             if (borrado == DialogResult.Yes)
@@ -264,6 +277,19 @@ namespace PiNaranja
                     inicio.Show();
                 }
             }
+=======
+            if (ConBD.Conexion != null)
+            {
+                ConBD.AbrirConexion();
+                Usuario.EliminaUsuario(usuario);
+                ConBD.CerrarConexion();
+                MessageBox.Show("Usuario Eliminado");
+                FrmInicioSesion inicio = new FrmInicioSesion();
+                this.Dispose();
+                inicio.Show();
+            }
+
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
         }
 
         private void btnDeleteHome_Click(object sender, EventArgs e)
@@ -300,6 +326,7 @@ namespace PiNaranja
             cmbDispositivos2.Items.Clear();
             for (int i = 0; i < lista.Count; i++) { cmbDispositivos2.Items.Add(lista[i].Nombre); }
 
+<<<<<<< HEAD
             //Dispositivo dispositivo = new Dispositivo();
             //MessageBox.Show(cmbDispositivos2.Text);
             //if (ConBD.Conexion != null)
@@ -313,6 +340,9 @@ namespace PiNaranja
             //cmbTipo2.Text = dispositivo.Tipo;
             //txtW2.Text = dispositivo.ConsumoBase.ToString();
             //txtEuros2.Text = dispositivo.ConsumoPrecio.ToString();
+=======
+
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -336,6 +366,7 @@ namespace PiNaranja
                 {
                     ConBD.CerrarConexion();
                 }
+<<<<<<< HEAD
                 cmbDispositivos2.Text = "";
                 cmbCertificado2.Text = "";
                 cmbTipo2.Text = "";
@@ -345,12 +376,15 @@ namespace PiNaranja
 
 
                 
+=======
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
                 Refrescar();
             }
         }
 
         private void cmbDispositivos2_SelectedIndexChanged(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             Dispositivo dispo = new Dispositivo();
             if (ConBD.Conexion != null)
             {
@@ -413,6 +447,9 @@ namespace PiNaranja
                 grbtemporizadores.Visible = true;
                 cmbTemp.Text = dtv.Rows[n].Cells[0].Value.ToString();
             }
+=======
+
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
         }
     }
 }

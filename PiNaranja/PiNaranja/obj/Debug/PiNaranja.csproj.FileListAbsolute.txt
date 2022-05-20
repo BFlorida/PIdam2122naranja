@@ -321,6 +321,7 @@ C:\Users\parofe01\Documents\GitHome\Programacion\PI\PIULTIMO\PIULTIMO\PiNaranja\
 C:\Users\parofe01\Documents\GitHome\Programacion\PI\PIULTIMO\PIULTIMO\PiNaranja\obj\Debug\PiNaranja.csproj.CopyComplete
 C:\Users\parofe01\Documents\GitHome\Programacion\PI\PIULTIMO\PIULTIMO\PiNaranja\obj\Debug\PiNaranja.exe
 C:\Users\parofe01\Documents\GitHome\Programacion\PI\PIULTIMO\PIULTIMO\PiNaranja\obj\Debug\PiNaranja.pdb
+<<<<<<< HEAD
 C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\PIULTIMO\PIULTIMO\PiNaranja\bin\Debug\PiNaranja.exe.config
 C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\PIULTIMO\PIULTIMO\PiNaranja\bin\Debug\PiNaranja.exe
 C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\PIULTIMO\PIULTIMO\PiNaranja\bin\Debug\PiNaranja.pdb
@@ -387,3 +388,38 @@ C:\Users\Ari\Downloads\PiNaranja (1)\PiNaranja\obj\Debug\EN-GB\PiNaranja.resourc
 C:\Users\Ari\Downloads\PiNaranja (1)\PiNaranja\obj\Debug\PiNaranja.csproj.CopyComplete
 C:\Users\Ari\Downloads\PiNaranja (1)\PiNaranja\obj\Debug\PiNaranja.exe
 C:\Users\Ari\Downloads\PiNaranja (1)\PiNaranja\obj\Debug\PiNaranja.pdb
+=======
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\bin\Debug\PiNaranja.exe.config
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\bin\Debug\PiNaranja.exe
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\bin\Debug\PiNaranja.pdb
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\bin\Debug\EN-GB\PiNaranja.resources.dll
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\bin\Debug\MySql.Data.dll
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\bin\Debug\Google.Protobuf.dll
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\bin\Debug\ZstdNet.dll
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\bin\Debug\System.Memory.dll
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\bin\Debug\System.Buffers.dll
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\bin\Debug\MySql.Data.xml
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\obj\Debug\PiNaranja.csproj.AssemblyReference.cache
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\obj\Debug\PiNaranja.csproj.SuggestedBindingRedirects.cache
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\obj\Debug\PiNaranja.exe.config
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\obj\Debug\PiNaranja.FrmPanelControl.resources
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\obj\Debug\PiNaranja.FrmInicioSesion.resources
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\obj\Debug\PiNaranja.FrmCreaCuenta.resources
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\obj\Debug\PiNaranja.FrmRecuperarCuenta.resources
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\obj\Debug\PiNaranja.FrmReemplazarCasa.resources
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\obj\Debug\PiNaranja.Properties.Resources.resources
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\obj\Debug\PiNaranja.Recursos.Idioma.resources
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\obj\Debug\PiNaranja.FrmVerificacion.resources
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\obj\Debug\PiNaranja.Recursos.Idioma.EN-GB.resources
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\obj\Debug\PiNaranja.csproj.GenerateResource.cache
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\obj\Debug\PiNaranja.csproj.CoreCompileInputs.cache
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\obj\Debug\EN-GB\PiNaranja.resources.dll
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\obj\Debug\PiNaranja.csproj.CopyComplete
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\obj\Debug\PiNaranja.exe
+C:\Users\Álex\Documents\DAM\PI\F\PiNaranja\obj\Debug\PiNaranja.pdb
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b

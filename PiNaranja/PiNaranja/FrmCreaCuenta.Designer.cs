@@ -62,11 +62,18 @@
             // lblCorreo
             // 
             this.lblCorreo.AutoSize = true;
+<<<<<<< HEAD
             this.lblCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorreo.Location = new System.Drawing.Point(341, 166);
             this.lblCorreo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCorreo.Name = "lblCorreo";
             this.lblCorreo.Size = new System.Drawing.Size(66, 25);
+=======
+            this.lblCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorreo.Location = new System.Drawing.Point(234, 150);
+            this.lblCorreo.Name = "lblCorreo";
+            this.lblCorreo.Size = new System.Drawing.Size(48, 20);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.lblCorreo.TabIndex = 4;
             this.lblCorreo.Text = "Email:";
             this.lblCorreo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -74,70 +81,109 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
+<<<<<<< HEAD
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.Location = new System.Drawing.Point(337, 46);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(87, 25);
+=======
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(226, 46);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(65, 20);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.lblNombre.TabIndex = 3;
             this.lblNombre.Text = "Nombre:";
             // 
             // lblConstraseña
             // 
             this.lblConstraseña.AutoSize = true;
+<<<<<<< HEAD
             this.lblConstraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConstraseña.Location = new System.Drawing.Point(315, 229);
             this.lblConstraseña.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblConstraseña.Name = "lblConstraseña";
             this.lblConstraseña.Size = new System.Drawing.Size(120, 25);
+=======
+            this.lblConstraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConstraseña.Location = new System.Drawing.Point(214, 202);
+            this.lblConstraseña.Name = "lblConstraseña";
+            this.lblConstraseña.Size = new System.Drawing.Size(92, 20);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.lblConstraseña.TabIndex = 6;
             this.lblConstraseña.Text = "Contraseña:";
             // 
             // lblCreaCuenta
             // 
             this.lblCreaCuenta.AutoSize = true;
+<<<<<<< HEAD
             this.lblCreaCuenta.Font = new System.Drawing.Font("Tahoma", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCreaCuenta.Location = new System.Drawing.Point(277, 23);
             this.lblCreaCuenta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCreaCuenta.Name = "lblCreaCuenta";
             this.lblCreaCuenta.Size = new System.Drawing.Size(257, 53);
+=======
+            this.lblCreaCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCreaCuenta.Location = new System.Drawing.Point(152, 32);
+            this.lblCreaCuenta.Name = "lblCreaCuenta";
+            this.lblCreaCuenta.Size = new System.Drawing.Size(299, 25);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.lblCreaCuenta.TabIndex = 7;
             this.lblCreaCuenta.Text = "REGISTRO";
             // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.txtNombre.Location = new System.Drawing.Point(257, 75);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.txtNombre.Location = new System.Drawing.Point(172, 69);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(245, 30);
+            this.txtNombre.Size = new System.Drawing.Size(185, 26);
             this.txtNombre.TabIndex = 9;
             // 
             // txtCon
             // 
             this.txtCon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.txtCon.Location = new System.Drawing.Point(257, 258);
             this.txtCon.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.txtCon.Location = new System.Drawing.Point(172, 225);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.txtCon.Name = "txtCon";
-            this.txtCon.Size = new System.Drawing.Size(245, 30);
+            this.txtCon.Size = new System.Drawing.Size(185, 26);
             this.txtCon.TabIndex = 12;
             // 
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.txtEmail.Location = new System.Drawing.Point(257, 195);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.txtEmail.Location = new System.Drawing.Point(172, 173);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(245, 30);
+            this.txtEmail.Size = new System.Drawing.Size(185, 26);
             this.txtEmail.TabIndex = 11;
             // 
             // btnCrearCuenta
             // 
             this.btnCrearCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.btnCrearCuenta.Location = new System.Drawing.Point(257, 314);
             this.btnCrearCuenta.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrearCuenta.Name = "btnCrearCuenta";
             this.btnCrearCuenta.Size = new System.Drawing.Size(245, 44);
+=======
+            this.btnCrearCuenta.Location = new System.Drawing.Point(172, 270);
+            this.btnCrearCuenta.Name = "btnCrearCuenta";
+            this.btnCrearCuenta.Size = new System.Drawing.Size(185, 49);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.btnCrearCuenta.TabIndex = 13;
             this.btnCrearCuenta.Text = "CREAR CUENTA";
             this.btnCrearCuenta.UseVisualStyleBackColor = true;
@@ -159,30 +205,44 @@
             this.grbRellena.Controls.Add(this.lblCorreo);
             this.grbRellena.Controls.Add(this.lblNombre);
             this.grbRellena.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.grbRellena.Location = new System.Drawing.Point(29, 80);
             this.grbRellena.Margin = new System.Windows.Forms.Padding(4);
             this.grbRellena.Name = "grbRellena";
             this.grbRellena.Padding = new System.Windows.Forms.Padding(4);
             this.grbRellena.Size = new System.Drawing.Size(738, 397);
+=======
+            this.grbRellena.Location = new System.Drawing.Point(31, 81);
+            this.grbRellena.Name = "grbRellena";
+            this.grbRellena.Size = new System.Drawing.Size(525, 349);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.grbRellena.TabIndex = 14;
             this.grbRellena.TabStop = false;
             // 
             // txtNombreHogar
             // 
             this.txtNombreHogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.txtNombreHogar.Location = new System.Drawing.Point(257, 138);
             this.txtNombreHogar.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.txtNombreHogar.Location = new System.Drawing.Point(172, 120);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.txtNombreHogar.Name = "txtNombreHogar";
-            this.txtNombreHogar.Size = new System.Drawing.Size(245, 26);
+            this.txtNombreHogar.Size = new System.Drawing.Size(185, 23);
             this.txtNombreHogar.TabIndex = 17;
             // 
             // lblNombreHogar
             // 
             this.lblNombreHogar.AutoSize = true;
+<<<<<<< HEAD
             this.lblNombreHogar.Location = new System.Drawing.Point(287, 109);
             this.lblNombreHogar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+=======
+            this.lblNombreHogar.Location = new System.Drawing.Point(196, 97);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.lblNombreHogar.Name = "lblNombreHogar";
-            this.lblNombreHogar.Size = new System.Drawing.Size(176, 25);
+            this.lblNombreHogar.Size = new System.Drawing.Size(142, 20);
             this.lblNombreHogar.TabIndex = 16;
             this.lblNombreHogar.Text = "Nombre del Hogar:";
             // 
@@ -192,10 +252,17 @@
             this.cmbIdioma.Items.AddRange(new object[] {
             "Castellano",
             "English"});
+<<<<<<< HEAD
             this.cmbIdioma.Location = new System.Drawing.Point(636, 41);
             this.cmbIdioma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbIdioma.Name = "cmbIdioma";
             this.cmbIdioma.Size = new System.Drawing.Size(131, 24);
+=======
+            this.cmbIdioma.Location = new System.Drawing.Point(422, 20);
+            this.cmbIdioma.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbIdioma.Name = "cmbIdioma";
+            this.cmbIdioma.Size = new System.Drawing.Size(99, 28);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.cmbIdioma.TabIndex = 15;
             this.cmbIdioma.SelectedIndexChanged += new System.EventHandler(this.cmbIdioma_SelectedIndexChanged);
             // 
@@ -203,20 +270,28 @@
             // 
             this.lblIdioma.AutoSize = true;
             this.lblIdioma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.lblIdioma.Location = new System.Drawing.Point(665, 14);
             this.lblIdioma.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+=======
+            this.lblIdioma.Location = new System.Drawing.Point(346, 22);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.lblIdioma.Name = "lblIdioma";
-            this.lblIdioma.Size = new System.Drawing.Size(76, 25);
+            this.lblIdioma.Size = new System.Drawing.Size(61, 20);
             this.lblIdioma.TabIndex = 14;
             this.lblIdioma.Text = "Idioma:";
             // 
             // ptbSalir
             // 
             this.ptbSalir.Image = ((System.Drawing.Image)(resources.GetObject("ptbSalir.Image")));
+<<<<<<< HEAD
             this.ptbSalir.Location = new System.Drawing.Point(710, 538);
             this.ptbSalir.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.ptbSalir.Location = new System.Drawing.Point(534, 503);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.ptbSalir.Name = "ptbSalir";
-            this.ptbSalir.Size = new System.Drawing.Size(57, 57);
+            this.ptbSalir.Size = new System.Drawing.Size(43, 46);
             this.ptbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbSalir.TabIndex = 15;
             this.ptbSalir.TabStop = false;
@@ -276,28 +351,42 @@
             // 
             this.ptbLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbLogo.Image = ((System.Drawing.Image)(resources.GetObject("ptbLogo.Image")));
+<<<<<<< HEAD
             this.ptbLogo.Location = new System.Drawing.Point(225, 504);
             this.ptbLogo.Margin = new System.Windows.Forms.Padding(4);
             this.ptbLogo.Name = "ptbLogo";
             this.ptbLogo.Size = new System.Drawing.Size(370, 105);
+=======
+            this.ptbLogo.Location = new System.Drawing.Point(121, 436);
+            this.ptbLogo.Name = "ptbLogo";
+            this.ptbLogo.Size = new System.Drawing.Size(341, 113);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.ptbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbLogo.TabIndex = 8;
             this.ptbLogo.TabStop = false;
             // 
             // FrmCreaCuenta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(804, 639);
             this.Controls.Add(this.pictureBox1);
+=======
+            this.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.ClientSize = new System.Drawing.Size(589, 561);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.Controls.Add(this.ptbSalir);
             this.Controls.Add(this.grbRellena);
             this.Controls.Add(this.ptbLogo);
             this.Controls.Add(this.lblCreaCuenta);
+<<<<<<< HEAD
             this.Controls.Add(this.cmbIdioma);
             this.Controls.Add(this.lblIdioma);
             this.Margin = new System.Windows.Forms.Padding(4);
+=======
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.Name = "FrmCreaCuenta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Crea Cuenta";

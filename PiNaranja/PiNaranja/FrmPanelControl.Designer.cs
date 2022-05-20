@@ -64,6 +64,7 @@
             this.lblTipo2 = new System.Windows.Forms.Label();
             this.lblEstancia2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+<<<<<<< HEAD
             this.btnDeleteHome = new System.Windows.Forms.Button();
             this.btnEliminarCuenta = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -83,6 +84,12 @@
             this.btnApagar = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+=======
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.btnDeleteHome = new System.Windows.Forms.Button();
+            this.btnEliminarCuenta = new System.Windows.Forms.Button();
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.btnSalir = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -90,6 +97,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ptbLogo = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.ptbTip = new System.Windows.Forms.PictureBox();
@@ -101,11 +109,32 @@
             this.ptbTipo = new System.Windows.Forms.PictureBox();
             this.ptbCertificado = new System.Windows.Forms.PictureBox();
             this.ptbNombre = new System.Windows.Forms.PictureBox();
+=======
+            this.btnMostrarModDis = new System.Windows.Forms.Button();
+            this.btnMostrarDis = new System.Windows.Forms.Button();
+            this.grbtemporizadores = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblFaltan2 = new System.Windows.Forms.Label();
+            this.lblFaltan = new System.Windows.Forms.Label();
+            this.btnParar2 = new System.Windows.Forms.Button();
+            this.btnParar = new System.Windows.Forms.Button();
+            this.btnConfigurar2 = new System.Windows.Forms.Button();
+            this.btnConfigurar = new System.Windows.Forms.Button();
+            this.mtxtTemp2 = new System.Windows.Forms.MaskedTextBox();
+            this.mtxtTemp = new System.Windows.Forms.MaskedTextBox();
+            this.tmrCrono = new System.Windows.Forms.Timer(this.components);
+            this.tmrCrono2 = new System.Windows.Forms.Timer(this.components);
+            this.lblnamehouse = new System.Windows.Forms.Label();
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             ((System.ComponentModel.ISupportInitialize)(this.dtv)).BeginInit();
             this.grbAnyadirDispositivo.SuspendLayout();
             this.ptbEst.SuspendLayout();
             this.groupBox1.SuspendLayout();
+<<<<<<< HEAD
             this.grbtemporizadores.SuspendLayout();
+=======
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -130,10 +159,17 @@
             // 
             this.dtv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtv.Location = new System.Drawing.Point(235, 551);
+<<<<<<< HEAD
             this.dtv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtv.Name = "dtv";
             this.dtv.RowHeadersWidth = 51;
             this.dtv.Size = new System.Drawing.Size(1203, 222);
+=======
+            this.dtv.Margin = new System.Windows.Forms.Padding(4);
+            this.dtv.Name = "dtv";
+            this.dtv.RowHeadersWidth = 51;
+            this.dtv.Size = new System.Drawing.Size(723, 222);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.dtv.TabIndex = 0;
             this.dtv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_CellContentClick);
             this.dtv.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_CellDoubleClick);
@@ -146,9 +182,15 @@
             this.lblDispositivosRegistrados.Location = new System.Drawing.Point(235, 521);
             this.lblDispositivosRegistrados.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDispositivosRegistrados.Name = "lblDispositivosRegistrados";
+<<<<<<< HEAD
             this.lblDispositivosRegistrados.Size = new System.Drawing.Size(221, 27);
             this.lblDispositivosRegistrados.TabIndex = 2;
             this.lblDispositivosRegistrados.Text = "DispositivosRegistrados";
+=======
+            this.lblDispositivosRegistrados.Size = new System.Drawing.Size(226, 27);
+            this.lblDispositivosRegistrados.TabIndex = 2;
+            this.lblDispositivosRegistrados.Text = "Dispositivos Registrados";
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.lblDispositivosRegistrados.Visible = false;
             // 
             // lblClick
@@ -202,13 +244,58 @@
             this.grbAnyadirDispositivo.Text = "Agregar Dispositivos";
             this.grbAnyadirDispositivo.Visible = false;
             // 
+<<<<<<< HEAD
+=======
+            // txtEuros
+            // 
+            this.txtEuros.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEuros.Location = new System.Drawing.Point(219, 130);
+            this.txtEuros.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEuros.Name = "txtEuros";
+            this.txtEuros.Size = new System.Drawing.Size(101, 26);
+            this.txtEuros.TabIndex = 32;
+            // 
+            // lblPrecio
+            // 
+            this.lblPrecio.AutoSize = true;
+            this.lblPrecio.Location = new System.Drawing.Point(195, 130);
+            this.lblPrecio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPrecio.Name = "lblPrecio";
+            this.lblPrecio.Size = new System.Drawing.Size(29, 25);
+            this.lblPrecio.TabIndex = 31;
+            this.lblPrecio.Text = "€:";
+            // 
+            // txtW
+            // 
+            this.txtW.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtW.Location = new System.Drawing.Point(116, 130);
+            this.txtW.Margin = new System.Windows.Forms.Padding(4);
+            this.txtW.Name = "txtW";
+            this.txtW.Size = new System.Drawing.Size(80, 26);
+            this.txtW.TabIndex = 30;
+            // 
+            // lblW
+            // 
+            this.lblW.AutoSize = true;
+            this.lblW.Location = new System.Drawing.Point(43, 129);
+            this.lblW.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblW.Name = "lblW";
+            this.lblW.Size = new System.Drawing.Size(73, 25);
+            this.lblW.TabIndex = 29;
+            this.lblW.Text = "Vatios:";
+            // 
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             // btnAgregarDispositivo
             // 
             this.btnAgregarDispositivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarDispositivo.Location = new System.Drawing.Point(566, 166);
             this.btnAgregarDispositivo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAgregarDispositivo.Name = "btnAgregarDispositivo";
+<<<<<<< HEAD
             this.btnAgregarDispositivo.Size = new System.Drawing.Size(120, 53);
+=======
+            this.btnAgregarDispositivo.Size = new System.Drawing.Size(255, 39);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.btnAgregarDispositivo.TabIndex = 28;
             this.btnAgregarDispositivo.Text = "Agregar";
             this.btnAgregarDispositivo.UseVisualStyleBackColor = true;
@@ -238,8 +325,13 @@
             this.cmbTipo.FormattingEnabled = true;
             this.cmbTipo.Items.AddRange(new object[] {
             "a"});
+<<<<<<< HEAD
             this.cmbTipo.Location = new System.Drawing.Point(529, 60);
             this.cmbTipo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.cmbTipo.Location = new System.Drawing.Point(436, 38);
+            this.cmbTipo.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(165, 33);
             this.cmbTipo.TabIndex = 25;
@@ -275,7 +367,11 @@
             // lblTipo
             // 
             this.lblTipo.AutoSize = true;
+<<<<<<< HEAD
             this.lblTipo.Location = new System.Drawing.Point(423, 63);
+=======
+            this.lblTipo.Location = new System.Drawing.Point(371, 41);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.lblTipo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTipo.Name = "lblTipo";
             this.lblTipo.Size = new System.Drawing.Size(57, 25);
@@ -397,6 +493,23 @@
             this.lblPrecio2.TabIndex = 33;
             this.lblPrecio2.Text = "€:";
             // 
+<<<<<<< HEAD
+=======
+            // btnEliminar
+            // 
+            this.btnEliminar.BackgroundImage = global::PiNaranja.Properties.Resources._9035535_trash_outline_icon;
+            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(453, 121);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(107, 39);
+            this.btnEliminar.TabIndex = 32;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             // cmbDispositivos2
             // 
             this.cmbDispositivos2.FormattingEnabled = true;
@@ -420,7 +533,11 @@
             // lblW2
             // 
             this.lblW2.AutoSize = true;
+<<<<<<< HEAD
             this.lblW2.Location = new System.Drawing.Point(122, 139);
+=======
+            this.lblW2.Location = new System.Drawing.Point(43, 134);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.lblW2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblW2.Name = "lblW2";
             this.lblW2.Size = new System.Drawing.Size(73, 25);
@@ -470,8 +587,13 @@
             // txtEstancia2
             // 
             this.txtEstancia2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.txtEstancia2.Location = new System.Drawing.Point(504, 86);
             this.txtEstancia2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.txtEstancia2.Location = new System.Drawing.Point(443, 82);
+            this.txtEstancia2.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.txtEstancia2.Name = "txtEstancia2";
             this.txtEstancia2.Size = new System.Drawing.Size(131, 26);
             this.txtEstancia2.TabIndex = 3;
@@ -499,7 +621,11 @@
             // lblEstancia2
             // 
             this.lblEstancia2.AutoSize = true;
+<<<<<<< HEAD
             this.lblEstancia2.Location = new System.Drawing.Point(409, 86);
+=======
+            this.lblEstancia2.Location = new System.Drawing.Point(305, 82);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.lblEstancia2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEstancia2.Name = "lblEstancia2";
             this.lblEstancia2.Size = new System.Drawing.Size(98, 25);
@@ -534,6 +660,7 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
+<<<<<<< HEAD
             // btnDeleteHome
             // 
             this.btnDeleteHome.FlatAppearance.BorderSize = 0;
@@ -547,9 +674,74 @@
             this.btnDeleteHome.Text = "Eliminar Casa";
             this.btnDeleteHome.UseVisualStyleBackColor = true;
             this.btnDeleteHome.Click += new System.EventHandler(this.btnDeleteHome_Click);
+=======
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::PiNaranja.Properties.Resources.trash_xxl;
+            this.pictureBox7.Location = new System.Drawing.Point(13, 581);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(52, 50);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 24;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::PiNaranja.Properties.Resources.disapprove_xxl;
+            this.pictureBox6.Location = new System.Drawing.Point(13, 514);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(52, 50);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 23;
+            this.pictureBox6.TabStop = false;
+            // 
+            // btnDeleteHome
+            // 
+            this.btnDeleteHome.FlatAppearance.BorderSize = 0;
+            this.btnDeleteHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteHome.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnDeleteHome.Location = new System.Drawing.Point(65, 581);
+            this.btnDeleteHome.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDeleteHome.Name = "btnDeleteHome";
+            this.btnDeleteHome.Size = new System.Drawing.Size(141, 50);
+            this.btnDeleteHome.TabIndex = 22;
+            this.btnDeleteHome.Text = "Eliminar Casa";
+            this.btnDeleteHome.UseVisualStyleBackColor = true;
+            this.btnDeleteHome.Click += new System.EventHandler(this.btnDeleteHome_Click);
             // 
             // btnEliminarCuenta
             // 
+            this.btnEliminarCuenta.FlatAppearance.BorderSize = 0;
+            this.btnEliminarCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarCuenta.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnEliminarCuenta.Location = new System.Drawing.Point(65, 514);
+            this.btnEliminarCuenta.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminarCuenta.Name = "btnEliminarCuenta";
+            this.btnEliminarCuenta.Size = new System.Drawing.Size(141, 50);
+            this.btnEliminarCuenta.TabIndex = 21;
+            this.btnEliminarCuenta.Text = "Eliminar Cuenta";
+            this.btnEliminarCuenta.UseVisualStyleBackColor = true;
+            this.btnEliminarCuenta.Click += new System.EventHandler(this.btnEliminarCuenta_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnSalir.BackgroundImage = global::PiNaranja.Properties.Resources.door_5_xxl;
+            this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSalir.Location = new System.Drawing.Point(65, 737);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(77, 73);
+            this.btnSalir.TabIndex = 20;
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
+            // 
+            // btnEliminarCuenta
+            // 
+<<<<<<< HEAD
             this.btnEliminarCuenta.FlatAppearance.BorderSize = 0;
             this.btnEliminarCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarCuenta.ForeColor = System.Drawing.SystemColors.Control;
@@ -561,6 +753,60 @@
             this.btnEliminarCuenta.Text = "Eliminar Cuenta";
             this.btnEliminarCuenta.UseVisualStyleBackColor = true;
             this.btnEliminarCuenta.Click += new System.EventHandler(this.btnEliminarCuenta_Click);
+=======
+            this.pictureBox5.Image = global::PiNaranja.Properties.Resources.time_13_xxl;
+            this.pictureBox5.Location = new System.Drawing.Point(13, 434);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(52, 50);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 10;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::PiNaranja.Properties.Resources.literature_xxl;
+            this.pictureBox4.Location = new System.Drawing.Point(13, 357);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(52, 50);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::PiNaranja.Properties.Resources.info_2_xxl;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 277);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(53, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PiNaranja.Properties.Resources.website_design_2_xxl;
+            this.pictureBox2.Location = new System.Drawing.Point(13, 194);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(52, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PiNaranja.Properties.Resources.box_5_xxl;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 110);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(52, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             // 
             // button4
             // 
@@ -836,6 +1082,7 @@
             // 
             // pictureBox10
             // 
+<<<<<<< HEAD
             this.pictureBox10.Image = global::PiNaranja.Properties.Resources.simbolo;
             this.pictureBox10.Location = new System.Drawing.Point(77, 137);
             this.pictureBox10.Name = "pictureBox10";
@@ -843,9 +1090,23 @@
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 52;
             this.pictureBox10.TabStop = false;
+=======
+            this.btnMostrarModDis.FlatAppearance.BorderSize = 0;
+            this.btnMostrarModDis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMostrarModDis.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnMostrarModDis.Location = new System.Drawing.Point(71, 193);
+            this.btnMostrarModDis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMostrarModDis.Name = "btnMostrarModDis";
+            this.btnMostrarModDis.Size = new System.Drawing.Size(135, 50);
+            this.btnMostrarModDis.TabIndex = 1;
+            this.btnMostrarModDis.Text = "Modificar Dispositivo";
+            this.btnMostrarModDis.UseVisualStyleBackColor = true;
+            this.btnMostrarModDis.Click += new System.EventHandler(this.btnMostrarModDis_Click);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             // 
             // pictureBox9
             // 
+<<<<<<< HEAD
             this.pictureBox9.Image = global::PiNaranja.Properties.Resources.electrodomestico;
             this.pictureBox9.Location = new System.Drawing.Point(361, 30);
             this.pictureBox9.Name = "pictureBox9";
@@ -853,9 +1114,23 @@
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 51;
             this.pictureBox9.TabStop = false;
+=======
+            this.btnMostrarDis.FlatAppearance.BorderSize = 0;
+            this.btnMostrarDis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMostrarDis.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnMostrarDis.Location = new System.Drawing.Point(65, 110);
+            this.btnMostrarDis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMostrarDis.Name = "btnMostrarDis";
+            this.btnMostrarDis.Size = new System.Drawing.Size(141, 50);
+            this.btnMostrarDis.TabIndex = 0;
+            this.btnMostrarDis.Text = "Nuevo DIspositivo";
+            this.btnMostrarDis.UseVisualStyleBackColor = true;
+            this.btnMostrarDis.Click += new System.EventHandler(this.btnMostrarDis_Click);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             // 
             // ptbTip
             // 
+<<<<<<< HEAD
             this.ptbTip.Image = global::PiNaranja.Properties.Resources.pasillo;
             this.ptbTip.Location = new System.Drawing.Point(361, 78);
             this.ptbTip.Name = "ptbTip";
@@ -927,6 +1202,55 @@
             this.ptbTipo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbTipo.TabIndex = 48;
             this.ptbTipo.TabStop = false;
+=======
+            this.grbtemporizadores.Controls.Add(this.comboBox2);
+            this.grbtemporizadores.Controls.Add(this.comboBox1);
+            this.grbtemporizadores.Controls.Add(this.lblFaltan2);
+            this.grbtemporizadores.Controls.Add(this.lblFaltan);
+            this.grbtemporizadores.Controls.Add(this.btnParar2);
+            this.grbtemporizadores.Controls.Add(this.btnParar);
+            this.grbtemporizadores.Controls.Add(this.btnConfigurar2);
+            this.grbtemporizadores.Controls.Add(this.btnConfigurar);
+            this.grbtemporizadores.Controls.Add(this.mtxtTemp2);
+            this.grbtemporizadores.Controls.Add(this.mtxtTemp);
+            this.grbtemporizadores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbtemporizadores.Location = new System.Drawing.Point(235, 270);
+            this.grbtemporizadores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbtemporizadores.Name = "grbtemporizadores";
+            this.grbtemporizadores.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbtemporizadores.Size = new System.Drawing.Size(613, 226);
+            this.grbtemporizadores.TabIndex = 42;
+            this.grbtemporizadores.TabStop = false;
+            this.grbtemporizadores.Text = "Temporizadores ";
+            this.grbtemporizadores.Visible = false;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(319, 37);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(249, 33);
+            this.comboBox2.TabIndex = 9;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(11, 37);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(241, 33);
+            this.comboBox1.TabIndex = 8;
+            // 
+            // lblFaltan2
+            // 
+            this.lblFaltan2.AutoSize = true;
+            this.lblFaltan2.Location = new System.Drawing.Point(315, 174);
+            this.lblFaltan2.Name = "lblFaltan2";
+            this.lblFaltan2.Size = new System.Drawing.Size(77, 25);
+            this.lblFaltan2.TabIndex = 7;
+            this.lblFaltan2.Text = "Faltan2";
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             // 
             // ptbCertificado
             // 
@@ -938,6 +1262,7 @@
             this.ptbCertificado.TabIndex = 47;
             this.ptbCertificado.TabStop = false;
             // 
+<<<<<<< HEAD
             // ptbNombre
             // 
             this.ptbNombre.Image = global::PiNaranja.Properties.Resources.nombre;
@@ -949,6 +1274,96 @@
             this.ptbNombre.TabStop = false;
             // 
             // pcbCertificado
+=======
+            // btnParar2
+            // 
+            this.btnParar2.Location = new System.Drawing.Point(447, 76);
+            this.btnParar2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnParar2.Name = "btnParar2";
+            this.btnParar2.Size = new System.Drawing.Size(123, 34);
+            this.btnParar2.TabIndex = 5;
+            this.btnParar2.Text = "Detener";
+            this.btnParar2.UseVisualStyleBackColor = true;
+            this.btnParar2.Click += new System.EventHandler(this.btnParar2_Click);
+            // 
+            // btnParar
+            // 
+            this.btnParar.Location = new System.Drawing.Point(141, 78);
+            this.btnParar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnParar.Name = "btnParar";
+            this.btnParar.Size = new System.Drawing.Size(112, 34);
+            this.btnParar.TabIndex = 4;
+            this.btnParar.Text = "Detener";
+            this.btnParar.UseVisualStyleBackColor = true;
+            this.btnParar.Click += new System.EventHandler(this.btnParar_Click);
+            // 
+            // btnConfigurar2
+            // 
+            this.btnConfigurar2.Location = new System.Drawing.Point(319, 116);
+            this.btnConfigurar2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnConfigurar2.Name = "btnConfigurar2";
+            this.btnConfigurar2.Size = new System.Drawing.Size(251, 41);
+            this.btnConfigurar2.TabIndex = 3;
+            this.btnConfigurar2.Text = "Configurar/Reanudar";
+            this.btnConfigurar2.UseVisualStyleBackColor = true;
+            this.btnConfigurar2.Click += new System.EventHandler(this.btnConfigurar2_Click);
+            // 
+            // btnConfigurar
+            // 
+            this.btnConfigurar.Location = new System.Drawing.Point(11, 122);
+            this.btnConfigurar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnConfigurar.Name = "btnConfigurar";
+            this.btnConfigurar.Size = new System.Drawing.Size(243, 41);
+            this.btnConfigurar.TabIndex = 2;
+            this.btnConfigurar.Text = "Configurar/Reanudar";
+            this.btnConfigurar.UseVisualStyleBackColor = true;
+            this.btnConfigurar.Click += new System.EventHandler(this.btnConfigurar_Click);
+            // 
+            // mtxtTemp2
+            // 
+            this.mtxtTemp2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtxtTemp2.Location = new System.Drawing.Point(319, 78);
+            this.mtxtTemp2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.mtxtTemp2.Mask = "00:00:00";
+            this.mtxtTemp2.Name = "mtxtTemp2";
+            this.mtxtTemp2.Size = new System.Drawing.Size(121, 34);
+            this.mtxtTemp2.TabIndex = 1;
+            this.mtxtTemp2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mtxtTemp2.ValidatingType = typeof(System.DateTime);
+            // 
+            // mtxtTemp
+            // 
+            this.mtxtTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtxtTemp.Location = new System.Drawing.Point(11, 76);
+            this.mtxtTemp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.mtxtTemp.Mask = "00:00:00";
+            this.mtxtTemp.Name = "mtxtTemp";
+            this.mtxtTemp.Size = new System.Drawing.Size(124, 34);
+            this.mtxtTemp.TabIndex = 0;
+            this.mtxtTemp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mtxtTemp.ValidatingType = typeof(System.DateTime);
+            // 
+            // tmrCrono
+            // 
+            this.tmrCrono.Interval = 1000;
+            this.tmrCrono.Tick += new System.EventHandler(this.tmrCrono_Tick);
+            // 
+            // tmrCrono2
+            // 
+            this.tmrCrono2.Interval = 1000;
+            this.tmrCrono2.Tick += new System.EventHandler(this.tmrCrono2_Tick);
+            // 
+            // lblnamehouse
+            // 
+            this.lblnamehouse.AutoSize = true;
+            this.lblnamehouse.Location = new System.Drawing.Point(243, 70);
+            this.lblnamehouse.Name = "lblnamehouse";
+            this.lblnamehouse.Size = new System.Drawing.Size(92, 16);
+            this.lblnamehouse.TabIndex = 43;
+            this.lblnamehouse.Text = "lblnamehouse";
+            // 
+            // FrmPanelControl
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -966,8 +1381,13 @@
             this.Controls.Add(this.lblClick);
             this.Controls.Add(this.lblDispositivosRegistrados);
             this.Controls.Add(this.dtv);
+<<<<<<< HEAD
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "pcbCertificado";
+=======
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "FrmPanelControl";
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Panel de Control";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -977,8 +1397,11 @@
             this.ptbEst.ResumeLayout(false);
             this.ptbEst.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+<<<<<<< HEAD
             this.grbtemporizadores.ResumeLayout(false);
             this.grbtemporizadores.PerformLayout();
+=======
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -1058,11 +1481,18 @@
         private System.Windows.Forms.Button btnParar;
         private System.Windows.Forms.Timer tmrCrono;
         private System.Windows.Forms.Timer tmrCrono2;
+<<<<<<< HEAD
         private System.Windows.Forms.ComboBox cmbTemp;
+=======
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblnamehouse;
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
         private System.Windows.Forms.Button btnEliminarCuenta;
         private System.Windows.Forms.Button btnDeleteHome;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox6;
+<<<<<<< HEAD
         private System.Windows.Forms.Button btnEncender;
         private System.Windows.Forms.Button btnApagar;
         private System.Windows.Forms.PictureBox ptbNombre;
@@ -1075,5 +1505,7 @@
         private System.Windows.Forms.PictureBox ptbTip;
         private System.Windows.Forms.PictureBox ptbCert;
         private System.Windows.Forms.PictureBox ptbDispositivo;
+=======
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
     }
 }

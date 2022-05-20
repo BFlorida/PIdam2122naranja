@@ -156,6 +156,7 @@ namespace PInaranja.Clases
         {
             int retorno;
 
+<<<<<<< HEAD
             string consulta = String.Format("UPDATE dispositivo SET certificado = @cert, tipo = @tipo, consumoBase = @cBa, precioBase = @preBa, estancia = @est WHERE nombreDispo = @nom");
 
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
@@ -165,6 +166,11 @@ namespace PInaranja.Clases
             comando.Parameters.AddWithValue("cBa", disp.consumoBase);
             comando.Parameters.AddWithValue("preBa", disp.consumoPrecio);
             comando.Parameters.AddWithValue("est", disp.estancia);
+=======
+            string consulta = String.Format("UPDATE dispositivo SET consumoBase = '{0}' WHERE nombreDispo = '{1}'",Dispositivo.CalcularConsumo(tipo,certificado),nombre);
+
+            MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             retorno = comando.ExecuteNonQuery();
 
             return retorno;
@@ -175,11 +181,19 @@ namespace PInaranja.Clases
         /// </summary>
         /// <param name="nombre del dispositivom(campo clave de Dispositivo)"></param>
         /// <returns>Número entero (0-1)que determinará si se ha eliminado el dispositivo o no</returns>
+<<<<<<< HEAD
         public static int Encender(string disp)
         {
             int retorno;
 
             string consulta = String.Format("UPDATE dispositivo SET encendido = TRUE WHERE nombreDispo = '{0}'",disp);
+=======
+        public static int Encender(Dispositivo disp)
+        {
+            int retorno;
+
+            string consulta = String.Format("UPDATE dispositivo SET encendido = TRUE WHERE nombreDispo = '{0}'",disp.encendido);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
 
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
             retorno = comando.ExecuteNonQuery();
@@ -192,11 +206,19 @@ namespace PInaranja.Clases
         /// </summary>
         /// <param name="nombre del dispositivom(campo clave de Dispositivo)"></param>
         /// <returns>Número entero (0-1)que determinará si se ha eliminado el dispositivo o no.</returns>
+<<<<<<< HEAD
         public static int Apagar(string disp)
         {
             int retorno;
 
             string consulta = String.Format("UPDATE dispositivo SET encendido = FALSE WHERE nombreDispo = '{0}'",disp);
+=======
+        public static int Apagar(Dispositivo disp)
+        {
+            int retorno;
+
+            string consulta = String.Format("UPDATE dispositivo SET encendido = FALSE WHERE nombreDispo = '{0}'",disp.encendido);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
 
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
             retorno = comando.ExecuteNonQuery();
@@ -301,6 +323,22 @@ namespace PInaranja.Clases
             {
                 lista.Add(new Dispositivo(reader.GetString(0), reader.GetBoolean(1), reader.GetString(2), reader.GetString(3),
                     reader.GetDouble(4), reader.GetDouble(5), reader.GetString(6), reader.GetString(7)));
+<<<<<<< HEAD
+=======
+            }
+            return lista;
+        }
+        public static List<Dispositivo> ListaDispositivos2()
+        {
+            List<Dispositivo> lista = new List<Dispositivo>();
+            String consulta = String.Format("SELECT nombreDispo FROM dispositivo;");
+            MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            while (reader.Read())
+            {
+                lista.Add(new Dispositivo(reader.GetString(0)));
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
             }
             return lista;
         }

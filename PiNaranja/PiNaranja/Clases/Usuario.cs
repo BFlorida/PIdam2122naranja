@@ -237,6 +237,7 @@ namespace PInaranja.Clases
                 return false;
             }
         }
+<<<<<<< HEAD
         public static int CambiarContrasenya(string nom,string con)
         {
             int retorno;
@@ -250,6 +251,9 @@ namespace PInaranja.Clases
 
             return retorno;
         }
+=======
+
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
 
 
 

@@ -51,7 +51,11 @@ namespace PiNaranja
                                 {
                                     usuario = txtUsuario.Text;
                                     ConBD.CerrarConexion();
+<<<<<<< HEAD
                                     pcbCertificado frmpc = new pcbCertificado(usuario);
+=======
+                                    FrmPanelControl frmpc = new FrmPanelControl(usuario);
+>>>>>>> 99276047efc7dadc2c20f06cbb3dacffdd2cf47b
                                     frmpc.Show();
                                     this.Hide();
                                 }
