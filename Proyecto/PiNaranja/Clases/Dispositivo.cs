@@ -1,9 +1,12 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using PiNaranja.Clases;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.Globalization;
+using System.IO;
+using System.Windows.Forms;
 
 namespace PInaranja.Clases
 {
@@ -30,7 +33,7 @@ namespace PInaranja.Clases
         public string Certificado { get => certificado; set => certificado = value; }
         public string NomCasa { get => nomCasa; set => nomCasa = value; }
 
-        public Dispositivo(string nombre, bool encendido, string certificado,string tipo, double consumoBase, double precioBase, string estancia, string casa)
+        public Dispositivo(string nombre, bool encendido, string certificado, string tipo, double consumoBase, double precioBase, string estancia, string casa)
         {
             this.nombre = nombre;
             this.encendido = encendido;
@@ -85,7 +88,7 @@ namespace PInaranja.Clases
         {
 
         }
-        
+
         /// <summary>
         /// Añade un dispositivo
         /// </summary>
@@ -101,11 +104,15 @@ namespace PInaranja.Clases
             comando.Parameters.AddWithValue("nom", disp.nombre);
             comando.Parameters.AddWithValue("cert", disp.certificado);
             comando.Parameters.AddWithValue("tipo", disp.tipo);
-            comando.Parameters.AddWithValue("cBa", Math.Round(disp.consumoBase,2));
-            comando.Parameters.AddWithValue("preBa", Math.Round(disp.consumoPrecio,2));
+            comando.Parameters.AddWithValue("cBa", Math.Round(disp.consumoBase, 2));
+            comando.Parameters.AddWithValue("preBa", Math.Round(disp.consumoPrecio, 2));
             comando.Parameters.AddWithValue("est", disp.estancia);
             comando.Parameters.AddWithValue("nCa", disp.nomCasa);
             retorno = comando.ExecuteNonQuery();
+
+            Log.Add("Insertado un dispositivo --> Nombre: " + disp.Nombre + " -- Certificado: " + disp.Certificado +
+               " -- Tipo: " + disp.Tipo + " -- Consumo Base: " + disp.ConsumoBase + " -- Consumo Precio: " +
+               disp.ConsumoPrecio + " -- Estancia: " + disp.Estancia + " -- Nombre Casa: " + disp.NomCasa);
 
             return retorno;
         }
@@ -125,6 +132,8 @@ namespace PInaranja.Clases
             comando.Parameters.AddWithValue("nom", disp);
 
             retorno = comando.ExecuteNonQuery();
+
+            Log.Add("Dispositivo eliminado --> Nombre dispositivo: " + disp);
 
             return retorno;
         }
@@ -151,7 +160,7 @@ namespace PInaranja.Clases
             return false;
         }
 
-            //Ver como introducir
+        //Ver como introducir
         public static int EditarDispositivo(Dispositivo disp)
         {
             int retorno;
@@ -159,12 +168,12 @@ namespace PInaranja.Clases
             string consulta = String.Format("UPDATE dispositivo SET certificado = @cert, tipo = @tipo, consumoBase = @cBa, precioBase = @preBa, estancia = @est WHERE nombreDispo = @nom");
 
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
-            comando.Parameters.AddWithValue("nom", disp.nombre);
             comando.Parameters.AddWithValue("cert", disp.certificado);
             comando.Parameters.AddWithValue("tipo", disp.tipo);
             comando.Parameters.AddWithValue("cBa", disp.consumoBase);
             comando.Parameters.AddWithValue("preBa", disp.consumoPrecio);
             comando.Parameters.AddWithValue("est", disp.estancia);
+            comando.Parameters.AddWithValue("nom", disp.nombre);
             retorno = comando.ExecuteNonQuery();
 
             return retorno;
@@ -179,10 +188,12 @@ namespace PInaranja.Clases
         {
             int retorno;
 
-            string consulta = String.Format("UPDATE dispositivo SET encendido = TRUE WHERE nombreDispo = '{0}'",disp);
+            string consulta = String.Format("UPDATE dispositivo SET encendido = TRUE WHERE nombreDispo = '{0}'", disp);
 
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
             retorno = comando.ExecuteNonQuery();
+
+            Log.Add("Dispositivo encendido --> Nombre: " + disp);
 
             return retorno;
         }
@@ -196,27 +207,29 @@ namespace PInaranja.Clases
         {
             int retorno;
 
-            string consulta = String.Format("UPDATE dispositivo SET encendido = FALSE WHERE nombreDispo = '{0}'",disp);
+            string consulta = String.Format("UPDATE dispositivo SET encendido = FALSE WHERE nombreDispo = '{0}'", disp);
 
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
             retorno = comando.ExecuteNonQuery();
+
+            Log.Add("Dispositivo apagado --> Nombre: " + disp);
 
             return retorno;
         }
 
         //Método alterar alternativo. 
-        public static int AlterarEstado(string nom,bool enc)
+        public static int AlterarEstado(string nom, bool enc)
         {
             int retorno;
             bool estado;
             string consulta;
-            if (enc==false)
+            if (enc == false)
             {
-                estado= true;
+                estado = true;
             }
             else
             {
-                estado= false;
+                estado = false;
             }
             consulta = String.Format("UPDATE dispositivo SET encendido = @est WHERE nombreDispo = @nom;");
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
@@ -232,16 +245,16 @@ namespace PInaranja.Clases
             switch (tipo)
             {
                 case "Lavadora":
-                    consumoBase = 330;
+                    consumoBase = 410;
                     break;
                 case "Horno":
-                    consumoBase = 950;
+                    consumoBase = 860;
                     break;
                 case "Lavavajillas":
-                    consumoBase = 980;
+                    consumoBase = 380;
                     break;
                 case "TV":
-                    consumoBase = 475;
+                    consumoBase = 200;
                     break;
                 case "Luces":
                     consumoBase = 10;
@@ -289,7 +302,12 @@ namespace PInaranja.Clases
             return consumoBase * 0.2;
         }
 
-
+        public static double TotalConsumo()
+        {
+            double consumo = 0;
+            
+            return consumo;
+        }
         public static List<Dispositivo> ListaDispositivos1(string casa)
         {
             List<Dispositivo> lista = new List<Dispositivo>();

@@ -88,11 +88,29 @@ namespace PiNaranja.Recursos {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Apagar.
+        /// </summary>
+        internal static string btnApagar {
+            get {
+                return ResourceManager.GetString("btnApagar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Consumo/Hora.
         /// </summary>
         internal static string btnCalculo {
             get {
                 return ResourceManager.GetString("btnCalculo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Configurar/Reanudar.
+        /// </summary>
+        internal static string btnconfigurar {
+            get {
+                return ResourceManager.GetString("btnconfigurar", resourceCulture);
             }
         }
         
@@ -106,11 +124,38 @@ namespace PiNaranja.Recursos {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Eliminar Casa.
+        /// </summary>
+        internal static string btnDeleteHome {
+            get {
+                return ResourceManager.GetString("btnDeleteHome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Eliminar Dispositivo.
         /// </summary>
         internal static string btnEliminaDispositivo {
             get {
                 return ResourceManager.GetString("btnEliminaDispositivo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Eliminar.
+        /// </summary>
+        internal static string btnEliminar {
+            get {
+                return ResourceManager.GetString("btnEliminar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Eliminar Cuenta.
+        /// </summary>
+        internal static string btnEliminarCuenta {
+            get {
+                return ResourceManager.GetString("btnEliminarCuenta", resourceCulture);
             }
         }
         
@@ -133,6 +178,15 @@ namespace PiNaranja.Recursos {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Encender.
+        /// </summary>
+        internal static string btnEncender {
+            get {
+                return ResourceManager.GetString("btnEncender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Inicio Sesión.
         /// </summary>
         internal static string btnInicioSesion {
@@ -147,6 +201,60 @@ namespace PiNaranja.Recursos {
         internal static string btnLog {
             get {
                 return ResourceManager.GetString("btnLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cambiar.
+        /// </summary>
+        internal static string btnModificar {
+            get {
+                return ResourceManager.GetString("btnModificar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Nuevo Dispositivo.
+        /// </summary>
+        internal static string btnMostrarDis {
+            get {
+                return ResourceManager.GetString("btnMostrarDis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Modificar Dispositivo.
+        /// </summary>
+        internal static string btnMostrarModDis {
+            get {
+                return ResourceManager.GetString("btnMostrarModDis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Detener.
+        /// </summary>
+        internal static string btnParar {
+            get {
+                return ResourceManager.GetString("btnParar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Registros.
+        /// </summary>
+        internal static string btnRegistro {
+            get {
+                return ResourceManager.GetString("btnRegistro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Temporizador.
+        /// </summary>
+        internal static string btnTemporizador {
+            get {
+                return ResourceManager.GetString("btnTemporizador", resourceCulture);
             }
         }
         
@@ -232,6 +340,15 @@ namespace PiNaranja.Recursos {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Certificado: .
+        /// </summary>
+        internal static string lblCertificado2 {
+            get {
+                return ResourceManager.GetString("lblCertificado2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Realiza click sobre la linea para seleccionar la Estancia o el Dispositivo.
         /// </summary>
         internal static string lblClick {
@@ -300,6 +417,15 @@ namespace PiNaranja.Recursos {
         internal static string lblDireccion {
             get {
                 return ResourceManager.GetString("lblDireccion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Dispositivo: .
+        /// </summary>
+        internal static string lblDispositivo {
+            get {
+                return ResourceManager.GetString("lblDispositivo", resourceCulture);
             }
         }
         
@@ -412,6 +538,15 @@ namespace PiNaranja.Recursos {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Tipo.
+        /// </summary>
+        internal static string lblTipo {
+            get {
+                return ResourceManager.GetString("lblTipo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Total Consumo:.
         /// </summary>
         internal static string lblTotalConsumo {
@@ -426,6 +561,15 @@ namespace PiNaranja.Recursos {
         internal static string lblUsuario {
             get {
                 return ResourceManager.GetString("lblUsuario", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Vatios.
+        /// </summary>
+        internal static string lblW2 {
+            get {
+                return ResourceManager.GetString("lblW2", resourceCulture);
             }
         }
     }

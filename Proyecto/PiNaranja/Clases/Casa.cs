@@ -40,6 +40,8 @@ namespace PInaranja.Clases
             //comando.Parameters.AddWithValue("prop", cas.propietario);
             retorno = comando.ExecuteNonQuery();
 
+            Log.Add("Agregada una casa en myHomy --> Nombre: " + cas.NombreCasa + " -- Propietario: " + cas.Propietario);
+
             return retorno;
         }
 
@@ -56,6 +58,8 @@ namespace PInaranja.Clases
             string consulta = String.Format("DELETE FROM casa WHERE propietario='{0}';", prop);
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
             retorno = comando.ExecuteNonQuery();
+
+            Log.Add("Casa eliminada de myHomy --> Propietario: " + prop);
             return retorno;
         }
 
@@ -67,7 +71,7 @@ namespace PInaranja.Clases
         /// <returns>Devuelve el nombre del propietario de la casa.</returns>
         public static string ObtenerCasa(string usu)
         {
-            string consulta = string.Format("SELECT nombreCasa from casa Where propietario = '{0}';",usu);
+            string consulta = string.Format("SELECT nombreCasa FROM casa WHERE propietario = '{0}';",usu);
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
             //comando.Parameters.AddWithValue("@nom", usu);
             string reader = (string)comando.ExecuteScalar();

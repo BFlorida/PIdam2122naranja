@@ -14,17 +14,14 @@ using System.Windows.Forms;
 
 namespace PiNaranja
 {
-    //To do HAcer invisibles los label de temporizador antes de darle al boton para que no aparezca "faltan..."
     public partial class FrmPanelControl : Form
     {
         private string usuario;
         private string casa;
-        private Dispositivo dispo = new Dispositivo();
         public FrmPanelControl(string usu)
         {
             InitializeComponent();
             usuario = usu;
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -46,9 +43,9 @@ namespace PiNaranja
         DateTime final;
         string[] fecha = new string[3];
 
-        DateTime ahora2 = DateTime.Now;
-        DateTime final2;
-        string[] fecha2 = new string[3];
+        //DateTime ahora2 = DateTime.Now;
+        //DateTime final2;
+        //string[] fecha2 = new string[3];
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -58,16 +55,34 @@ namespace PiNaranja
         private void AplicarIdioma()
         {
             this.Text = Recursos.Idioma.FrmPanelControl;
-            lblTipo.Text = Recursos.Idioma.lblSelecHogar;
+            lblTipo.Text = Recursos.Idioma.lblTipo;
             grbAnyadirDispositivo.Text = Recursos.Idioma.grbAnyadirProducto;
             lblNombreDis.Text = Recursos.Idioma.lblNombreDis;
-            lblTipo.Text = Recursos.Idioma.lblSelecHogar;
-            lblCertificado.Text = Recursos.Idioma.lblEstanciaDispo;
-            lblEstancia.Text = Recursos.Idioma.lblConsumoBase;
+            //lblCerti1.Text = Recursos.Idioma.lblEstancia;
+            lblEstancia.Text = Recursos.Idioma.lblEstancia;
             btnAgregarDispositivo.Text = Recursos.Idioma.btnAgregarDispositivo;
             lblDispositivosRegistrados.Text = Recursos.Idioma.lblEstanciasRegistradas;
             lblClick.Text = Recursos.Idioma.lblClick;
             lblIdioma.Text = Recursos.Idioma.lblIdioma;
+            btnEncender.Text = Recursos.Idioma.btnEncender;
+            btnApagar.Text = Recursos.Idioma.btnApagar;
+            lblDispositivo.Text = Recursos.Idioma.lblDispositivo;
+            lblCertificado2.Text = Recursos.Idioma.lblCertificado2;
+            lblW2.Text = Recursos.Idioma.lblW2;
+            btnModificar.Text = Recursos.Idioma.btnModificar;
+            btnEliminar.Text = Recursos.Idioma.btnEliminar;
+            lblTipo2.Text = Recursos.Idioma.lblTipo;
+            lblTipo.Text = Recursos.Idioma.lblTipo;
+            lblCerti1.Text = Recursos.Idioma.lblCertificado2;
+            lblEstancia2.Text = Recursos.Idioma.lblEstancia;
+            btnParar.Text = Recursos.Idioma.btnParar;
+            btnConfigurar.Text = Recursos.Idioma.btnconfigurar;
+            btnMostrarDis.Text = Recursos.Idioma.btnMostrarDis;
+            btnMostrarModDis.Text = Recursos.Idioma.btnMostrarModDis;
+            btnTemporizador.Text = Recursos.Idioma.btnTemporizador;
+            btnRegistro.Text = Recursos.Idioma.btnRegistro;
+            btnEliminarCuenta.Text = Recursos.Idioma.btnEliminarCuenta;
+            btnDeleteHome.Text = Recursos.Idioma.btnDeleteHome;
         }
 
         private void cmbIdioma_SelectedIndexChanged(object sender, EventArgs e)
@@ -97,7 +112,7 @@ namespace PiNaranja
             try
             {
                 ConBD.AbrirConexion();
-                Dispositivo disp = new Dispositivo(txtNombre.Text, cmbTipo.Text, cmbCertificado.Text, txtEstancia.Text, casa);
+                Dispositivo disp = new Dispositivo(txtNombre.Text, cmbTipo.Text, cmbCertificado.Text, txtEstancia1.Text, casa);
                 Dispositivo.AgregarDispositivos(disp);
                 ConBD.CerrarConexion();
                 MessageBox.Show("Dispositivo agregado con éxito.");
@@ -122,8 +137,8 @@ namespace PiNaranja
                 ConBD.AbrirConexion();
                 Dispositivo disp = new Dispositivo(cmbDispositivos2.Text, cmbTipo2.Text, cmbCertificado2.Text, txtEstancia2.Text, casa);
                 Dispositivo.EditarDispositivo(disp);
+                MessageBox.Show("Dispositivo modificado con éxito.");
                 ConBD.CerrarConexion();
-                MessageBox.Show("Dispositivo agregado con éxito.");
             }
             catch (Exception ex)
             {
@@ -133,7 +148,6 @@ namespace PiNaranja
             {
                 ConBD.CerrarConexion();
             }
-
 
             Refrescar();
         }
@@ -152,6 +166,10 @@ namespace PiNaranja
 
         private void btnMostrarDis_Click(object sender, EventArgs e)
         {
+            if (grbModificar.Visible == true)
+            {
+                grbModificar.Visible = false;
+            }
             if (grbAnyadirDispositivo.Visible == true)
             {
                 grbAnyadirDispositivo.Visible = false;
@@ -166,7 +184,8 @@ namespace PiNaranja
 
         private void btnMostrarModDis_Click(object sender, EventArgs e)
         {
-            if (grbModificar.Visible == true)
+
+            if (grbModificar.Visible)
             {
                 grbModificar.Visible = false;
             }
@@ -174,6 +193,11 @@ namespace PiNaranja
             {
                 grbModificar.Visible = true;
             }
+            if (grbAnyadirDispositivo.Visible)
+            {
+                grbAnyadirDispositivo.Visible = false;
+            }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -194,7 +218,10 @@ namespace PiNaranja
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            FrmRegistro reg = new FrmRegistro(usuario);
+            reg.Refrescar();
+            reg.Show();
+            this.Hide();
 
         }
 
@@ -202,10 +229,10 @@ namespace PiNaranja
         {
             tmrCrono.Enabled = true;
             string nomdisp = txtTemp1.Text;
-            
+
 
             Refrescar();
-            
+
         }
 
         private void btnConfigurar2_Click(object sender, EventArgs e)
@@ -227,7 +254,6 @@ namespace PiNaranja
         {
             DateTime hoy = DateTime.Now;
             string temp = mtxtTemp.Text;
-            bool estado = false;
             fecha = temp.Split(':');
             final = new DateTime(ahora.Year, ahora.Month, ahora.Day,
                 Convert.ToInt32(fecha[0]), Convert.ToInt32(fecha[1]),
@@ -244,23 +270,89 @@ namespace PiNaranja
                 if (ConBD.Conexion != null)
                 {
                     ConBD.AbrirConexion();
-
-                    estado = Convert.ToBoolean(Dispositivo.GetEstado(txtTemp1.Text));
+                    Dispositivo dispo = new Dispositivo();
+                    dispo = Dispositivo.ObtenerDatosDispo(txtTemp1.Text);
 
                     ConBD.CerrarConexion();
                     if (ConBD.Conexion != null)
                     {
                         ConBD.AbrirConexion();
-
-                        Dispositivo.AlterarEstado(txtTemp1.Text, estado);
-                        
-
+                        Dispositivo.AlterarEstado(txtTemp1.Text, dispo.Encendido);
                         ConBD.CerrarConexion();
+                        if (dispo.Encendido == true)
+                        {
+                            //Instanciamos un objeto registro
+                            Registro reg = new Registro();
+                            if (ConBD.Conexion != null)
+                            {
+                                ConBD.AbrirConexion();
+                                //Obtenemos la fila a la que pertence el dispositivo seleccionado. 
+                                int fila = Registro.ObtenerFila(txtTemp1.Text);
+                                ConBD.CerrarConexion();
+                                if (fila != 0)
+                                {
+                                    //Si el valor es distinto de 0 significa que ha encontrado un regisro. 
+                                    if (ConBD.Conexion != null)
+                                    {
+                                        ConBD.AbrirConexion();
+                                        //Obtenemos todos los datos de la fila seleccionada. 
+                                        reg = Registro.ObtenerRegistro(fila);
+                                        ConBD.CerrarConexion();
+                                        //Asignamos a seg el valor que devuelve el método. (en segundos.)
+                                        int seg = Registro.Tiempo(reg);
+                                        //Pasamos el consumo de vatios por hora al consumo de vatios por segundo. 
+                                        double vatiosXs = Registro.CalcularConsumoSegundo(dispo.ConsumoBase);
+                                        //Pasamos el consumo de euros por hora al consumo de euros por segundo. 
+                                        double precioXs = Registro.CalcularPrecioSegundo(dispo.ConsumoPrecio);
+                                        if (ConBD.Conexion != null)
+                                        {
+                                            double num;
+                                            //Instanciamos un registro y le asignamos valores. 
+                                            Registro r = new Registro();
+                                            r.Dispo = txtTemp1.Text;
+                                            r.Estado = false;
+                                            r.Fecha = DateTime.Now;
+                                            //Obtenemos la hora del label del reloj. 
+                                            r.Hora = TimeSpan.Parse(lblReloj.Text);
+                                            //Asignamos a num los vatios que se han consumido durante los segundos que a estado encendido.
+                                            num = (vatiosXs * seg);
+                                            r.TotalConsumo = Math.Round(num, 2);
+                                            //Asignamos a num los euros que se han consumido durante los segundos que a estado encendido.
+                                            num = (precioXs * seg);
+                                            r.TotalPrecio = Math.Round(num, 2);
+                                            ConBD.AbrirConexion();
+                                            //Agregamos el registro a registros. 
+                                            Registro.AgregarRegistro(r);
+                                            ConBD.CerrarConexion();
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        else
+                        {
+                            if (ConBD.Conexion != null)
+                            {
+                                //Crea un objeto registro, y le asignamos sus valores
+                                Registro r = new Registro();
+                                r.Dispo = txtTemp1.Text;
+                                r.Estado = true;
+                                r.Fecha = DateTime.Now;
+                                //Obtenemos la hora en el momento de pulsar el botón
+                                r.Hora = TimeSpan.Parse(lblReloj.Text);
+                                r.TotalConsumo = 0;
+                                r.TotalPrecio = 0;
+                                ConBD.AbrirConexion();
+                                //Registramos el registro. 
+                                Registro.AgregarRegistro(r);
+                                ConBD.CerrarConexion();
+                            }
+                        }
+                        
                     }
                 }
-              
-                Refrescar();
             }
+            Refrescar();
         }
 
 
@@ -282,7 +374,7 @@ namespace PiNaranja
                     ConBD.AbrirConexion();
                     Usuario.EliminaUsuario(usuario);
                     ConBD.CerrarConexion();
-                    MessageBox.Show("Usuario Eliminado");
+                    MessageBox.Show("Cuenta Eliminada");
                     FrmInicioSesion inicio = new FrmInicioSesion();
                     this.Dispose();
                     inicio.Show();
@@ -297,7 +389,7 @@ namespace PiNaranja
             this.Hide();
         }
 
-        
+
         private void Refrescar()
         {
             if (ConBD.Conexion != null)
@@ -321,8 +413,7 @@ namespace PiNaranja
             {
                 MessageBox.Show("No se ha podido abrir la conexión con la Base de Datos");
             }
-            cmbDispositivos2.Items.Clear();
-            for (int i = 0; i < lista.Count; i++) { cmbDispositivos2.Items.Add(lista[i].Nombre); }
+
 
             //Dispositivo dispositivo = new Dispositivo();
             //MessageBox.Show(cmbDispositivos2.Text);
@@ -347,10 +438,11 @@ namespace PiNaranja
                     Dispositivo dispo = new Dispositivo();
                     dispo.Nombre = cmbDispositivos2.Text;
                     ConBD.AbrirConexion();
-                    MessageBox.Show(cmbDispositivos2.Text);
                     Dispositivo.EliminarDispositivos(cmbDispositivos2.Text);
                     ConBD.CerrarConexion();
                     MessageBox.Show("Dispositivo eliminado con éxito.");
+                    Refrescar();
+
                 }
                 catch (Exception ex)
                 {
@@ -368,7 +460,7 @@ namespace PiNaranja
                 txtEuros2.Text = "";
 
 
-                
+
                 Refrescar();
             }
         }
@@ -401,30 +493,146 @@ namespace PiNaranja
                 txtW2.Text = Dispositivo.CalcularConsumo(dtv.Rows[n].Cells[4].Value.ToString(), dtv.Rows[n].Cells[6].Value.ToString()).ToString();
                 txtEuros2.Text = Dispositivo.CalcularPrecio(Convert.ToDouble(txtW2.Text)).ToString();
             }
-           
+            grbAnyadirDispositivo.Visible = false;
+            grbModificar.Visible = true;
+            grbtemporizadores.Visible = true;
 
 
             Refrescar();
         }
 
+
+        /// <summary>
+        /// Enciende el dispositivo y registra encendido en registros y en el log.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnEncender_Click(object sender, EventArgs e)
         {
-            if (ConBD.Conexion != null)
+            if (string.IsNullOrEmpty(cmbDispositivos2.Text) != true)
             {
-                ConBD.AbrirConexion();
-                Dispositivo.Encender(cmbDispositivos2.Text);
-                ConBD.CerrarConexion();
+                //Si el dispositivo que está en el campo de texto existe. 
+                Dispositivo dispo = new Dispositivo();
+                if (ConBD.Conexion != null)
+                {
+                    //Obtiene datos del dispositivo seleccionado. 
+                    ConBD.AbrirConexion();
+                    dispo = Dispositivo.ObtenerDatosDispo(cmbDispositivos2.Text);
+                    ConBD.CerrarConexion();
+                    if (dispo.Encendido != true)
+                    {
+                        //Si el dispositivo está apagado
+                        if (ConBD.Conexion != null)
+                        {
+                            ConBD.AbrirConexion();
+                            //Lo enciende
+                            Dispositivo.Encender(cmbDispositivos2.Text);
+                            ConBD.CerrarConexion();
+                            //Crea un objeto reguistro
+
+                            if (ConBD.Conexion != null)
+                            {
+                                //Crea un objeto registro, y le asignamos sus valores
+                                Registro r = new Registro();
+                                r.Dispo = cmbDispositivos2.Text;
+                                r.Estado = true;
+                                r.Fecha = DateTime.Now;
+                                //Obtenemos la hora en el momento de pulsar el botón
+                                r.Hora = TimeSpan.Parse(lblReloj.Text);
+                                r.TotalConsumo = 0;
+                                r.TotalPrecio = 0;
+                                ConBD.AbrirConexion();
+                                //Registramos el registro. 
+                                Registro.AgregarRegistro(r);
+                                ConBD.CerrarConexion();
+                            }
+                        }
+
+                    }
+                }
             }
+            //Recargamos el Data grid View. 
             Refrescar();
         }
 
+
+
+        /// <summary>
+        /// Apaga el dispositivo y registra apagado en registros y en el log.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnApagar_Click(object sender, EventArgs e)
         {
-            if (ConBD.Conexion != null)
+            if (string.IsNullOrEmpty(cmbDispositivos2.Text) != true)
             {
-                ConBD.AbrirConexion();
-                Dispositivo.Apagar(cmbDispositivos2.Text);
-                ConBD.CerrarConexion();
+                //Comprueba si el campo de texto hay valores. 
+                Dispositivo dispo = new Dispositivo();
+                if (ConBD.Conexion != null)
+                {
+                    ConBD.AbrirConexion();
+                    //Obtiene los datos de dispositivo. 
+                    dispo = Dispositivo.ObtenerDatosDispo(cmbDispositivos2.Text);
+                    ConBD.CerrarConexion();
+                    if (dispo.Encendido==true)
+                    {
+                        //Si el Dispositivo está encendido. 
+                        if (ConBD.Conexion != null)
+                        {
+                            ConBD.AbrirConexion();
+                            //Apagamos el dispositivo.
+                            Dispositivo.Apagar(cmbDispositivos2.Text);
+                            ConBD.CerrarConexion();
+                        }
+                        //Instanciamos un objeto registro
+                        Registro reg = new Registro();
+                        if (ConBD.Conexion != null)
+                        {
+                            ConBD.AbrirConexion();
+                            //Obtenemos la fila a la que pertence el dispositivo seleccionado. 
+                            int fila = Registro.ObtenerFila(cmbDispositivos2.Text);
+                            ConBD.CerrarConexion();
+                            if (fila != 0)
+                            {
+                                //Si el valor es distinto de 0 significa que ha encontrado un regisro. 
+                                if (ConBD.Conexion != null)
+                                {
+                                    ConBD.AbrirConexion();
+                                    //Obtenemos todos los datos de la fila seleccionada. 
+                                    reg = Registro.ObtenerRegistro(fila);
+                                    ConBD.CerrarConexion();
+                                    //Asignamos a seg el valor que devuelve el método. (en segundos.)
+                                    int seg = Registro.Tiempo(reg);
+                                    //Pasamos el consumo de vatios por hora al consumo de vatios por segundo. 
+                                    double vatiosXs = Registro.CalcularConsumoSegundo(dispo.ConsumoBase);
+                                    //Pasamos el consumo de euros por hora al consumo de euros por segundo. 
+                                    double precioXs = Registro.CalcularPrecioSegundo(dispo.ConsumoPrecio);
+                                    if (ConBD.Conexion != null)
+                                    {
+                                        double num;
+                                        //Instanciamos un registro y le asignamos valores. 
+                                        Registro r = new Registro();
+                                        r.Dispo = cmbDispositivos2.Text;
+                                        r.Estado = false;
+                                        r.Fecha = DateTime.Now;
+                                        //Obtenemos la hora del label del reloj. 
+                                        r.Hora = TimeSpan.Parse(lblReloj.Text);
+                                        //Asignamos a num los vatios que se han consumido durante los segundos que a estado encendido.
+                                        num = (vatiosXs * seg);
+                                        r.TotalConsumo = Math.Round(num,2);
+                                        //Asignamos a num los euros que se han consumido durante los segundos que a estado encendido.
+                                        num = (precioXs * seg);
+                                        r.TotalPrecio = Math.Round(num,2);
+                                        ConBD.AbrirConexion();
+                                        //Agregamos el registro a registros. 
+                                        Registro.AgregarRegistro(r);
+                                        ConBD.CerrarConexion();
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
             Refrescar();
         }
@@ -446,6 +654,50 @@ namespace PiNaranja
         }
 
         private void lblFaltan_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTemporizador_Click(object sender, EventArgs e)
+        {
+            if (grbAnyadirDispositivo.Visible)
+            {
+                grbAnyadirDispositivo.Visible = false;
+            }
+            if (grbModificar.Visible)
+            {
+                grbModificar.Visible = false;
+            }
+            if (grbtemporizadores.Visible)
+            {
+                if (grbModificar.Visible || grbAnyadirDispositivo.Visible)
+                {
+                    grbtemporizadores.Visible = true;
+                }
+                else
+                {
+                    grbtemporizadores.Visible = false;
+                }
+
+            }
+            else
+            {
+                grbtemporizadores.Visible = true;
+            }
+
+        }
+
+        private void lblTipo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNombreDis_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblReloj_Click(object sender, EventArgs e)
         {
 
         }

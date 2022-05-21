@@ -126,14 +126,30 @@
   <data name="btnAgregarHogar" xml:space="preserve">
     <value>Agregar Hogar</value>
   </data>
+  <data name="btnApagar" xml:space="preserve">
+    <value>Apagar</value>
+  </data>
   <data name="btnCalculo" xml:space="preserve">
     <value>Consumo/Hora</value>
+  </data>
+  <data name="btnconfigurar" xml:space="preserve">
+    <value>Configurar/Reanudar</value>
   </data>
   <data name="btnCrearCuenta" xml:space="preserve">
     <value>Crear Cuenta</value>
   </data>
+  <data name="btnDeleteHome" xml:space="preserve">
+    <value>Eliminar Casa</value>
+  </data>
   <data name="btnEliminaDispositivo" xml:space="preserve">
     <value>Eliminar Dispositivo</value>
+  </data>
+  <data name="btnEliminar" xml:space="preserve">
+    <value>Eliminar</value>
+    <comment>º</comment>
+  </data>
+  <data name="btnEliminarCuenta" xml:space="preserve">
+    <value>Eliminar Cuenta</value>
   </data>
   <data name="btnEliminarEstancia" xml:space="preserve">
     <value>Eliminar Estancia</value>
@@ -141,11 +157,32 @@
   <data name="btnEliminarHogar" xml:space="preserve">
     <value>Eliminar Hogar</value>
   </data>
+  <data name="btnEncender" xml:space="preserve">
+    <value>Encender</value>
+  </data>
   <data name="btnInicioSesion" xml:space="preserve">
     <value>Inicio Sesión</value>
   </data>
   <data name="btnLog" xml:space="preserve">
     <value>Acceso a Registros</value>
+  </data>
+  <data name="btnModificar" xml:space="preserve">
+    <value>Cambiar</value>
+  </data>
+  <data name="btnMostrarDis" xml:space="preserve">
+    <value>Nuevo Dispositivo</value>
+  </data>
+  <data name="btnMostrarModDis" xml:space="preserve">
+    <value>Modificar Dispositivo</value>
+  </data>
+  <data name="btnParar" xml:space="preserve">
+    <value>Detener</value>
+  </data>
+  <data name="btnRegistro" xml:space="preserve">
+    <value>Registros</value>
+  </data>
+  <data name="btnTemporizador" xml:space="preserve">
+    <value>Temporizador</value>
   </data>
   <data name="FrmCrearCuenta" xml:space="preserve">
     <value>Crear Cuenta</value>
@@ -174,6 +211,9 @@
   <data name="lblCalculo" xml:space="preserve">
     <value>Calculo</value>
   </data>
+  <data name="lblCertificado2" xml:space="preserve">
+    <value>Certificado: </value>
+  </data>
   <data name="lblClick" xml:space="preserve">
     <value>Realiza click sobre la linea para seleccionar la Estancia o el Dispositivo</value>
   </data>
@@ -197,6 +237,9 @@
   </data>
   <data name="lblDireccion" xml:space="preserve">
     <value>Dirección</value>
+  </data>
+  <data name="lblDispositivo" xml:space="preserve">
+    <value>Dispositivo: </value>
   </data>
   <data name="lblDispositivosRegistrados" xml:space="preserve">
     <value>Dispositivos Registrados</value>
@@ -234,10 +277,16 @@
   <data name="lblSelecHogar" xml:space="preserve">
     <value>Hogar</value>
   </data>
+  <data name="lblTipo" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
   <data name="lblTotalConsumo" xml:space="preserve">
     <value>Total Consumo:</value>
   </data>
   <data name="lblUsuario" xml:space="preserve">
     <value>Usuario</value>
+  </data>
+  <data name="lblW2" xml:space="preserve">
+    <value>Vatios</value>
   </data>
 </root>

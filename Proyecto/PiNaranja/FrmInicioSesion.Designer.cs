@@ -48,7 +48,7 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(276, 243);
+            this.lblUsuario.Location = new System.Drawing.Point(243, 247);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(84, 20);
             this.lblUsuario.TabIndex = 1;
@@ -58,7 +58,7 @@
             // 
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseña.Location = new System.Drawing.Point(260, 314);
+            this.lblContraseña.Location = new System.Drawing.Point(227, 318);
             this.lblContraseña.Name = "lblContraseña";
             this.lblContraseña.Size = new System.Drawing.Size(119, 20);
             this.lblContraseña.TabIndex = 2;
@@ -67,7 +67,7 @@
             // txtUsuario
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(208, 274);
+            this.txtUsuario.Location = new System.Drawing.Point(175, 278);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(224, 30);
             this.txtUsuario.TabIndex = 3;
@@ -75,32 +75,39 @@
             // txtContrasenya
             // 
             this.txtContrasenya.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContrasenya.Location = new System.Drawing.Point(208, 344);
+            this.txtContrasenya.Location = new System.Drawing.Point(175, 348);
             this.txtContrasenya.Name = "txtContrasenya";
             this.txtContrasenya.PasswordChar = '*';
             this.txtContrasenya.Size = new System.Drawing.Size(224, 30);
             this.txtContrasenya.TabIndex = 4;
+            this.txtContrasenya.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContrasenya_KeyPress);
             // 
             // btnInicioSesion
             // 
+            this.btnInicioSesion.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnInicioSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicioSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInicioSesion.Location = new System.Drawing.Point(242, 401);
+            this.btnInicioSesion.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnInicioSesion.Location = new System.Drawing.Point(211, 421);
             this.btnInicioSesion.Name = "btnInicioSesion";
             this.btnInicioSesion.Size = new System.Drawing.Size(154, 43);
             this.btnInicioSesion.TabIndex = 5;
             this.btnInicioSesion.Text = "INICIO SESION";
-            this.btnInicioSesion.UseVisualStyleBackColor = true;
+            this.btnInicioSesion.UseVisualStyleBackColor = false;
             this.btnInicioSesion.Click += new System.EventHandler(this.btnInicioSesion_Click);
             // 
             // btnCrearCuenta
             // 
+            this.btnCrearCuenta.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnCrearCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearCuenta.Location = new System.Drawing.Point(228, 469);
+            this.btnCrearCuenta.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnCrearCuenta.Location = new System.Drawing.Point(198, 470);
             this.btnCrearCuenta.Name = "btnCrearCuenta";
             this.btnCrearCuenta.Size = new System.Drawing.Size(183, 43);
             this.btnCrearCuenta.TabIndex = 6;
             this.btnCrearCuenta.Text = "CREAR CUENTA";
-            this.btnCrearCuenta.UseVisualStyleBackColor = true;
+            this.btnCrearCuenta.UseVisualStyleBackColor = false;
             this.btnCrearCuenta.Click += new System.EventHandler(this.btnCrearCuenta_Click);
             // 
             // lblIdioma
@@ -128,6 +135,7 @@
             // 
             // ptbSalir
             // 
+            this.ptbSalir.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ptbSalir.Image = ((System.Drawing.Image)(resources.GetObject("ptbSalir.Image")));
             this.ptbSalir.Location = new System.Drawing.Point(513, 506);
             this.ptbSalir.Name = "ptbSalir";
@@ -149,20 +157,24 @@
             // 
             // btnRecContr
             // 
-            this.btnRecContr.Location = new System.Drawing.Point(37, 459);
+            this.btnRecContr.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnRecContr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRecContr.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnRecContr.Location = new System.Drawing.Point(222, 392);
             this.btnRecContr.Name = "btnRecContr";
             this.btnRecContr.Size = new System.Drawing.Size(133, 23);
             this.btnRecContr.TabIndex = 11;
             this.btnRecContr.Text = "Recuperar Contraseña";
-            this.btnRecContr.UseVisualStyleBackColor = true;
+            this.btnRecContr.UseVisualStyleBackColor = false;
             this.btnRecContr.Click += new System.EventHandler(this.btnRecContr_Click);
             // 
             // FrmInicioSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(584, 561);
+            this.ControlBox = false;
             this.Controls.Add(this.btnRecContr);
             this.Controls.Add(this.cmbIdioma);
             this.Controls.Add(this.lblIdioma);
@@ -174,6 +186,7 @@
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.ptblogo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmInicioSesion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio Sesion";

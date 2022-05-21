@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
+using PiNaranja.Clases;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -59,6 +60,8 @@ namespace PInaranja.Clases
             comando.Parameters.AddWithValue("conx", usu.conectado);
             retorno = comando.ExecuteNonQuery();
 
+            Log.Add("Insertado un usuario en myHomy --> Nombre: " + usu.Nombre + " -- Correo: " + usu.Correo);
+
             return retorno;
         }
 
@@ -73,6 +76,8 @@ namespace PInaranja.Clases
             string consulta = String.Format("DELETE FROM cuenta WHERE nombreUsu='{0}';", nombre);
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
             retorno = comando.ExecuteNonQuery();
+
+            Log.Add("Usuario eliminado de myHomy --> Nombre: " + nombre);
             return retorno;
         }
 

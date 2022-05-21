@@ -387,3 +387,171 @@ C:\Users\bozaag\Desktop\pi2\PiNaranja\obj\Debug\EN-GB\PiNaranja.resources.dll
 C:\Users\bozaag\Desktop\pi2\PiNaranja\obj\Debug\PiNaranja.csproj.CopyComplete
 C:\Users\bozaag\Desktop\pi2\PiNaranja\obj\Debug\PiNaranja.exe
 C:\Users\bozaag\Desktop\pi2\PiNaranja\obj\Debug\PiNaranja.pdb
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\bin\Debug\PiNaranja.exe.config
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\bin\Debug\PiNaranja.exe
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\bin\Debug\PiNaranja.pdb
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\bin\Debug\EN-GB\PiNaranja.resources.dll
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\bin\Debug\MySql.Data.dll
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\bin\Debug\Google.Protobuf.dll
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\bin\Debug\ZstdNet.dll
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\bin\Debug\System.Memory.dll
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\bin\Debug\System.Buffers.dll
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\bin\Debug\MySql.Data.xml
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\obj\Debug\PiNaranja.csproj.AssemblyReference.cache
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\obj\Debug\PiNaranja.csproj.SuggestedBindingRedirects.cache
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\obj\Debug\PiNaranja.exe.config
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\obj\Debug\PiNaranja.FrmPanelControl.resources
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\obj\Debug\PiNaranja.FrmInicioSesion.resources
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\obj\Debug\PiNaranja.FrmCreaCuenta.resources
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\obj\Debug\PiNaranja.FrmRecuperarCuenta.resources
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\obj\Debug\PiNaranja.FrmReemplazarCasa.resources
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\obj\Debug\PiNaranja.Properties.Resources.resources
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\obj\Debug\PiNaranja.Recursos.Idioma.resources
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\obj\Debug\PiNaranja.FrmVerificacion.resources
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\obj\Debug\PiNaranja.Recursos.Idioma.EN-GB.resources
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\obj\Debug\PiNaranja.csproj.GenerateResource.cache
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\obj\Debug\PiNaranja.csproj.CoreCompileInputs.cache
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\obj\Debug\EN-GB\PiNaranja.resources.dll
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\obj\Debug\PiNaranja.csproj.CopyComplete
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\obj\Debug\PiNaranja.exe
+C:\Users\parofe01\Documents\GitHome\Programacion\PI\Proyecto\PiNaranja\obj\Debug\PiNaranja.pdb
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\bin\Debug\PiNaranja.exe.config
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\bin\Debug\PiNaranja.exe
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\bin\Debug\PiNaranja.pdb
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\bin\Debug\EN-GB\PiNaranja.resources.dll
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\bin\Debug\MySql.Data.dll
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\bin\Debug\Google.Protobuf.dll
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\bin\Debug\ZstdNet.dll
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\bin\Debug\System.Memory.dll
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\bin\Debug\System.Buffers.dll
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\bin\Debug\MySql.Data.xml
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\obj\Debug\PiNaranja.csproj.AssemblyReference.cache
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\obj\Debug\PiNaranja.csproj.SuggestedBindingRedirects.cache
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\obj\Debug\PiNaranja.exe.config
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\obj\Debug\PiNaranja.FrmPanelControl.resources
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\obj\Debug\PiNaranja.FrmInicioSesion.resources
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\obj\Debug\PiNaranja.FrmCreaCuenta.resources
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\obj\Debug\PiNaranja.FrmRecuperarCuenta.resources
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\obj\Debug\PiNaranja.FrmReemplazarCasa.resources
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\obj\Debug\PiNaranja.Properties.Resources.resources
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\obj\Debug\PiNaranja.Recursos.Idioma.resources
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\obj\Debug\PiNaranja.FrmVerificacion.resources
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\obj\Debug\PiNaranja.Recursos.Idioma.EN-GB.resources
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\obj\Debug\PiNaranja.csproj.GenerateResource.cache
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\obj\Debug\PiNaranja.csproj.CoreCompileInputs.cache
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\obj\Debug\EN-GB\PiNaranja.resources.dll
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\obj\Debug\PiNaranja.csproj.CopyComplete
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\obj\Debug\PiNaranja.exe
+C:\Users\Álex\Documents\DAM\PI\V\PiNaranja\obj\Debug\PiNaranja.pdb
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\bin\Debug\PiNaranja.exe.config
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\bin\Debug\PiNaranja.exe
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\bin\Debug\PiNaranja.pdb
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\bin\Debug\EN-GB\PiNaranja.resources.dll
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\bin\Debug\MySql.Data.dll
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\bin\Debug\Google.Protobuf.dll
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\bin\Debug\ZstdNet.dll
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\bin\Debug\System.Memory.dll
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\bin\Debug\System.Buffers.dll
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\bin\Debug\MySql.Data.xml
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\obj\Debug\PiNaranja.csproj.AssemblyReference.cache
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\obj\Debug\PiNaranja.csproj.SuggestedBindingRedirects.cache
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\obj\Debug\PiNaranja.exe.config
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\obj\Debug\PiNaranja.FrmPanelControl.resources
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\obj\Debug\PiNaranja.FrmInicioSesion.resources
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\obj\Debug\PiNaranja.FrmCreaCuenta.resources
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\obj\Debug\PiNaranja.FrmRecuperarCuenta.resources
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\obj\Debug\PiNaranja.FrmReemplazarCasa.resources
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\obj\Debug\PiNaranja.Properties.Resources.resources
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\obj\Debug\PiNaranja.Recursos.Idioma.resources
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\obj\Debug\PiNaranja.FrmVerificacion.resources
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\obj\Debug\PiNaranja.Recursos.Idioma.EN-GB.resources
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\obj\Debug\PiNaranja.csproj.GenerateResource.cache
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\obj\Debug\PiNaranja.csproj.CoreCompileInputs.cache
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\obj\Debug\EN-GB\PiNaranja.resources.dll
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\obj\Debug\PiNaranja.csproj.CopyComplete
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\obj\Debug\PiNaranja.exe
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\obj\Debug\PiNaranja.pdb
+C:\Users\borji\OneDrive\Escritorio\pitufos\PiNaranja\obj\Debug\PiNaranja.FrmRegistro.resources
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\bin\Debug\PiNaranja.exe.config
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\bin\Debug\PiNaranja.exe
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\bin\Debug\PiNaranja.pdb
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\bin\Debug\EN-GB\PiNaranja.resources.dll
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\bin\Debug\MySql.Data.dll
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\bin\Debug\Google.Protobuf.dll
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\bin\Debug\ZstdNet.dll
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\bin\Debug\BouncyCastle.Crypto.dll
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\bin\Debug\Ubiety.Dns.Core.dll
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\bin\Debug\System.Memory.dll
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\bin\Debug\System.Buffers.dll
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\bin\Debug\K4os.Compression.LZ4.dll
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\bin\Debug\K4os.Hash.xxHash.dll
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\bin\Debug\MySql.Data.xml
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\obj\Debug\PiNaranja.csproj.AssemblyReference.cache
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\obj\Debug\PiNaranja.csproj.SuggestedBindingRedirects.cache
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\obj\Debug\PiNaranja.exe.config
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\obj\Debug\PiNaranja.FrmPanelControl.resources
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\obj\Debug\PiNaranja.FrmInicioSesion.resources
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\obj\Debug\PiNaranja.FrmCreaCuenta.resources
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\obj\Debug\PiNaranja.FrmRecuperarCuenta.resources
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\obj\Debug\PiNaranja.FrmReemplazarCasa.resources
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\obj\Debug\PiNaranja.FrmRegistro.resources
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\obj\Debug\PiNaranja.Properties.Resources.resources
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\obj\Debug\PiNaranja.Recursos.Idioma.resources
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\obj\Debug\PiNaranja.FrmVerificacion.resources
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\obj\Debug\PiNaranja.Recursos.Idioma.EN-GB.resources
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\obj\Debug\PiNaranja.csproj.GenerateResource.cache
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\obj\Debug\PiNaranja.csproj.CoreCompileInputs.cache
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\obj\Debug\EN-GB\PiNaranja.resources.dll
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\obj\Debug\PiNaranja.csproj.CopyComplete
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\obj\Debug\PiNaranja.exe
+D:\OneDrive - Florida\OneDrive - Florida Centre de Formació Coop.V\1ºDAM\Z.PI_SERGIO\VIERNES ULTIMOS MOVIMIENTOS\pitufos\PiNaranja\obj\Debug\PiNaranja.pdb
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\obj\Debug\PiNaranja.csproj.AssemblyReference.cache
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\obj\Debug\PiNaranja.csproj.SuggestedBindingRedirects.cache
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\obj\Debug\PiNaranja.exe.config
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\obj\Debug\PiNaranja.FrmPanelControl.resources
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\obj\Debug\PiNaranja.FrmInicioSesion.resources
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\obj\Debug\PiNaranja.FrmCreaCuenta.resources
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\obj\Debug\PiNaranja.FrmRecuperarCuenta.resources
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\obj\Debug\PiNaranja.FrmReemplazarCasa.resources
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\obj\Debug\PiNaranja.FrmRegistro.resources
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\obj\Debug\PiNaranja.Properties.Resources.resources
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\obj\Debug\PiNaranja.Recursos.Idioma.resources
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\obj\Debug\PiNaranja.FrmVerificacion.resources
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\obj\Debug\PiNaranja.Recursos.Idioma.EN-GB.resources
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\obj\Debug\PiNaranja.csproj.GenerateResource.cache
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\obj\Debug\PiNaranja.csproj.CoreCompileInputs.cache
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\obj\Debug\PiNaranja.exe
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\obj\Debug\PiNaranja.pdb
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\bin\Debug\PiNaranja.exe.config
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\bin\Debug\PiNaranja.exe
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\bin\Debug\PiNaranja.pdb
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\bin\Debug\EN-GB\PiNaranja.resources.dll
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\bin\Debug\MySql.Data.dll
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\bin\Debug\Google.Protobuf.dll
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\bin\Debug\ZstdNet.dll
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\bin\Debug\System.Memory.dll
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\bin\Debug\System.Buffers.dll
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\bin\Debug\MySql.Data.xml
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\obj\Debug\EN-GB\PiNaranja.resources.dll
+C:\Users\pablo\Desktop\Estudios\GitHome\Programacion\PI\pitufos\PiNaranja\obj\Debug\PiNaranja.csproj.CopyComplete

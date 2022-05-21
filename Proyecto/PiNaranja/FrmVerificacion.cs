@@ -88,5 +88,37 @@ namespace PiNaranja
             inicio.Show();
             this.Hide();
         }
+
+        private void btnCheckVCode_Click_1(object sender, EventArgs e)
+        {
+            FrmPanelControl panel = new FrmPanelControl(usuario);
+            int codigo;
+            int verifyCode = Convert.ToInt32(txtCode.Text);
+            if (ConBD.Conexion != null)
+            {
+                ConBD.AbrirConexion();
+                codigo = Usuario.GetCodigo(usuario);
+                ConBD.CerrarConexion();
+            }
+            else
+            {
+                codigo = 9999999;
+            }
+            if (verifyCode == codigo)
+            {
+                if (ConBD.Conexion != null)
+                {
+                    ConBD.AbrirConexion();
+                    Usuario.ActivarVerificacion(usuario);
+                    ConBD.CerrarConexion();
+                    panel.Show();
+                    this.Hide();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Codigo incorrecto, revisa el correo y/o reenvialo de nuevo");
+            }
+        }
     }
 }

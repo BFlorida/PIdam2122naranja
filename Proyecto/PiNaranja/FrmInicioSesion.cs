@@ -97,7 +97,7 @@ namespace PiNaranja
 
         private void ptbSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void FrmInicioSesion_Load(object sender, EventArgs e)
@@ -141,6 +141,11 @@ namespace PiNaranja
             FrmRecuperarCuenta rCuenta = new FrmRecuperarCuenta();
             rCuenta.Show();
             this.Hide();
+        }
+
+        private void txtContrasenya_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
         }
     }
 }

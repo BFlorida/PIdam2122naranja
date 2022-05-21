@@ -115,17 +115,20 @@
             // 
             // btnCrearCuenta
             // 
+            this.btnCrearCuenta.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnCrearCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearCuenta.Location = new System.Drawing.Point(172, 270);
             this.btnCrearCuenta.Name = "btnCrearCuenta";
             this.btnCrearCuenta.Size = new System.Drawing.Size(185, 49);
             this.btnCrearCuenta.TabIndex = 13;
             this.btnCrearCuenta.Text = "CREAR CUENTA";
-            this.btnCrearCuenta.UseVisualStyleBackColor = true;
+            this.btnCrearCuenta.UseVisualStyleBackColor = false;
             this.btnCrearCuenta.Click += new System.EventHandler(this.btnCrearCuenta_Click);
             // 
             // grbRellena
             // 
+            this.grbRellena.BackColor = System.Drawing.Color.LightSkyBlue;
             this.grbRellena.Controls.Add(this.txtNombreHogar);
             this.grbRellena.Controls.Add(this.lblNombreHogar);
             this.grbRellena.Controls.Add(this.cmbIdioma);
@@ -169,7 +172,7 @@
             "Castellano",
             "English"});
             this.cmbIdioma.Location = new System.Drawing.Point(422, 20);
-            this.cmbIdioma.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbIdioma.Margin = new System.Windows.Forms.Padding(2);
             this.cmbIdioma.Name = "cmbIdioma";
             this.cmbIdioma.Size = new System.Drawing.Size(99, 28);
             this.cmbIdioma.TabIndex = 15;
@@ -211,12 +214,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(589, 561);
+            this.ControlBox = false;
             this.Controls.Add(this.ptbSalir);
             this.Controls.Add(this.grbRellena);
             this.Controls.Add(this.ptbLogo);
             this.Controls.Add(this.lblCreaCuenta);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmCreaCuenta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Crea Cuenta";
