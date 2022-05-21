@@ -1,0 +1,7 @@
+22/05/2022 0:03:28 - Insertado un dispositivo --> Nombre: eqweqweq -- Certificado: C -- Tipo: TV -- Consumo Base: 60 -- Consumo Precio: 12 -- Estancia:  -- Nombre Casa: dasa
+22/05/2022 0:03:33 - Dispositivo eliminado --> Nombre dispositivo: eqweqweq
+22/05/2022 0:04:26 - Insertado un dispositivo --> Nombre: 1 -- Certificado: C -- Tipo: TV -- Consumo Base: 60 -- Consumo Precio: 12 -- Estancia:  -- Nombre Casa: dasa
+22/05/2022 0:04:30 - Insertado un dispositivo --> Nombre: 2 -- Certificado: C -- Tipo: TV -- Consumo Base: 60 -- Consumo Precio: 12 -- Estancia:  -- Nombre Casa: dasa
+22/05/2022 0:04:55 - Dispositivo eliminado --> Nombre dispositivo: 1
+22/05/2022 0:05:05 - Insertado un dispositivo --> Nombre: 1 -- Certificado: C -- Tipo: TV -- Consumo Base: 60 -- Consumo Precio: 12 -- Estancia:  -- Nombre Casa: dasa
+22/05/2022 0:06:02 - Dispositivo eliminado --> Nombre dispositivo: 1

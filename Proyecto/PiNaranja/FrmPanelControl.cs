@@ -109,44 +109,54 @@ namespace PiNaranja
 
         private void btnAgregarDispositivo_Click(object sender, EventArgs e)
         {
-            try
+            if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(cmbTipo.Text) || string.IsNullOrEmpty(cmbCertificado.Text))
             {
-                ConBD.AbrirConexion();
-                Dispositivo disp = new Dispositivo(txtNombre.Text, cmbTipo.Text, cmbCertificado.Text, txtEstancia1.Text, casa);
-                Dispositivo.AgregarDispositivos(disp);
-                ConBD.CerrarConexion();
-                MessageBox.Show("Dispositivo agregado con éxito.");
+                MessageBox.Show("Debes introducir un nombre al dispositivo", "Aviso");
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                ConBD.CerrarConexion();
-            }
+                try
+                {
+                    ConBD.AbrirConexion();
+                    Dispositivo disp = new Dispositivo(txtNombre.Text, cmbTipo.Text, cmbCertificado.Text, txtEstancia1.Text, casa);
+                    Dispositivo.AgregarDispositivos(disp);
+                    ConBD.CerrarConexion();
+                    MessageBox.Show("Dispositivo agregado con éxito.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    ConBD.CerrarConexion();
+                }
 
-
+            }
             Refrescar();
+
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            try
             {
-                ConBD.AbrirConexion();
-                Dispositivo disp = new Dispositivo(cmbDispositivos2.Text, cmbTipo2.Text, cmbCertificado2.Text, txtEstancia2.Text, casa);
-                Dispositivo.EditarDispositivo(disp);
-                MessageBox.Show("Dispositivo modificado con éxito.");
-                ConBD.CerrarConexion();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                ConBD.CerrarConexion();
+                try
+                {
+                    ConBD.AbrirConexion();
+                    Dispositivo disp = new Dispositivo(cmbDispositivos2.Text, cmbTipo2.Text, cmbCertificado2.Text, txtEstancia2.Text, casa);
+                    Dispositivo.EditarDispositivo(disp);
+                    MessageBox.Show("Dispositivo modificado con éxito.");
+                    ConBD.CerrarConexion();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    ConBD.CerrarConexion();
+                }
+
             }
 
             Refrescar();
@@ -227,10 +237,26 @@ namespace PiNaranja
 
         private void btnConfigurar_Click(object sender, EventArgs e)
         {
-            tmrCrono.Enabled = true;
-            string nomdisp = txtTemp1.Text;
+            if (string.IsNullOrEmpty(txtTemp1.Text))
+            {
+                MessageBox.Show("No puede iniciar el temporizador sin seleccionar un dispositivo de la tabla");
+            }
+            else
+            {
+                string temp = mtxtTemp.Text;
+                fecha = temp.Split(':');
+                if (string.IsNullOrEmpty(fecha[0]) || string.IsNullOrEmpty(fecha[1]) || string.IsNullOrEmpty(fecha[2]))
+                {
+                    MessageBox.Show("No puede iniciar el temporizador sin indicar un tiempo");
+                }
+                else
+                {
+                    tmrCrono.Enabled = true;
+                    string nomdisp = txtTemp1.Text;
 
+                }
 
+            }
             Refrescar();
 
         }
@@ -348,9 +374,10 @@ namespace PiNaranja
                                 ConBD.CerrarConexion();
                             }
                         }
-                        
+
                     }
                 }
+
             }
             Refrescar();
         }
@@ -432,6 +459,7 @@ namespace PiNaranja
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+
             {
                 try
                 {
@@ -458,6 +486,7 @@ namespace PiNaranja
                 txtEstancia2.Text = "";
                 txtW2.Text = "";
                 txtEuros2.Text = "";
+                txtTemp1.Text = "";
 
 
 
@@ -574,7 +603,7 @@ namespace PiNaranja
                     //Obtiene los datos de dispositivo. 
                     dispo = Dispositivo.ObtenerDatosDispo(cmbDispositivos2.Text);
                     ConBD.CerrarConexion();
-                    if (dispo.Encendido==true)
+                    if (dispo.Encendido == true)
                     {
                         //Si el Dispositivo está encendido. 
                         if (ConBD.Conexion != null)
@@ -619,10 +648,10 @@ namespace PiNaranja
                                         r.Hora = TimeSpan.Parse(lblReloj.Text);
                                         //Asignamos a num los vatios que se han consumido durante los segundos que a estado encendido.
                                         num = (vatiosXs * seg);
-                                        r.TotalConsumo = Math.Round(num,2);
+                                        r.TotalConsumo = Math.Round(num, 2);
                                         //Asignamos a num los euros que se han consumido durante los segundos que a estado encendido.
                                         num = (precioXs * seg);
-                                        r.TotalPrecio = Math.Round(num,2);
+                                        r.TotalPrecio = Math.Round(num, 2);
                                         ConBD.AbrirConexion();
                                         //Agregamos el registro a registros. 
                                         Registro.AgregarRegistro(r);
@@ -700,6 +729,16 @@ namespace PiNaranja
         private void lblReloj_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dtv_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int n = e.RowIndex;
+            if (n != -1)
+            {
+                grbtemporizadores.Visible = true;
+                txtTemp1.Text = dtv.Rows[n].Cells[0].Value.ToString();
+            }
         }
     }
 }

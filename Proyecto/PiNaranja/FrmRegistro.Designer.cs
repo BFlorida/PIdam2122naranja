@@ -39,7 +39,7 @@
             this.lblRegisto.AutoSize = true;
             this.lblRegisto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblRegisto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegisto.Location = new System.Drawing.Point(217, 9);
+            this.lblRegisto.Location = new System.Drawing.Point(37, 24);
             this.lblRegisto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRegisto.Name = "lblRegisto";
             this.lblRegisto.Size = new System.Drawing.Size(188, 22);
@@ -49,9 +49,9 @@
             // dtgRegistro
             // 
             this.dtgRegistro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgRegistro.Location = new System.Drawing.Point(12, 49);
+            this.dtgRegistro.Location = new System.Drawing.Point(37, 49);
             this.dtgRegistro.Name = "dtgRegistro";
-            this.dtgRegistro.Size = new System.Drawing.Size(622, 351);
+            this.dtgRegistro.Size = new System.Drawing.Size(778, 351);
             this.dtgRegistro.TabIndex = 1;
             // 
             // btnSalir
@@ -72,7 +72,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(646, 469);
+            this.ClientSize = new System.Drawing.Size(846, 469);
+            this.ControlBox = false;
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.dtgRegistro);
             this.Controls.Add(this.lblRegisto);

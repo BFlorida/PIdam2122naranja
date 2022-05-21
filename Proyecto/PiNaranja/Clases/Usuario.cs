@@ -242,7 +242,7 @@ namespace PInaranja.Clases
                 return false;
             }
         }
-        public static int CambiarContrasenya(string nom,string con)
+        public static int CambiarContrasenya(string nom, string con)
         {
             int retorno;
 

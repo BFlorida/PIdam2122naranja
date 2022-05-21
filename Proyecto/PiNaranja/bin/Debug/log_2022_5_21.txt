@@ -94,3 +94,13 @@
 21/05/2022 22:31:03 - Insertado un registro en myHomy --> Nombre: 0
 21/05/2022 22:37:02 - Insertado un registro en myHomy --> Nombre: 0
 21/05/2022 22:37:38 - Insertado un registro en myHomy --> Nombre: 0
+21/05/2022 22:58:30 - Insertado un dispositivo --> Nombre: eqweqwe -- Certificado: C -- Tipo: Horno -- Consumo Base: 258 -- Consumo Precio: 51,6 -- Estancia:  -- Nombre Casa: flashhome
+21/05/2022 22:58:54 - Insertado un dispositivo --> Nombre:  -- Certificado: C -- Tipo: Horno -- Consumo Base: 258 -- Consumo Precio: 51,6 -- Estancia:  -- Nombre Casa: flashhome
+21/05/2022 23:02:25 - Insertado un dispositivo --> Nombre: ff -- Certificado:  -- Tipo:  -- Consumo Base: 0 -- Consumo Precio: 0 -- Estancia:  -- Nombre Casa: flashhome
+21/05/2022 23:03:21 - Dispositivo eliminado --> Nombre dispositivo: ff
+21/05/2022 23:03:27 - Dispositivo eliminado --> Nombre dispositivo: 
+21/05/2022 23:06:16 - Insertado un dispositivo --> Nombre: asdsa -- Certificado: D -- Tipo: Lavavajillas -- Consumo Base: 133 -- Consumo Precio: 26,6 -- Estancia: asdasd -- Nombre Casa: flashhome
+21/05/2022 23:10:50 - Insertado un usuario en myHomy --> Nombre: Borja -- Correo: borja_bza@hotmail.com
+21/05/2022 23:10:50 - Agregada una casa en myHomy --> Nombre: Borjas -- Propietario: Borja
+21/05/2022 23:54:51 - Insertado un usuario en myHomy --> Nombre: sadad -- Correo: borja_bza@hotmail.com
+21/05/2022 23:54:51 - Agregada una casa en myHomy --> Nombre: dasa -- Propietario: sadad

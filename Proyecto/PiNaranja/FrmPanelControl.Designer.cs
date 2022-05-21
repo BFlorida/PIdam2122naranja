@@ -110,8 +110,9 @@
             this.dtv.Location = new System.Drawing.Point(177, 369);
             this.dtv.Name = "dtv";
             this.dtv.RowHeadersWidth = 51;
-            this.dtv.Size = new System.Drawing.Size(856, 262);
+            this.dtv.Size = new System.Drawing.Size(856, 231);
             this.dtv.TabIndex = 0;
+            this.dtv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_CellClick);
             this.dtv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_CellContentClick);
             this.dtv.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_CellDoubleClick);
             // 
@@ -131,7 +132,7 @@
             // 
             this.lblClick.AutoSize = true;
             this.lblClick.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClick.Location = new System.Drawing.Point(173, 634);
+            this.lblClick.Location = new System.Drawing.Point(174, 609);
             this.lblClick.Name = "lblClick";
             this.lblClick.Size = new System.Drawing.Size(335, 13);
             this.lblClick.TabIndex = 7;
@@ -229,6 +230,7 @@
             // 
             // cmbCertificado
             // 
+            this.cmbCertificado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCertificado.FormattingEnabled = true;
             this.cmbCertificado.Items.AddRange(new object[] {
             "A",
@@ -255,6 +257,7 @@
             // 
             // cmbTipo
             // 
+            this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipo.FormattingEnabled = true;
             this.cmbTipo.Items.AddRange(new object[] {
             "Lavadora",
@@ -263,7 +266,7 @@
             "TV",
             "Luces",
             "Persianas",
-            "SIstema de Riego"});
+            "Sistema de Riego"});
             this.cmbTipo.Location = new System.Drawing.Point(327, 35);
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(155, 28);
@@ -286,9 +289,9 @@
             this.grbModificar.Controls.Add(this.lblTipo2);
             this.grbModificar.Controls.Add(this.lblEstancia2);
             this.grbModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbModificar.Location = new System.Drawing.Point(185, 83);
+            this.grbModificar.Location = new System.Drawing.Point(182, 83);
             this.grbModificar.Name = "grbModificar";
-            this.grbModificar.Size = new System.Drawing.Size(494, 149);
+            this.grbModificar.Size = new System.Drawing.Size(498, 149);
             this.grbModificar.TabIndex = 31;
             this.grbModificar.TabStop = false;
             this.grbModificar.Text = "Modificar Dispositivo";
@@ -347,6 +350,7 @@
             // 
             // cmbCertificado2
             // 
+            this.cmbCertificado2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCertificado2.FormattingEnabled = true;
             this.cmbCertificado2.Items.AddRange(new object[] {
             "A",
@@ -373,6 +377,7 @@
             // 
             // cmbTipo2
             // 
+            this.cmbTipo2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipo2.FormattingEnabled = true;
             this.cmbTipo2.Items.AddRange(new object[] {
             "Lavadora",
@@ -727,7 +732,7 @@
             this.grbtemporizadores.Margin = new System.Windows.Forms.Padding(2);
             this.grbtemporizadores.Name = "grbtemporizadores";
             this.grbtemporizadores.Padding = new System.Windows.Forms.Padding(2);
-            this.grbtemporizadores.Size = new System.Drawing.Size(202, 172);
+            this.grbtemporizadores.Size = new System.Drawing.Size(209, 172);
             this.grbtemporizadores.TabIndex = 42;
             this.grbtemporizadores.TabStop = false;
             this.grbtemporizadores.Text = "Temporizadores ";
@@ -735,9 +740,11 @@
             // 
             // txtTemp1
             // 
-            this.txtTemp1.Location = new System.Drawing.Point(8, 35);
+            this.txtTemp1.Enabled = false;
+            this.txtTemp1.Location = new System.Drawing.Point(17, 36);
             this.txtTemp1.Margin = new System.Windows.Forms.Padding(2);
             this.txtTemp1.Name = "txtTemp1";
+            this.txtTemp1.ReadOnly = true;
             this.txtTemp1.Size = new System.Drawing.Size(182, 26);
             this.txtTemp1.TabIndex = 33;
             this.txtTemp1.TextChanged += new System.EventHandler(this.txtTemp1_TextChanged);
@@ -757,7 +764,7 @@
             // 
             this.btnParar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnParar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnParar.Location = new System.Drawing.Point(106, 63);
+            this.btnParar.Location = new System.Drawing.Point(115, 63);
             this.btnParar.Margin = new System.Windows.Forms.Padding(2);
             this.btnParar.Name = "btnParar";
             this.btnParar.Size = new System.Drawing.Size(84, 28);
@@ -770,7 +777,7 @@
             // 
             this.btnConfigurar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnConfigurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfigurar.Location = new System.Drawing.Point(8, 99);
+            this.btnConfigurar.Location = new System.Drawing.Point(17, 99);
             this.btnConfigurar.Margin = new System.Windows.Forms.Padding(2);
             this.btnConfigurar.Name = "btnConfigurar";
             this.btnConfigurar.Size = new System.Drawing.Size(182, 33);
@@ -782,7 +789,7 @@
             // mtxtTemp
             // 
             this.mtxtTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mtxtTemp.Location = new System.Drawing.Point(8, 63);
+            this.mtxtTemp.Location = new System.Drawing.Point(17, 63);
             this.mtxtTemp.Margin = new System.Windows.Forms.Padding(2);
             this.mtxtTemp.Mask = "00:00:00";
             this.mtxtTemp.Name = "mtxtTemp";
