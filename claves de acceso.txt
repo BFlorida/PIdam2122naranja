@@ -1,0 +1,13 @@
+#AWS
+User:
+parofe01@floridauniversitaria.es
+Pass:
+4sec987,Z
+-Database admin
+EndPoint:
+myhomy.cdgeb6sovbed.us-east-1.rds.amazonaws.com
+User:
+naranjitoteam
+Pass:
+PIdamNaranjito1234!
+-------------------

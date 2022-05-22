@@ -1,0 +1,5 @@
+DIARIO DE ABORDO (PROGRESO)
+11.05.2022
+- Subida la base de datos a AWS
+- Comienzo de interfaz. 
+

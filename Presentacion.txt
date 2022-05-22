@@ -1,0 +1,16 @@
+EXPOSICION 
+
+1.Propuesta 
+* NOMBRE
+* LOGO
+*SLOGAN (sentir)
+ 
+2.Speech (English)
+
+3. ÍNDICE Separar partes de la presentación por  cada asignatura. 
+* Asignaturas 
+	- BBDD
+	- Programacion
+	- Marcas
+	- Entornos
+	- Sistemas
