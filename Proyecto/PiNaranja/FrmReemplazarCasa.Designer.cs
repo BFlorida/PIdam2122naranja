@@ -87,7 +87,7 @@
             "Castellano",
             "English"});
             this.cmbIdioma.Location = new System.Drawing.Point(259, 3);
-            this.cmbIdioma.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbIdioma.Margin = new System.Windows.Forms.Padding(2);
             this.cmbIdioma.Name = "cmbIdioma";
             this.cmbIdioma.Size = new System.Drawing.Size(92, 21);
             this.cmbIdioma.TabIndex = 16;
@@ -118,6 +118,7 @@
             this.Name = "FrmReemplazarCasa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmReemplazarCasa";
+            this.Load += new System.EventHandler(this.FrmReemplazarCasa_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

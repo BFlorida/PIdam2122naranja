@@ -26,9 +26,17 @@ namespace PiNaranja
 
         private void FrmRecuperarCuenta_Load(object sender, EventArgs e)
         {
-
+            txtUsuario.Enabled = true;
+            txtCodigo.Enabled = false;
+            txtContrasenya.Enabled = false;
         }
 
+
+        /// <summary>
+        /// Envia un mail con el codigo de verificacion al correo de la cuenta logeada. 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnEnviarMail_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtUsuario.Text))
@@ -60,11 +68,13 @@ namespace PiNaranja
                         }
                         StringBuilder stringBuilder = new StringBuilder();
                         stringBuilder.Append(mensaje.Trim());
-                        string para = correo; //obtencion de correo como sea
+                        string para = correo;
                         string asunto = "Recuperacion de cuentas";
                         string error = "";
                         Correo.EnviarCorreo(stringBuilder, DateTime.Now, para.Trim(), asunto.Trim(), out error);
-
+                        txtUsuario.Enabled = false;
+                        txtCodigo.Enabled = true;
+                        txtContrasenya.Enabled = true;
                     }
                     else
                     {
@@ -80,13 +90,12 @@ namespace PiNaranja
             int i = 0;
             string s = txtCodigo.Text;
             bool result = int.TryParse(s, out i);
-            if (string.IsNullOrEmpty(txtContrasenya.Text) || string.IsNullOrEmpty(txtCodigo.Text) || result == false)
+            if (string.IsNullOrEmpty(txtContrasenya.Text) || string.IsNullOrEmpty(txtCodigo.Text) || result == false || string.IsNullOrEmpty(txtUsuario.Text))
             {
-                MessageBox.Show("La contraseña no puede estar vacía.");
+                MessageBox.Show("Los campos no pueden estar vacios y el código debe ser numérico.");
             }
             else
             {
-
                 int codigo;
                 int verifyCode = Convert.ToInt32(txtCodigo.Text);
                 if (ConBD.Conexion != null)

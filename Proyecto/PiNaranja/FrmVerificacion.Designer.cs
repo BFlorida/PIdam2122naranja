@@ -85,6 +85,7 @@
             this.btnReturn.TabIndex = 8;
             this.btnReturn.Text = "Volver";
             this.btnReturn.UseVisualStyleBackColor = false;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click_1);
             // 
             // btnCheckVCode
             // 

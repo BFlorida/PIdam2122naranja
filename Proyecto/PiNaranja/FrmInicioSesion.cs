@@ -17,7 +17,7 @@ namespace PiNaranja
 {
     public partial class FrmInicioSesion : Form
     {
-        
+
         private string usuario;
         public FrmInicioSesion()
         {
@@ -26,25 +26,25 @@ namespace PiNaranja
 
         private void btnInicioSesion_Click(object sender, EventArgs e)
         {
-            
+
 
             if (ConBD.Conexion != null)
             {
                 ConBD.AbrirConexion();
-
+                //Comprueba si el usuario ya está registrado
                 if (Usuario.UsuarioYaRegistrado(txtUsuario.Text))
                 {
                     ConBD.CerrarConexion();
                     if (ConBD.Conexion != null)
                     {
                         ConBD.AbrirConexion();
-
+                        //Si el usuario está registrado, valida contraseña. 
                         if (Usuario.ValidaConstrasenya(txtContrasenya.Text))
                         {
-                            
+
                             ConBD.CerrarConexion();
                             if (ConBD.Conexion != null)
-                            {
+                            {//Comprueba si el usuario está validado. 
                                 ConBD.AbrirConexion();
                                 bool validado = Usuario.UsuarioValidado(txtUsuario.Text);
                                 if (validado == true)
@@ -56,7 +56,7 @@ namespace PiNaranja
                                     this.Hide();
                                 }
                                 else
-                                {
+                                { //Si no está validad te envia al formulario de verificacion. 
                                     usuario = txtUsuario.Text;
                                     ConBD.CerrarConexion();
                                     FrmVerificacion frmv = new FrmVerificacion(usuario);
@@ -92,7 +92,7 @@ namespace PiNaranja
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("¿Deseas eliminar la cuenta registrada?", "Avisa", MessageBoxButtons.YesNo);
-            //funcion de eliminar todo para pablo
+
         }
 
         private void ptbSalir_Click(object sender, EventArgs e)

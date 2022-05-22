@@ -11,6 +11,7 @@ namespace PInaranja.Clases
 {
     class Usuario
     {
+        #region - Atributos - Propiedades - Constructores -
         private string nombre;
         private string correo;
         private string contrasenya;
@@ -45,7 +46,15 @@ namespace PInaranja.Clases
 
         //Constructor sobrecargado sin parámetros
         public Usuario() { }
+        #endregion
 
+        #region - Métodos - 
+
+        /// <summary>
+        /// Agrega usuario
+        /// </summary>
+        /// <param name="usu">Usuario</param>
+        /// <returns>1 si ha insertado el usuario 0  si no lo ha insertado.</returns>
         public static int AgregarUsuario(Usuario usu)
         {
             int retorno;
@@ -64,7 +73,6 @@ namespace PInaranja.Clases
 
             return retorno;
         }
-
         /// <summary>
         /// Elimina usuario.
         /// </summary>
@@ -170,6 +178,12 @@ namespace PInaranja.Clases
             retorno = (int)comando.ExecuteScalar();
             return retorno;
         }
+
+        /// <summary>
+        /// Selecciona un correo en base a un usuario.
+        /// </summary>
+        /// <param name="usu">Nombre usuario</param>
+        /// <returns>devuelve el correo del usuario</returns>
         public static string GetCorreo(string usu)
         {
             string retorno;
@@ -201,12 +215,6 @@ namespace PInaranja.Clases
         }
 
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param string="nom">Objeto casa</param>
-        /// <param int = "vCode" > Objeto casa</param>
-        /// <returns>Devuelve numero de control para determinar si se ha creado una casa 1 o no 0.</returns>
         public static int ActivarVerificacion(string nom)
         {
             int retorno;
@@ -242,6 +250,13 @@ namespace PInaranja.Clases
                 return false;
             }
         }
+
+        /// <summary>
+        /// Cambia contraseña de usuario. 
+        /// </summary>
+        /// <param name="nom">nombre del usuario</param>
+        /// <param name="con">contraseña del usuario</param>
+        /// <returns>devuelve 1 si se ha modificado la contraseña del usuario. </returns>
         public static int CambiarContrasenya(string nom, string con)
         {
             int retorno;
@@ -259,4 +274,5 @@ namespace PInaranja.Clases
 
 
     }
+    #endregion
 }

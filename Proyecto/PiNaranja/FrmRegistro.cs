@@ -37,7 +37,7 @@ namespace PiNaranja
 
 
 
-
+        //Recargamos el DGV para añadir nuevos registros. 
         public void Refrescar()
         {
             if (ConBD.Conexion != null)

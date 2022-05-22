@@ -23,13 +23,13 @@ namespace PiNaranja
             usuario = usu;
         }
         /// <summary>
-        /// Borra la casa antigua y erronea y crea una nueva. 
+        /// Borra la casa antigua y erronea y crea una nueva en su lugar. 
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnActualizarCasa_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(txtNewHome.Text))
+            if (string.IsNullOrEmpty(txtNewHome.Text))
             {
                 MessageBox.Show("Debes añadir un nombre a la nueva casa,\n no puedes tener un nombre de casa vacio,\n no puedes no tener casa");
             }
@@ -39,6 +39,7 @@ namespace PiNaranja
                 if (ConBD.Conexion != null)
                 {
                     ConBD.AbrirConexion();
+                    //Comporueba que ya exista la casa que se pretende crear. 
                     bool casaregistrada = Casa.CasaYaRegistrada(txtNewHome.Text);
                     if (casaregistrada)
                     {
@@ -56,14 +57,14 @@ namespace PiNaranja
                         }
                         if (ConBD.Conexion != null)
                         {
-                            Casa c = new Casa(txtNewHome.Text,usuario);
+                            Casa c = new Casa(txtNewHome.Text, usuario);
                             ConBD.AbrirConexion();
                             Casa.AgregaCasa(c);
                             ConBD.CerrarConexion();
                         }
                         MessageBox.Show("La vieja casa se ha eliminado junto con todos \nsus dispositivos y la nueva se ha creado con exito.");
                     }
-                    
+
 
 
 
@@ -74,16 +75,17 @@ namespace PiNaranja
                 this.Dispose();
             }
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+
         private void btnCancelarBorrado_Click(object sender, EventArgs e)
         {
             FrmPanelControl panel = new FrmPanelControl(usuario);
             panel.Show();
             this.Dispose();
+        }
+
+        private void FrmReemplazarCasa_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

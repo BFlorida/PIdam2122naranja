@@ -493,6 +493,15 @@ namespace PiNaranja.Recursos {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a .
+        /// </summary>
+        internal static string lblInfo {
+            get {
+                return ResourceManager.GetString("lblInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Nombre.
         /// </summary>
         internal static string lblNombre {

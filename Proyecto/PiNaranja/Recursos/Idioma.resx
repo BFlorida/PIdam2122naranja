@@ -262,6 +262,9 @@
   <data name="lblIdioma" xml:space="preserve">
     <value>Idioma</value>
   </data>
+  <data name="lblInfo" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblNombre" xml:space="preserve">
     <value>Nombre</value>
   </data>

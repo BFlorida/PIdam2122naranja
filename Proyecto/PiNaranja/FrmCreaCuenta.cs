@@ -17,38 +17,42 @@ namespace PiNaranja
 
         private void btnCrearCuenta_Click(object sender, EventArgs e)
         {
-            if (ConBD.Conexion != null)
+            if(string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtNombreHogar.Text) || string.IsNullOrEmpty(txtEmail.Text) || string.IsNullOrEmpty(txtCon.Text))
             {
-                ConBD.AbrirConexion();
-                if (Usuario.UsuarioYaRegistrado(txtNombre.Text) == false)
+                MessageBox.Show("Debes rellenar todos los campos para continuar.");
+            }
+            else
+            {
+                if (ConBD.Conexion != null)
                 {
-                    ConBD.CerrarConexion();
-                    FrmInicioSesion frm = new FrmInicioSesion();
-                    Usuario user = new Usuario(txtNombre.Text, txtEmail.Text, txtCon.Text);
-
-                    if (ConBD.Conexion != null)
+                    ConBD.AbrirConexion();
+                    if (Usuario.UsuarioYaRegistrado(txtNombre.Text) == false)
                     {
-                        ConBD.AbrirConexion();
-                        Usuario.AgregarUsuario(user);
-
-                        Casa home = new Casa(txtNombreHogar.Text, txtNombre.Text);
-                        Casa.AgregaCasa(home);
                         ConBD.CerrarConexion();
-                    }
-                    frm.Show();
-                    this.Dispose();
+                        FrmInicioSesion frm = new FrmInicioSesion();
+                        Usuario user = new Usuario(txtNombre.Text, txtEmail.Text, txtCon.Text);
 
-                }
-                else
-                {
-                    ConBD.CerrarConexion();
-                    MessageBox.Show("El usuario ya está registrado. Inténtalo de nuevo");
-                    txtNombre.Text = "";
+                        if (ConBD.Conexion != null)
+                        {
+                            ConBD.AbrirConexion();
+                            Usuario.AgregarUsuario(user);
+
+                            Casa home = new Casa(txtNombreHogar.Text, txtNombre.Text);
+                            Casa.AgregaCasa(home);
+                            ConBD.CerrarConexion();
+                        }
+                        frm.Show();
+                        this.Dispose();
+
+                    }
+                    else
+                    {
+                        ConBD.CerrarConexion();
+                        MessageBox.Show("El usuario ya está registrado. Inténtalo de nuevo");
+                        txtNombre.Text = "";
+                    }
                 }
             }
-
-
-
         }
 
 

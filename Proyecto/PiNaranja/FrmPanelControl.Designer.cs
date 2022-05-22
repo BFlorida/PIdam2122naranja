@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPanelControl));
             this.dtv = new System.Windows.Forms.DataGridView();
             this.lblDispositivosRegistrados = new System.Windows.Forms.Label();
-            this.lblClick = new System.Windows.Forms.Label();
             this.lblReloj = new System.Windows.Forms.Label();
             this.grbAnyadirDispositivo = new System.Windows.Forms.GroupBox();
             this.txtEstancia1 = new System.Windows.Forms.TextBox();
@@ -90,6 +89,7 @@
             this.tmrCrono = new System.Windows.Forms.Timer(this.components);
             this.tmrCrono2 = new System.Windows.Forms.Timer(this.components);
             this.lblnamehouse = new System.Windows.Forms.Label();
+            this.lblInfo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtv)).BeginInit();
             this.grbAnyadirDispositivo.SuspendLayout();
             this.grbModificar.SuspendLayout();
@@ -123,21 +123,10 @@
             this.lblDispositivosRegistrados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDispositivosRegistrados.Location = new System.Drawing.Point(177, 344);
             this.lblDispositivosRegistrados.Name = "lblDispositivosRegistrados";
-            this.lblDispositivosRegistrados.Size = new System.Drawing.Size(181, 22);
+            this.lblDispositivosRegistrados.Size = new System.Drawing.Size(185, 22);
             this.lblDispositivosRegistrados.TabIndex = 2;
-            this.lblDispositivosRegistrados.Text = "DispositivosRegistrados";
+            this.lblDispositivosRegistrados.Text = "Dispositivos Registrados";
             this.lblDispositivosRegistrados.Visible = false;
-            // 
-            // lblClick
-            // 
-            this.lblClick.AutoSize = true;
-            this.lblClick.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClick.Location = new System.Drawing.Point(174, 609);
-            this.lblClick.Name = "lblClick";
-            this.lblClick.Size = new System.Drawing.Size(335, 13);
-            this.lblClick.TabIndex = 7;
-            this.lblClick.Text = "Realiza click sobre la linea para seleccionar la Estancia o el Dispositivo";
-            this.lblClick.Visible = false;
             // 
             // lblReloj
             // 
@@ -817,6 +806,17 @@
             this.lblnamehouse.TabIndex = 43;
             this.lblnamehouse.Text = "lblnamehouse";
             // 
+            // lblInfo
+            // 
+            this.lblInfo.AutoSize = true;
+            this.lblInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfo.Location = new System.Drawing.Point(188, 613);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(830, 20);
+            this.lblInfo.TabIndex = 46;
+            this.lblInfo.Text = "Pulse sobre cualquier celda para modificar dispositivo, configurar temporizador, " +
+    "encenderlo y apagarlo.\r\n";
+            // 
             // FrmPanelControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -824,6 +824,7 @@
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(1058, 653);
             this.ControlBox = false;
+            this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.lblnamehouse);
             this.Controls.Add(this.grbtemporizadores);
@@ -836,7 +837,6 @@
             this.Controls.Add(this.lblPanelControl);
             this.Controls.Add(this.grbAnyadirDispositivo);
             this.Controls.Add(this.lblReloj);
-            this.Controls.Add(this.lblClick);
             this.Controls.Add(this.lblDispositivosRegistrados);
             this.Controls.Add(this.dtv);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -868,7 +868,6 @@
 
         private System.Windows.Forms.DataGridView dtv;
         private System.Windows.Forms.Label lblDispositivosRegistrados;
-        private System.Windows.Forms.Label lblClick;
         private System.Windows.Forms.Label lblReloj;
         private System.Windows.Forms.PictureBox ptbLogo;
         private System.Windows.Forms.GroupBox grbAnyadirDispositivo;
@@ -926,5 +925,6 @@
         private System.Windows.Forms.TextBox txtEstancia1;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox cmbDispositivos2;
+        private System.Windows.Forms.Label lblInfo;
     }
 }

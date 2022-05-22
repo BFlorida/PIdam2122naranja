@@ -10,9 +10,9 @@ namespace PInaranja.Clases
 {
     class Casa
     {
+        #region - Atributos - Propiedades - Constructores -
         private string nombreCasa;
         private string propietario;
-        //Lista de dispositivos?
         public string NombreCasa { get { return nombreCasa; } set { nombreCasa = value; } }
         public string Propietario { get { return propietario; } set { propietario = value; } } //Nombre del propietario (Foreign Key hacia cuenta)
         public Casa(string nomCasa, string prop)
@@ -23,7 +23,9 @@ namespace PInaranja.Clases
 
         public Casa() { }
 
+        #endregion
 
+        #region - Métodos - 
         /// <summary>
         ///Agrega la casa del usuario
         /// </summary>
@@ -71,7 +73,7 @@ namespace PInaranja.Clases
         /// <returns>Devuelve el nombre del propietario de la casa.</returns>
         public static string ObtenerCasa(string usu)
         {
-            string consulta = string.Format("SELECT nombreCasa FROM casa WHERE propietario = '{0}';",usu);
+            string consulta = string.Format("SELECT nombreCasa FROM casa WHERE propietario = '{0}';", usu);
             MySqlCommand comando = new MySqlCommand(consulta, ConBD.Conexion);
             //comando.Parameters.AddWithValue("@nom", usu);
             string reader = (string)comando.ExecuteScalar();
@@ -102,6 +104,6 @@ namespace PInaranja.Clases
             }
         }
 
-
+        #endregion
     }
 }

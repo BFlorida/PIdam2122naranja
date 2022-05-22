@@ -5,3 +5,39 @@
 22/05/2022 0:04:55 - Dispositivo eliminado --> Nombre dispositivo: 1
 22/05/2022 0:05:05 - Insertado un dispositivo --> Nombre: 1 -- Certificado: C -- Tipo: TV -- Consumo Base: 60 -- Consumo Precio: 12 -- Estancia:  -- Nombre Casa: dasa
 22/05/2022 0:06:02 - Dispositivo eliminado --> Nombre dispositivo: 1
+22/05/2022 2:40:19 - Insertado un dispositivo --> Nombre: utyjt -- Certificado: C -- Tipo: Lavavajillas -- Consumo Base: 114 -- Consumo Precio: 22,8 -- Estancia:  -- Nombre Casa: flashhome
+22/05/2022 2:41:13 - Dispositivo encendido --> Nombre: asdsa
+22/05/2022 2:41:14 - Insertado un registro en myHomy --> Nombre: 0
+22/05/2022 2:41:25 - Dispositivo apagado --> Nombre: asdsa
+22/05/2022 2:41:26 - Insertado un registro en myHomy --> Nombre: 0
+22/05/2022 2:41:52 - Insertado un registro en myHomy --> Nombre: 0
+22/05/2022 2:42:33 - Insertado un registro en myHomy --> Nombre: 0
+22/05/2022 10:31:42 - Dispositivo eliminado --> Nombre dispositivo: 
+22/05/2022 10:31:48 - Dispositivo eliminado --> Nombre dispositivo: 
+22/05/2022 10:37:37 - Dispositivo eliminado --> Nombre dispositivo: 
+22/05/2022 11:11:55 - Insertado un usuario en myHomy --> Nombre:  -- Correo: 
+22/05/2022 11:11:56 - Agregada una casa en myHomy --> Nombre:  -- Propietario: 
+22/05/2022 11:15:56 - Insertado un usuario en myHomy --> Nombre: uy -- Correo: pabloski.2002@gmail.com
+22/05/2022 11:15:56 - Agregada una casa en myHomy --> Nombre: fr -- Propietario: uy
+22/05/2022 11:35:38 - Insertado un usuario en myHomy --> Nombre: kk -- Correo: pabloski.2002@gmail.com
+22/05/2022 11:35:38 - Agregada una casa en myHomy --> Nombre: a -- Propietario: kk
+22/05/2022 11:54:02 - Insertado un usuario en myHomy --> Nombre: Vicente -- Correo: vrozalen@gmail.com
+22/05/2022 11:54:02 - Agregada una casa en myHomy --> Nombre: CasaVi -- Propietario: Vicente
+22/05/2022 11:55:33 - Insertado un dispositivo --> Nombre: Lava -- Certificado: A -- Tipo: Lavavajillas -- Consumo Base: 38 -- Consumo Precio: 7,6 -- Estancia: Cocina -- Nombre Casa: CasaVi
+22/05/2022 11:56:12 - Insertado un dispositivo --> Nombre: Lavadora -- Certificado: A -- Tipo: Lavadora -- Consumo Base: 41 -- Consumo Precio: 8,2 -- Estancia: Cocina -- Nombre Casa: CasaVi
+22/05/2022 11:56:48 - Dispositivo encendido --> Nombre: Lava
+22/05/2022 11:56:49 - Insertado un registro en myHomy --> Nombre: 0
+22/05/2022 12:00:15 - Dispositivo encendido --> Nombre: Lavadora
+22/05/2022 12:00:16 - Insertado un registro en myHomy --> Nombre: 0
+22/05/2022 12:02:03 - Insertado un registro en myHomy --> Nombre: 0
+22/05/2022 12:05:39 - Dispositivo apagado --> Nombre: Lava
+22/05/2022 12:05:40 - Insertado un registro en myHomy --> Nombre: 0
+22/05/2022 12:12:17 - Insertado un usuario en myHomy --> Nombre: hd -- Correo: pabloski.2002@gmail.com
+22/05/2022 12:12:18 - Agregada una casa en myHomy --> Nombre: sf -- Propietario: hd
+22/05/2022 12:15:28 - Insertado un dispositivo --> Nombre: labadora -- Certificado: B -- Tipo: Lavadora -- Consumo Base: 102,5 -- Consumo Precio: 20,5 -- Estancia: Cocina -- Nombre Casa: sf
+22/05/2022 14:20:52 - Dispositivo encendido --> Nombre: kk
+22/05/2022 14:20:52 - Insertado un registro en myHomy --> Nombre: 0
+22/05/2022 14:20:58 - Dispositivo apagado --> Nombre: kk
+22/05/2022 14:20:59 - Insertado un registro en myHomy --> Nombre: 0
+22/05/2022 14:21:06 - Dispositivo encendido --> Nombre: kk
+22/05/2022 14:21:07 - Insertado un registro en myHomy --> Nombre: 0

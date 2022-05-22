@@ -13,6 +13,7 @@ namespace PInaranja.Clases
     //Clase Dispositivo. 
     internal class Dispositivo
     {
+        #region - Atributos - Propiedades - Constructores -
         private string nombre;
         private bool encendido;
         private double consumoBase;
@@ -89,6 +90,10 @@ namespace PInaranja.Clases
 
         }
 
+        #endregion
+
+        #region - Métodos - 
+
         /// <summary>
         /// Añade un dispositivo
         /// </summary>
@@ -160,7 +165,11 @@ namespace PInaranja.Clases
             return false;
         }
 
-        //Ver como introducir
+        /// <summary>
+        /// Edita un dispositivo
+        /// </summary>
+        /// <param name="disp">Dispositivo</param>
+        /// <returns>1 si se ha modificado un registro./returns>
         public static int EditarDispositivo(Dispositivo disp)
         {
             int retorno;
@@ -217,7 +226,12 @@ namespace PInaranja.Clases
             return retorno;
         }
 
-        //Método alterar alternativo. 
+        /// <summary>
+        /// Cambia el estado del dispositivo
+        /// </summary>
+        /// <param name="nom">Nombre</param>
+        /// <param name="enc">Encendido</param>
+        /// <returns>1 si ha modificado un registro.</returns>
         public static int AlterarEstado(string nom, bool enc)
         {
             int retorno;
@@ -239,6 +253,13 @@ namespace PInaranja.Clases
 
             return retorno;
         }
+
+        /// <summary>
+        /// Genera el consumo base de los dispositivos
+        /// </summary>
+        /// <param name="tipo"></param>
+        /// <param name="certificado"></param>
+        /// <returns>Cantidad de consumo base.</returns>
         public static double CalcularConsumo(string tipo, string certificado)
         {
             double consumoBase;
@@ -297,17 +318,29 @@ namespace PInaranja.Clases
             return consumoBase;
         }
 
+        /// <summary>
+        /// Calcula el precio del consumo en base al coste de la luz.
+        /// </summary>
+        /// <param name="consumoBase"></param>
+        /// <returns>coste del consumo por hora</returns>
+
         public static double CalcularPrecio(double consumoBase)
         {
             return consumoBase * 0.2;
         }
 
-        public static double TotalConsumo()
-        {
-            double consumo = 0;
-            
-            return consumo;
-        }
+        //public static double TotalConsumo()
+        //{
+        //    double consumo = 0;
+
+        //    return consumo;
+        //}
+
+        /// <summary>
+        /// Lista los dispositivos
+        /// </summary>
+        /// <param name="casa"></param>
+        /// <returns>lista de dispositivos</returns>
         public static List<Dispositivo> ListaDispositivos1(string casa)
         {
             List<Dispositivo> lista = new List<Dispositivo>();
@@ -322,6 +355,12 @@ namespace PInaranja.Clases
             }
             return lista;
         }
+
+        /// <summary>
+        /// Otra lista de dispositivo
+        /// </summary>
+        /// <param name="casa"></param>
+        /// <returns>Listea de disposiivo</returns>
         public static List<Dispositivo> ListaDispositivos2(string casa)
         {
             List<Dispositivo> lista = new List<Dispositivo>();
@@ -335,6 +374,12 @@ namespace PInaranja.Clases
             }
             return lista;
         }
+
+        /// <summary>
+        /// Obtiene un dispositivo
+        /// </summary>
+        /// <param name="nom"></param>
+        /// <returns>Dispositivo</returns>
         public static Dispositivo ObtenerDatosDispo(string nom)
         {
             Dispositivo dispositivo = new Dispositivo();
@@ -350,6 +395,12 @@ namespace PInaranja.Clases
             }
             return dispositivo;
         }
+
+        /// <summary>
+        /// Estado de un dispositivo
+        /// </summary>
+        /// <param name="dispo"></param>
+        /// <returns>true si está encendido false si está apagado.</returns>
         public static bool GetEstado(string dispo)
         {
             bool retorno;
@@ -361,7 +412,7 @@ namespace PInaranja.Clases
         }
 
 
-
+        #endregion
 
     }
 }

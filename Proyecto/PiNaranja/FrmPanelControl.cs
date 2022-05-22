@@ -16,6 +16,8 @@ namespace PiNaranja
 {
     public partial class FrmPanelControl : Form
     {
+        //Atributos que pasan el nombre del usuario y el nombre de la casa de un formulario a otro. 
+        //Esto lo empleamos en casi todos los formularios. 
         private string usuario;
         private string casa;
         public FrmPanelControl(string usu)
@@ -43,6 +45,7 @@ namespace PiNaranja
         DateTime final;
         string[] fecha = new string[3];
 
+        //Otro array de tiempo para un posible segundo temporizador.
         //DateTime ahora2 = DateTime.Now;
         //DateTime final2;
         //string[] fecha2 = new string[3];
@@ -52,6 +55,7 @@ namespace PiNaranja
             lblReloj.Text = DateTime.Now.ToLongTimeString();
         }
 
+        //carga los idiomas
         private void AplicarIdioma()
         {
             this.Text = Recursos.Idioma.FrmPanelControl;
@@ -62,7 +66,7 @@ namespace PiNaranja
             lblEstancia.Text = Recursos.Idioma.lblEstancia;
             btnAgregarDispositivo.Text = Recursos.Idioma.btnAgregarDispositivo;
             lblDispositivosRegistrados.Text = Recursos.Idioma.lblEstanciasRegistradas;
-            lblClick.Text = Recursos.Idioma.lblClick;
+            //lblClick.Text = Recursos.Idioma.lblClick;
             lblIdioma.Text = Recursos.Idioma.lblIdioma;
             btnEncender.Text = Recursos.Idioma.btnEncender;
             btnApagar.Text = Recursos.Idioma.btnApagar;
@@ -139,6 +143,11 @@ namespace PiNaranja
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(cmbDispositivos2.Text) || string.IsNullOrEmpty(cmbTipo2.Text) || string.IsNullOrEmpty(cmbCertificado2.Text))
+            {
+                MessageBox.Show("No pueden haber campos vacios al editar un dispositivo.");
+            }
+            else
             {
                 try
                 {
@@ -156,9 +165,7 @@ namespace PiNaranja
                 {
                     ConBD.CerrarConexion();
                 }
-
             }
-
             Refrescar();
         }
 
@@ -210,21 +217,7 @@ namespace PiNaranja
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (lblDispositivosRegistrados.Visible == true && dtv.Visible == true && lblClick.Visible == true)
-            {
-                lblDispositivosRegistrados.Visible = false;
-                dtv.Visible = false;
-                lblClick.Visible = false;
-            }
-            else
-            {
-                lblDispositivosRegistrados.Visible = true;
-                dtv.Visible = true;
-                lblClick.Visible = true;
-            }
-        }
+
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -251,9 +244,18 @@ namespace PiNaranja
                 }
                 else
                 {
-                    tmrCrono.Enabled = true;
-                    string nomdisp = txtTemp1.Text;
-
+                    DateTime hoy = DateTime.Now;
+                    final = new DateTime(ahora.Year, ahora.Month, ahora.Day,
+                    Convert.ToInt32(fecha[0]), Convert.ToInt32(fecha[1]),
+                    Convert.ToInt32(fecha[2]) + 1);
+                    if (hoy < final)
+                    {
+                        tmrCrono.Enabled = true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("El tiempo introducido no puede ser inferior al actual.");
+                    }
                 }
 
             }
@@ -392,7 +394,7 @@ namespace PiNaranja
 
         private void btnEliminarCuenta_Click(object sender, EventArgs e)
         {
-            DialogResult borrado = MessageBox.Show("Vas a borrar la cuenta",
+            DialogResult borrado = MessageBox.Show("Vas a borrar la cuenta.",
             "\n¿Estás seguro de borrarla?", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
             if (borrado == DialogResult.Yes)
             {
@@ -459,7 +461,11 @@ namespace PiNaranja
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-
+            if (string.IsNullOrEmpty(cmbDispositivos2.Text))
+            {
+                MessageBox.Show("Tienes que seleccionar un dipositivo para borrarlo.");
+            }
+            else
             {
                 try
                 {
@@ -487,11 +493,8 @@ namespace PiNaranja
                 txtW2.Text = "";
                 txtEuros2.Text = "";
                 txtTemp1.Text = "";
-
-
-
-                Refrescar();
             }
+            Refrescar();
         }
 
         private void cmbDispositivos2_SelectedIndexChanged(object sender, EventArgs e)
@@ -578,6 +581,10 @@ namespace PiNaranja
                         }
 
                     }
+                    else
+                    {
+                        MessageBox.Show("El dispositivo ya está encendido.", "Aviso");
+                    }
                 }
             }
             //Recargamos el Data grid View. 
@@ -661,6 +668,10 @@ namespace PiNaranja
                             }
                         }
                     }
+                    else
+                    {
+                        MessageBox.Show("El dispositivo ya se encuentra apagado.", "Aviso");
+                    }
                 }
             }
             Refrescar();
@@ -731,13 +742,25 @@ namespace PiNaranja
 
         }
 
+        //Obtenemos el nombre del dispositivo haciendo click en una cualquier celda del Data grid view
         private void dtv_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int n = e.RowIndex;
             if (n != -1)
             {
+                cmbDispositivos2.Text = dtv.Rows[n].Cells[0].Value.ToString();
+                cmbTipo2.Text = dtv.Rows[n].Cells[4].Value.ToString();
+                cmbCertificado2.Text = dtv.Rows[n].Cells[6].Value.ToString();
+                txtEstancia2.Text = dtv.Rows[n].Cells[3].Value.ToString();
+                txtW2.Text = Dispositivo.CalcularConsumo(dtv.Rows[n].Cells[4].Value.ToString(), dtv.Rows[n].Cells[6].Value.ToString()).ToString();
+                txtEuros2.Text = Dispositivo.CalcularPrecio(Convert.ToDouble(txtW2.Text)).ToString();
+
                 grbtemporizadores.Visible = true;
                 txtTemp1.Text = dtv.Rows[n].Cells[0].Value.ToString();
+
+                grbAnyadirDispositivo.Visible = false;
+                grbModificar.Visible = true;
+                grbtemporizadores.Visible = true;
             }
         }
     }
