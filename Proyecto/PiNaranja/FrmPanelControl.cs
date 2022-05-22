@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Globalization;
 using System.Threading;
-using PiNaranja.Recursos;
+using PiNaranja.Resources;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -58,35 +58,41 @@ namespace PiNaranja
         //carga los idiomas
         private void AplicarIdioma()
         {
-            this.Text = Recursos.Idioma.FrmPanelControl;
-            lblTipo.Text = Recursos.Idioma.lblTipo;
-            grbAnyadirDispositivo.Text = Recursos.Idioma.grbAnyadirProducto;
-            lblNombreDis.Text = Recursos.Idioma.lblNombreDis;
+            this.Text = Resources.Idioma.FrmPanelControl;
+            lblTipo.Text = Resources.Idioma.lblTipo;
+            grbAnyadirDispositivo.Text = Resources.Idioma.grbAnyadirProducto;
+            lblNombreDis.Text = Resources.Idioma.lblNombreDis;
             //lblCerti1.Text = Recursos.Idioma.lblEstancia;
-            lblEstancia.Text = Recursos.Idioma.lblEstancia;
-            btnAgregarDispositivo.Text = Recursos.Idioma.btnAgregarDispositivo;
-            lblDispositivosRegistrados.Text = Recursos.Idioma.lblEstanciasRegistradas;
+            lblEstancia.Text = Resources.Idioma.lblEstancia;
+            btnAgregarDispositivo.Text = Resources.Idioma.btnAgregarDispositivo;
+            lblDispositivosRegistrados.Text = Resources.Idioma.lblEstanciasRegistradas;
             //lblClick.Text = Recursos.Idioma.lblClick;
-            lblIdioma.Text = Recursos.Idioma.lblIdioma;
-            btnEncender.Text = Recursos.Idioma.btnEncender;
-            btnApagar.Text = Recursos.Idioma.btnApagar;
-            lblDispositivo.Text = Recursos.Idioma.lblDispositivo;
-            lblCertificado2.Text = Recursos.Idioma.lblCertificado2;
-            lblW2.Text = Recursos.Idioma.lblW2;
-            btnModificar.Text = Recursos.Idioma.btnModificar;
-            btnEliminar.Text = Recursos.Idioma.btnEliminar;
-            lblTipo2.Text = Recursos.Idioma.lblTipo;
-            lblTipo.Text = Recursos.Idioma.lblTipo;
-            lblCerti1.Text = Recursos.Idioma.lblCertificado2;
-            lblEstancia2.Text = Recursos.Idioma.lblEstancia;
-            btnParar.Text = Recursos.Idioma.btnParar;
-            btnConfigurar.Text = Recursos.Idioma.btnconfigurar;
-            btnMostrarDis.Text = Recursos.Idioma.btnMostrarDis;
-            btnMostrarModDis.Text = Recursos.Idioma.btnMostrarModDis;
-            btnTemporizador.Text = Recursos.Idioma.btnTemporizador;
-            btnRegistro.Text = Recursos.Idioma.btnRegistro;
-            btnEliminarCuenta.Text = Recursos.Idioma.btnEliminarCuenta;
-            btnDeleteHome.Text = Recursos.Idioma.btnDeleteHome;
+            lblIdioma.Text = Resources.Idioma.lblIdioma;
+            btnEncender.Text = Resources.Idioma.btnEncender;
+            btnApagar.Text = Resources.Idioma.btnApagar;
+            lblDispositivo.Text = Resources.Idioma.lblDispositivo;
+            lblCertificado2.Text = Resources.Idioma.lblCertificado2;
+            lblW2.Text = Resources.Idioma.lblW2;
+            btnModificar.Text = Resources.Idioma.btnModificar;
+            btnEliminar.Text = Resources.Idioma.btnEliminar;
+            lblTipo2.Text = Resources.Idioma.lblTipo;
+            lblTipo.Text = Resources.Idioma.lblTipo;
+            lblCerti1.Text = Resources.Idioma.lblCertificado2;
+            lblEstancia2.Text = Resources.Idioma.lblEstancia;
+            btnParar.Text = Resources.Idioma.btnParar;
+            btnConfigurar.Text = Resources.Idioma.btnConfigurar;
+            btnMostrarDis.Text = Resources.Idioma.btnMostrarDis;
+            btnMostrarModDis.Text = Resources.Idioma.btnMostrarModDis;
+            btnTemporizador.Text = Resources.Idioma.btnTemporizador;
+            btnRegistro.Text = Resources.Idioma.btnRegistro;
+            btnEliminarCuenta.Text = Resources.Idioma.btnEliminarCuenta;
+            btnDeleteHome.Text = Resources.Idioma.btnDeleteHome;
+            lblPanelControl.Text = Resources.Idioma.lblPanelControl;
+            grbModificar.Text = Resources.Idioma.grbModificar;
+            grbtemporizadores.Text = Resources.Idioma.grbTemporizadores;
+            btnParar.Text = Resources.Idioma.btnParar;
+            btnConfigurar.Text = Resources.Idioma.btnConfigurar;
+            lblInfo.Text = Resources.Idioma.lblInfo;
         }
 
         private void cmbIdioma_SelectedIndexChanged(object sender, EventArgs e)
@@ -763,5 +769,7 @@ namespace PiNaranja
                 grbtemporizadores.Visible = true;
             }
         }
+
+
     }
 }

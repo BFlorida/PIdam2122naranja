@@ -83,9 +83,29 @@ namespace PiNaranja.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3168179 {
+            get {
+                object obj = ResourceManager.GetObject("3168179", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _3844425_can_trash_icon {
             get {
                 object obj = ResourceManager.GetObject("3844425_can_trash_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4115235_exit_logout_sign_out_icon {
+            get {
+                object obj = ResourceManager.GetObject("4115235_exit_logout_sign out_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -306,6 +326,16 @@ namespace PiNaranja.Properties {
         internal static System.Drawing.Bitmap literature_xxl {
             get {
                 object obj = ResourceManager.GetObject("literature-xxl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_MyHomy {
+            get {
+                object obj = ResourceManager.GetObject("Logo_MyHomy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

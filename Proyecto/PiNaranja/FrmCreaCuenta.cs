@@ -2,7 +2,7 @@
 using PInaranja.Clases;
 using System.Globalization;
 using System.Threading;
-using PiNaranja.Recursos;
+using PiNaranja.Resources;
 using System.Windows.Forms;
 
 
@@ -40,7 +40,7 @@ namespace PiNaranja
                             Casa home = new Casa(txtNombreHogar.Text, txtNombre.Text);
                             Casa.AgregaCasa(home);
                             ConBD.CerrarConexion();
-                        }
+                        }                        
                         frm.Show();
                         this.Dispose();
 
@@ -73,14 +73,15 @@ namespace PiNaranja
 
         private void AplicarIdioma()
         {
-            lblNombre.Text = Recursos.Idioma.lblNombre;
-            lblCorreo.Text = Recursos.Idioma.lblCorreo;
-            lblConstraseña.Text = Recursos.Idioma.lblContraseña;
-            btnCrearCuenta.Text = Recursos.Idioma.btnCrearCuenta;
-            grbRellena.Text = Recursos.Idioma.grbRellena;
-            lblIdioma.Text = Recursos.Idioma.lblIdioma;
-            lblCreaCuenta.Text = Recursos.Idioma.lblCrearCuenta;
-            this.Text = Recursos.Idioma.FrmCrearCuenta;
+            lblNombre.Text = Resources.Idioma.lblNombre;
+            lblCorreo.Text = Resources.Idioma.lblCorreo;
+            lblConstraseña.Text = Resources.Idioma.lblContraseña;
+            btnCrearCuenta.Text = Resources.Idioma.btnCrearCuenta;
+            grbRellena.Text = Resources.Idioma.grbRellena;
+            lblIdioma.Text = Resources.Idioma.lblIdioma;
+            lblCreaCuenta.Text = Resources.Idioma.lblCrearCuenta;
+            this.Text = Resources.Idioma.FrmCrearCuenta;
+            lblNombreHogar.Text = Resources.Idioma.lblNombreHogar;
         }
 
         private void cmbIdioma_SelectedIndexChanged(object sender, EventArgs e)
@@ -102,7 +103,6 @@ namespace PiNaranja
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
             AplicarIdioma();
         }
-
 
     }
 }

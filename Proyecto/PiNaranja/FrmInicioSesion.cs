@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
 using System.Threading;
-using PiNaranja.Recursos;
+using PiNaranja.Resources;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
@@ -53,7 +53,7 @@ namespace PiNaranja
                                     ConBD.CerrarConexion();
                                     FrmPanelControl frmpc = new FrmPanelControl(usuario);
                                     frmpc.Show();
-                                    this.Hide();
+                                    this.Hide();                                    
                                 }
                                 else
                                 { //Si no está validad te envia al formulario de verificacion. 
@@ -108,12 +108,13 @@ namespace PiNaranja
 
         private void AplicarIdioma()
         {
-            this.Text = Recursos.Idioma.FrmInicioSesion;
-            lblUsuario.Text = Recursos.Idioma.lblUsuario;
-            lblContraseña.Text = Recursos.Idioma.lblContraseña;
-            lblIdioma.Text = Recursos.Idioma.lblIdioma;
-            btnInicioSesion.Text = Recursos.Idioma.btnInicioSesion;
-            btnCrearCuenta.Text = Recursos.Idioma.btnCrearCuenta;
+            this.Text = Resources.Idioma.FrmInicioSesion;
+            lblUsuario.Text = Resources.Idioma.lblUsuario;
+            lblContraseña.Text = Resources.Idioma.lblContraseña;
+            lblIdioma.Text = Resources.Idioma.lblIdioma;
+            btnInicioSesion.Text = Resources.Idioma.btnInicioSesion;
+            btnCrearCuenta.Text = Resources.Idioma.btnCrearCuenta;
+            btnRecContr.Text = Resources.Idioma.btnRecuperarCon;
         }
 
         private void cmbIdioma_SelectedIndexChanged(object sender, EventArgs e)
@@ -147,5 +148,7 @@ namespace PiNaranja
         {
 
         }
+
+
     }
 }

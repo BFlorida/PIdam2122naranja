@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Globalization;
 using System.Threading;
-using PiNaranja.Recursos;
+using PiNaranja.Resources;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -85,7 +85,37 @@ namespace PiNaranja
 
         private void FrmReemplazarCasa_Load(object sender, EventArgs e)
         {
+            cmbIdioma.Text = "Castellano";
+            AplicarIdioma();
+        }
 
+        private void AplicarIdioma()
+        {
+            this.Text = Resources.Idioma.frmReemplazarCasa;
+            lblIdioma.Text = Resources.Idioma.lblIdioma;
+            lblNuevaCasa.Text = Resources.Idioma.lblNuevaCasa;
+            btnActualizarCasa.Text = Resources.Idioma.btnActualizarCasa;
+            btnCancelarBorrado.Text = Resources.Idioma.btnCancelar;
+        }
+
+        private void cmbIdioma_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string cultura = "";
+            switch (cmbIdioma.Text)
+            {
+                case "Castellano":
+                    {
+                        cultura = "ES-ES";
+                        break;
+                    }
+                case "English":
+                    {
+                        cultura = "EN-GB";
+                        break;
+                    }
+            }
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
+            AplicarIdioma();
         }
     }
 }

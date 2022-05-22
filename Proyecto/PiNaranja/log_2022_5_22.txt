@@ -1,0 +1,1 @@
+22/05/2022 19:43:34 - Insertado un dispositivo --> Nombre: haola -- Certificado: C -- Tipo: Horno -- Consumo Base: 258 -- Consumo Precio: 51,6 -- Estancia: asdasdasd -- Nombre Casa: flashhome

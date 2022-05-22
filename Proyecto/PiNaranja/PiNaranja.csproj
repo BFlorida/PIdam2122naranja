@@ -92,12 +92,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Recursos\Idioma.EN-GB.Designer.cs">
+    <Compile Include="Resources\Idioma.EN-GB.Designer.cs">
       <DependentUpon>Idioma.EN-GB.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Recursos\Idioma.Designer.cs">
+    <Compile Include="Resources\Idioma.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Idioma.resx</DependentUpon>
@@ -136,11 +136,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Recursos\Idioma.EN-GB.resx">
+    <EmbeddedResource Include="Resources\Idioma.EN-GB.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Idioma.EN-GB.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Recursos\Idioma.resx">
+    <EmbeddedResource Include="Resources\Idioma.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Idioma.Designer.cs</LastGenOutput>
     </EmbeddedResource>
@@ -285,6 +285,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\door-5-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3168179.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4115235_exit_logout_sign out_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_MyHomy.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recursos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

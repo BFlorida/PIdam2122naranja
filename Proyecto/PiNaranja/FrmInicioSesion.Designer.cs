@@ -48,9 +48,10 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(243, 247);
+            this.lblUsuario.Location = new System.Drawing.Point(324, 304);
+            this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(84, 20);
+            this.lblUsuario.Size = new System.Drawing.Size(102, 25);
             this.lblUsuario.TabIndex = 1;
             this.lblUsuario.Text = "USUARIO";
             // 
@@ -58,27 +59,30 @@
             // 
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseña.Location = new System.Drawing.Point(227, 318);
+            this.lblContraseña.Location = new System.Drawing.Point(303, 391);
+            this.lblContraseña.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(119, 20);
+            this.lblContraseña.Size = new System.Drawing.Size(152, 25);
             this.lblContraseña.TabIndex = 2;
             this.lblContraseña.Text = "CONTRASEÑA";
             // 
             // txtUsuario
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(175, 278);
+            this.txtUsuario.Location = new System.Drawing.Point(233, 342);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(224, 30);
+            this.txtUsuario.Size = new System.Drawing.Size(297, 36);
             this.txtUsuario.TabIndex = 3;
             // 
             // txtContrasenya
             // 
             this.txtContrasenya.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContrasenya.Location = new System.Drawing.Point(175, 348);
+            this.txtContrasenya.Location = new System.Drawing.Point(233, 428);
+            this.txtContrasenya.Margin = new System.Windows.Forms.Padding(4);
             this.txtContrasenya.Name = "txtContrasenya";
             this.txtContrasenya.PasswordChar = '*';
-            this.txtContrasenya.Size = new System.Drawing.Size(224, 30);
+            this.txtContrasenya.Size = new System.Drawing.Size(297, 36);
             this.txtContrasenya.TabIndex = 4;
             this.txtContrasenya.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContrasenya_KeyPress);
             // 
@@ -88,9 +92,10 @@
             this.btnInicioSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicioSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInicioSesion.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnInicioSesion.Location = new System.Drawing.Point(211, 421);
+            this.btnInicioSesion.Location = new System.Drawing.Point(281, 518);
+            this.btnInicioSesion.Margin = new System.Windows.Forms.Padding(4);
             this.btnInicioSesion.Name = "btnInicioSesion";
-            this.btnInicioSesion.Size = new System.Drawing.Size(154, 43);
+            this.btnInicioSesion.Size = new System.Drawing.Size(205, 53);
             this.btnInicioSesion.TabIndex = 5;
             this.btnInicioSesion.Text = "INICIO SESION";
             this.btnInicioSesion.UseVisualStyleBackColor = false;
@@ -102,9 +107,10 @@
             this.btnCrearCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearCuenta.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCrearCuenta.Location = new System.Drawing.Point(198, 470);
+            this.btnCrearCuenta.Location = new System.Drawing.Point(264, 578);
+            this.btnCrearCuenta.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrearCuenta.Name = "btnCrearCuenta";
-            this.btnCrearCuenta.Size = new System.Drawing.Size(183, 43);
+            this.btnCrearCuenta.Size = new System.Drawing.Size(244, 53);
             this.btnCrearCuenta.TabIndex = 6;
             this.btnCrearCuenta.Text = "CREAR CUENTA";
             this.btnCrearCuenta.UseVisualStyleBackColor = false;
@@ -114,9 +120,10 @@
             // 
             this.lblIdioma.AutoSize = true;
             this.lblIdioma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdioma.Location = new System.Drawing.Point(366, 204);
+            this.lblIdioma.Location = new System.Drawing.Point(488, 251);
+            this.lblIdioma.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIdioma.Name = "lblIdioma";
-            this.lblIdioma.Size = new System.Drawing.Size(61, 20);
+            this.lblIdioma.Size = new System.Drawing.Size(76, 25);
             this.lblIdioma.TabIndex = 9;
             this.lblIdioma.Text = "Idioma:";
             // 
@@ -126,10 +133,10 @@
             this.cmbIdioma.Items.AddRange(new object[] {
             "Castellano",
             "English"});
-            this.cmbIdioma.Location = new System.Drawing.Point(448, 204);
-            this.cmbIdioma.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbIdioma.Location = new System.Drawing.Point(597, 251);
+            this.cmbIdioma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbIdioma.Name = "cmbIdioma";
-            this.cmbIdioma.Size = new System.Drawing.Size(92, 21);
+            this.cmbIdioma.Size = new System.Drawing.Size(121, 24);
             this.cmbIdioma.TabIndex = 10;
             this.cmbIdioma.SelectedIndexChanged += new System.EventHandler(this.cmbIdioma_SelectedIndexChanged);
             // 
@@ -137,9 +144,10 @@
             // 
             this.ptbSalir.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ptbSalir.Image = ((System.Drawing.Image)(resources.GetObject("ptbSalir.Image")));
-            this.ptbSalir.Location = new System.Drawing.Point(513, 506);
+            this.ptbSalir.Location = new System.Drawing.Point(684, 623);
+            this.ptbSalir.Margin = new System.Windows.Forms.Padding(4);
             this.ptbSalir.Name = "ptbSalir";
-            this.ptbSalir.Size = new System.Drawing.Size(43, 46);
+            this.ptbSalir.Size = new System.Drawing.Size(57, 57);
             this.ptbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbSalir.TabIndex = 7;
             this.ptbSalir.TabStop = false;
@@ -148,9 +156,10 @@
             // ptblogo
             // 
             this.ptblogo.Image = ((System.Drawing.Image)(resources.GetObject("ptblogo.Image")));
-            this.ptblogo.Location = new System.Drawing.Point(51, 43);
+            this.ptblogo.Location = new System.Drawing.Point(68, 53);
+            this.ptblogo.Margin = new System.Windows.Forms.Padding(4);
             this.ptblogo.Name = "ptblogo";
-            this.ptblogo.Size = new System.Drawing.Size(488, 145);
+            this.ptblogo.Size = new System.Drawing.Size(651, 178);
             this.ptblogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptblogo.TabIndex = 0;
             this.ptblogo.TabStop = false;
@@ -160,9 +169,10 @@
             this.btnRecContr.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnRecContr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRecContr.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnRecContr.Location = new System.Drawing.Point(222, 392);
+            this.btnRecContr.Location = new System.Drawing.Point(296, 482);
+            this.btnRecContr.Margin = new System.Windows.Forms.Padding(4);
             this.btnRecContr.Name = "btnRecContr";
-            this.btnRecContr.Size = new System.Drawing.Size(133, 23);
+            this.btnRecContr.Size = new System.Drawing.Size(177, 28);
             this.btnRecContr.TabIndex = 11;
             this.btnRecContr.Text = "Recuperar Contraseña";
             this.btnRecContr.UseVisualStyleBackColor = false;
@@ -170,10 +180,10 @@
             // 
             // FrmInicioSesion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(584, 561);
+            this.ClientSize = new System.Drawing.Size(779, 723);
             this.ControlBox = false;
             this.Controls.Add(this.btnRecContr);
             this.Controls.Add(this.cmbIdioma);
@@ -187,6 +197,7 @@
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.ptblogo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmInicioSesion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio Sesion";

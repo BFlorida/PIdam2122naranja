@@ -41,3 +41,13 @@
 22/05/2022 14:20:59 - Insertado un registro en myHomy --> Nombre: 0
 22/05/2022 14:21:06 - Dispositivo encendido --> Nombre: kk
 22/05/2022 14:21:07 - Insertado un registro en myHomy --> Nombre: 0
+22/05/2022 16:28:46 - Insertado un usuario en myHomy --> Nombre: Jaimito -- Correo: alexalabau98@gmail.com
+22/05/2022 16:28:46 - Agregada una casa en myHomy --> Nombre: El Choco -- Propietario: Jaimito
+22/05/2022 19:41:50 - Dispositivo encendido --> Nombre: asdsa
+22/05/2022 19:41:50 - Insertado un registro en myHomy --> Nombre: 0
+22/05/2022 19:41:52 - Dispositivo apagado --> Nombre: asdsa
+22/05/2022 19:41:53 - Insertado un registro en myHomy --> Nombre: 0
+22/05/2022 19:41:55 - Dispositivo encendido --> Nombre: asdsa
+22/05/2022 19:41:56 - Insertado un registro en myHomy --> Nombre: 0
+22/05/2022 19:42:01 - Dispositivo apagado --> Nombre: asdsa
+22/05/2022 19:42:02 - Insertado un registro en myHomy --> Nombre: 0

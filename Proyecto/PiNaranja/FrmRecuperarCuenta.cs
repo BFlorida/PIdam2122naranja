@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using PiNaranja.Resources;
 
 namespace PiNaranja
 {
@@ -26,6 +27,8 @@ namespace PiNaranja
 
         private void FrmRecuperarCuenta_Load(object sender, EventArgs e)
         {
+            cmbIdioma.Text = "Castellano";
+            AplicarIdioma();
             txtUsuario.Enabled = true;
             txtCodigo.Enabled = false;
             txtContrasenya.Enabled = false;
@@ -132,6 +135,39 @@ namespace PiNaranja
             this.Hide();
         }
 
+        private void AplicarIdioma()
+        {
+            this.Text = Resources.Idioma.frmRecuperarCuenta;
+            lblCodigo.Text = Resources.Idioma.lblCodigo;
+            lblUsuario.Text = Resources.Idioma.lblUsuario;
+            lblNuevaCon.Text = Resources.Idioma.lblContrasenya;
+            lblIdioma.Text = Resources.Idioma.lblIdioma;
+            btnEnviarMail.Text = Resources.Idioma.btnEnviarMail;
+            grbCambioCon.Text = Resources.Idioma.grbCambioCon;
+            lblNuevaCon.Text = Resources.Idioma.lblNuevaCon;
+            btnVolver.Text = Resources.Idioma.btnVolver;
+            btnCambiarContrasenya.Text = Resources.Idioma.btnCambiarContraseña;
+            grbRecuperacion.Text = Resources.Idioma.grbRecuperacion;
+        }
 
+        private void cmbIdioma_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string cultura = "";
+            switch (cmbIdioma.Text)
+            {
+                case "Castellano":
+                    {
+                        cultura = "ES-ES";
+                        break;
+                    }
+                case "English":
+                    {
+                        cultura = "EN-GB";
+                        break;
+                    }
+            }
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
+            AplicarIdioma();
+        }
     }
 }

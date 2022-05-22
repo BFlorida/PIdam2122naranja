@@ -58,6 +58,10 @@ namespace PiNaranja
             string error = "";
             //Enviamos el mensaje con el cuerpo, la fecha de hoy, el usuario a quien se envia y el asunto. 
             Correo.EnviarCorreo(stringBuilder, DateTime.Now, para.Trim(), asunto.Trim(), out error);
+            MessageBox.Show("Revise su correo, recibirá un código de verificación");
+
+            cmbIdioma.Text = "Castellano";
+            AplicarIdioma();
         }
 
         private void btnCheckVCode_Click(object sender, EventArgs e)
@@ -90,6 +94,34 @@ namespace PiNaranja
             {
                 MessageBox.Show("Codigo incorrecto, revisa el correo y/o reenvialo de nuevo");
             }
+        }
+        private void AplicarIdioma()
+        {
+            this.Text =
+            lblIdioma.Text = Resources.Idioma.lblIdioma;
+            lblCode.Text = Resources.Idioma.lblCode;
+            btnCheckVCode.Text = Resources.Idioma.btnCheckVCode;
+            btnReturn.Text = Resources.Idioma.btnReturn;
+        }
+
+        private void cmbIdioma_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string cultura = "";
+            switch (cmbIdioma.Text)
+            {
+                case "Castellano":
+                    {
+                        cultura = "ES-ES";
+                        break;
+                    }
+                case "English":
+                    {
+                        cultura = "EN-GB";
+                        break;
+                    }
+            }
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
+            AplicarIdioma();
         }
 
         private void btnReturn_Click(object sender, EventArgs e)
